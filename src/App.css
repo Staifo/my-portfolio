@@ -1,38 +1,585 @@
-.App {
-  text-align: center;
+html,
+body,
+#root {
+  height: 100%;
+  min-width: 1200px;
 }
 
-.App-logo {
-  height: 40vmin;
+.list {
+  position: relative;
+  z-index: 0;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  width: 60%;
+  max-height: 400px;
+}
+
+.list > div {
+  position: absolute;
+  will-change: transform, width, height, opacity;
+  padding: 15px;
+}
+
+.list > div > div {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px -10px rgba(0, 0, 0, 0.2);
+}
+
+.jumbo {
+  /* background-color:#343136; */
+  /* background-image: url('./images/logo4.png');
+z-index: -1; */
+  background-color: white;
+}
+
+.projects {
+  overflow: hidden;
+  user-select: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  color: rgb(173, 216, 230, 0.1)
+}
+
+.codeCard {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  /* background-color:#EEF7FF */
+}
+.codingLang {
+  background-color: rgb(173, 216, 230, 0.1)
+}
+
+.codingLang > div, .myProjects > div {
+  /* border-radius: 60px; */
+  /* margin-top: 60px; */
+  /* border-top: 2px solid blue; */
+  /* border-bottom: 2px solid blue; */
+  margin-bottom: 20px;
+  font-size: 20px;
+  height: 400px;
+  /* font-weight: bold; */
+  /* background-color: rgba(166, 217, 252, 0.1); */
+  /* color: rgb(228, 211, 211); */
+  /* border-right: 4px solid rgb(173, 216, 230, 0.4);
+border-left: 4px solid rgb(173, 216, 230, 0.4); */
+  font-family: "Quicksand";
+  color: black;
+}
+
+codingLang > div:hover {
+  box-shadow: 0 0 30px 15px white,
+  /* inner white */ 0 0 50px 30px rgb(235, 232, 232),
+    /* middle white */ 0 0 60px 20px rgb(170, 213, 248); /* outer white */
+  color: rgb(190, 186, 186);
+}
+
+.codingLang > div > div {
+  margin-top: 40px;
+}
+
+.codingSkills {
+  /* color: lightgrey; */
+  color: grey;
+  /* opacity: 0.4; */
+  font-family: Quicksand;
+}
+
+/* .codingSkills:hover {
+  color: white;
+  opacity: 1;
+} */
+
+/* .myProjects:hover {
+  color: grey
+} */
+
+.trails-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  /* margin-bottom: 60px; */
+  
+}
+
+.trails-text {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: white;
+  /* font-size: 1.4em; */
+  font-weight: 600;
+  letter-spacing: 4px;
+  will-change: transform, opacity;
+  /* overflow: hidden; */
+  height: max-content;
+}
+
+.trails-text > div {
+  /* overflow: hidden; */
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  
+  
+}
+
+
+/* .trailDiv {
+  color: rgb(255, 255, 255);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+  margin-left: 20px;
+ 
+} */
+
+.square {
+  height: 498px;
+}
+
+/* @media (max-width:600px) {
+  .trailDiv {
+  
+  }
+
+  .trails-text {
+
+line-height: 54px;
+  
+  }
+
+  .trails-text > div {
+    
+ 
+  }
+
+  .junior {
+    line-height: 40px;
+   
+  }
+
+  .image {
+width: 260px;
+  }
+
+  .square {
+height: 360px;
+  }
+}
+
+@media (max-width:600px) {
+  .trailDiv {
+  
+  }
+
+  .trails-text {
+
+line-height: 54px;
+  
+  }
+
+  .trails-text > div {
+    
+ 
+  }
+
+  .junior {
+    line-height: 40px;
+   
+  }
+
+  .image {
+width: 260px;
+  }
+
+  .square {
+height: 360px;
+  }
+} */
+
+
+
+/* .projectsButton :hover{
+  box-shadow:
+  0 0 30px 15px white,  
+  0 0 50px 30px rgb(224, 221, 221), 
+  0 0 70px 45px rgb(185, 181, 181); 
+
+} */
+
+/* .card {
+  width: 45ch;
+  height: 45ch;
+  background: grey;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+} */
+
+/* .juniorCoder:hover {
+background-color:yellow;
+} */
+
+/* .skills:hover{
+ text-shadow:4px 4px blue;
+} */
+
+/* REACT SLIDER */
+.item {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  pointer-events: auto;
+  transform-origin: 50% 50% 0px;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.fg {
+  cursor: -webkit-grab;
+  background-color: #272727;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.2);
+  font-size: 3em;
+
+  font-weight: 600;
+  transition: box-shadow 0.75s;
+}
+
+.fg:active {
+  cursor: -webkit-grabbing;
+  box-shadow: 0px 15px 30px -5px rgba(0, 0, 0, 0.4);
+}
+
+.fg > * {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.av {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/*  */
+
+@media (max-width: 1500px) {
+  .otherProjects {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+  }
+  .otherProjects > div {
+    margin-top: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .triangle {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 100px 100px 0 100px;
+border-color: rgb(248, 242, 242) transparent transparent transparent;
+} */
+
+/* .element {
+  height: 1000px;
+  background-color: #ededed;
+  font-size: 45px;
+  border-top: 1px solid #000;
+  padding-top: 55px;
+  padding-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.element.no-padding {
+  padding-top: 0;
+} */
+
+/* .active {
+  color: red !important;
+  
+} */
+
+/* .testing {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 0%;
+  position: relative;
+  animation: testing 5s;
 }
 
-@keyframes App-logo-spin {
+
+
+@keyframes testing {
+   from {
+      margin-left: -500px;
+   }
+
+   to {
+      margin-left: 0%;
+   }
+} */
+
+#clickme:hover {
+background-color: white;
+}
+
+#clickme {
+  position: relative;
+  animation-name: click;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes click {
+0% {background-color: rgb(255, 255, 255,0); }
+25% {background-color: rgb(250, 250, 242); color: white}
+50% {background-color: rgb(255, 255, 255,0);}
+75% {background-color: rgb(255, 255, 248); color: white}
+100% {background-color: rgb(255, 255, 255,0);}
+}
+
+.junior, .codinSkillsText, .myProjectsText {
+  text-align: center;
+
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    rgb(220, 243, 250) 10%,
+    rgb(173, 216, 230, 0.2),
+    rgb(255, 255, 255) 20%,
+    lightgrey 60%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.image [data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+  transition-duration: 4000ms;
+}
+
+
+.square {
+  position: relative;
+  animation: mymove 14s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+@keyframes mymove {
   from {
-    transform: rotate(0deg);
+    top: 160px;
+    align-self: flex-start;
+    width: 200px;
+    height: 200px;
+   
+    /* position: relative;
+    opacity: 1; */
   }
   to {
-    transform: rotate(360deg);
+    top: 0;
+    align-self: flex-start;
+    height: 20px;
+    width: 800px;
+    position: absolute;
+    /* opacity: 1; */
   }
+}
+
+#square1 {
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    rgb(220, 243, 250) 10%,
+    rgb(173, 216, 230, 0.2),
+    rgb(255, 255, 255) 20%,
+    lightgrey 60%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+
+  text-fill-color: transparent;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* .welcome2 {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 0%;
+  position: relative;
+  animation: testing 5s;
+  z-Index: 0;
+}
+
+
+
+@keyframes testing {
+   from {
+      margin-left: -500px;
+   }
+
+   to {
+      margin-left: 0%;
+   }
+}  */
+
+
+
+
+.welcome2 {
+  /* border-right: solid 3px rgba(0,255,0,.75); */
+  white-space: nowrap;
+  overflow: hidden;    
+  /* font-family: 'Source Code Pro', monospace;   */
+  /* font-size: 28px; */
+  /* color: rgba(255,255,255,.70); */
+  margin: 0 auto;
+}
+
+/* Animation */
+.welcome2 {
+animation: animated-text 4s steps(29,end) 1s 1 normal both;
+animation-delay: 10s;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 600px;}
+}
+
+/* cursor animations */
+
+/* @keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+} */
+
+
+.nice {
+  position: relative;
+  width: max-content;
+  height: 160px;
+  line-height: 80px;
+  color: black;
+  font-size: 8em;
+  font-weight: 800;
+  letter-spacing: -9px;
+  will-change: transform, opacity;
+  overflow: hidden;
+ 
+}
+
+
+
+/* .arrow {
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 54px 0 54px 54px;
+border-color: transparent transparent transparent black;
+} */
+
+.arrow2, .arrow {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 54px 54px 0 54px;
+border-color:black transparent transparent transparent
+}
+
+.hi {
+  position: relative;
+  animation-name: move;
+  animation-delay: 0s;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move {
+  0% {opacity: 0}
+  25% {opacity: 0.2}
+  50% {opacity: 0.6}
+  75% {opacity: 0.8}
+  100% {opacity: 1}
+}
+
+
+.about {
+  color: rgb(128, 128, 128, 0.1);
 }
