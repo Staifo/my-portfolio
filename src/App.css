@@ -119,7 +119,7 @@ codingLang > div:hover {
   align-items: center;
   text-align: left;
   /* margin-bottom: 60px; */
-  
+
 }
 
 .trails-text {
@@ -155,6 +155,47 @@ codingLang > div:hover {
   margin-left: 20px;
  
 } */
+
+.trailDiv2 {
+  font-size: calc(100px + 1.2vw);
+}
+
+@media (max-width: 860px) {
+  .trailDiv2 {
+    font-size: calc(100px + 1.4vw);
+   
+  }
+}
+
+@media (max-width: 400px) {
+  .trailDiv2 {
+    font-size: calc(100px + 2.6vw);
+   
+  }
+}
+
+.junior { 
+  font-size: calc(100px + 1.0vw);
+}
+
+@media (max-width: 400px) {
+  .junior {
+    font-size: calc(100px + 2.6vw);
+   
+  }
+}
+
+
+.info {
+  margin-top: 40px;
+}
+
+@media (min-width: 350px) {
+  .info {
+    margin-top: 0px;
+   
+  }
+}
 
 .square {
   height: 498px;
@@ -582,4 +623,15 @@ border-color:black transparent transparent transparent
 
 .about {
   color: rgb(128, 128, 128, 0.1);
+}
+
+
+.design {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 10px 0 10px;
+border-color: #007bff transparent transparent transparent;
+/* margin-top: 6px; */
+margin-bottom: 20px;
 }

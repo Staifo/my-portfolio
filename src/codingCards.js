@@ -552,7 +552,7 @@ import { SiJavascript } from "react-icons/si";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 400,
-    height: 440,
+    height: 420,
   },
   media: {
     height: 0,
@@ -603,13 +603,14 @@ export default function CodingCard() {
         width: "100%",
         alignItems: "center",
         marginTop: "100px",
+        justifyContent: "center"
       }}
     >
       <div
         data-aos="zoom-out-right"
         data-aos-offset="160"
         data-aos-duration="3000"
-        style={{ width: "30%", marginLeft: "2%" }}
+        style={{ width:'max-content',}}
       >
         <Card className={classes.root}>
           <CardMedia style={{ textAlign: "center" }} >
@@ -624,6 +625,7 @@ export default function CodingCard() {
                 justifyContent: "center",
                 fontFamily: "Quicksand",
                 alignItems: "center",
+                // color: 'grey'
               }}
             >
               <div
@@ -651,6 +653,7 @@ export default function CodingCard() {
               <SiJavascript style={{fontSize: '40px', color: 'yellow',}}/>
               </div>
               <div style={{width: '100%', display: "flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}> */}
+              {/* <li style={{listStyleType: "none",textAlign: 'center', fontWeight: 'bold', fontSize: '20px',}}>Languages</li> */}
               <li style={{ listStyleType: "none", fontSize: "20px" }}>HTML5</li>
               <li style={{ listStyleType: "none", fontSize: "20px" }}>CSS3</li>
               <li style={{ listStyleType: "none", fontSize: "20px" }}>
@@ -660,12 +663,13 @@ export default function CodingCard() {
                 ReactJS
               </li>
               <hr style={{ border: "2px solid grey", width: "6%" }} />
-              <li style={{ listStyleType: "none", fontSize: "20px" }}>
-                Material UI
+              {/* <li style={{listStyleType: "none",textAlign: 'center', fontWeight: 'bold', fontSize: '20px',}}>Tools and Methods I used</li> */}
+              <li style={{ listStyleType: "none", fontSize: "16px", textAlign: 'center', }}>
+               Github | Material UI | Bootstrap | React Spring | Netlify | Agile Methods/Scrum
               </li>
-              <li style={{ listStyleType: "none", fontSize: "20px" }}>
+              {/* <li style={{ listStyleType: "none", fontSize: "20px" }}>
                 Bootstrap
-              </li>
+              </li> */}
               {/* </div>
               </div> */}
             </div>
@@ -679,7 +683,7 @@ export default function CodingCard() {
         data-aos="zoom-out-right"
         data-aos-offset="160"
         data-aos-duration="3000"
-        style={{ width: "30%", marginLeft: "2%" }}
+        style={{width:'max-content', marginLeft: '2%',}}
       >
         <Card className={classes.root}>
           <CardMedia style={{ textAlign: "center" }}>
@@ -717,11 +721,17 @@ export default function CodingCard() {
                 </span>
               </div>
               <hr style={{ border: "2px solid yellow", width: "40%" }} />
+              {/* <li style={{listStyleType: "none",textAlign: 'center', fontWeight: 'bold', fontSize: '20px',}}>Languages</li> */}
               <li style={{ listStyleType: "none", fontSize: "20px" }}>
                 NodeJS
               </li>
               <li style={{ listStyleType: "none", fontSize: "20px" }}>
                 Express
+              </li>
+              <hr style={{ border: "2px solid grey", width: "6%", marginTop: '70px' }} />
+              {/* <li style={{listStyleType: "none",textAlign: 'center', fontWeight: 'bold', fontSize: '20px',}}>Tools and Methods I used</li> */}
+              <li style={{ listStyleType: "none", fontSize: "16px", textAlign: 'center',  width: '100%',}}>
+               Github | Express | NoSQL | SQL | Heroku | Agile Methods/Scrum
               </li>
             </div>
           </CardContent>
@@ -734,7 +744,7 @@ export default function CodingCard() {
         data-aos="zoom-out-right"
         data-aos-offset="160"
         data-aos-duration="3000"
-        style={{ width: "30%", marginLeft: "2%" }}
+        style={{ width:'max-content', marginLeft: '2%',}}
       >
         <Card className={classes.root}>
           <CardMedia style={{ textAlign: "center" }}>
@@ -783,7 +793,7 @@ export default function CodingCard() {
 
       {/*  */}
 
-      <div
+      {/* <div
         data-aos="zoom-out-right"
         data-aos-offset="160"
         data-aos-duration="3000"
@@ -791,7 +801,7 @@ export default function CodingCard() {
       >
         <Card className={classes.root}>
           <CardMedia style={{ textAlign: "center" }}>
-            {/* <DvrIcon color="disabled" style={{ fontSize: "40px" }} /> */}
+          
           </CardMedia>
           <CardContent style={{}}>
             <div
@@ -810,7 +820,7 @@ export default function CodingCard() {
                   listStyleType: "none",
                   fontWeight: "bold",
                   fontSize: "calc(60px + 2.2vw)",
-                  // position: 'absolute',
+               
                   display: "flex",
                   flexDirection: "column",
                   color: "lightgrey",
@@ -829,7 +839,7 @@ export default function CodingCard() {
             </div>
           </CardContent>
         </Card>
-      </div>
+      </div> */}
     </div>
   );
 }

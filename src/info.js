@@ -75,7 +75,7 @@ const Info = () => {
           >
             <span
               style={{
-                fontSize: "16px",
+                fontSize: "14px",
                 fontFamily: "Quicksand",
                 // fontWeight: "bold",
                 color: 'grey'

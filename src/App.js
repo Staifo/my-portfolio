@@ -33,7 +33,9 @@ import neu1 from "./images/neu1.png";
 import todo1 from "./images/todo1.jpg";
 import todo2 from "./images/todo2.jpg";
 import todo3 from "./images/todo3.jpg";
-import testpic from "./images/testpic.jpg";
+import portfolio1 from "./images/portfolio1.jpg";
+import portfolio2 from "./images/portfolio2.jpg";
+import portfolio3 from "./images/portfolio3.jpg";
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useSpring, animated, interpolate } from "react-spring";
 import { useGesture } from "react-with-gesture";
@@ -54,6 +56,7 @@ import Collapse from "@material-ui/core/Collapse";
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
 import { red } from "@material-ui/core/colors";
+import CVneu from "./images/CVneu.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -66,30 +69,28 @@ const calc = (x, y) => [
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      minWidth: 345,
-    },
-    media: {
-      height: 0,
-      paddingTop: "56.25%", // 16:9
-    },
-    expand: {
-      transform: "rotate(0deg)",
-      marginLeft: "auto",
-      transition: theme.transitions.create("transform", {
-        duration: theme.transitions.duration.shortest,
-      }),
-    },
-    expandOpen: {
-      transform: "rotate(180deg)",
-    },
-    avatar: {
-      backgroundColor: red[500],
-    },
-  }));
-  
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minWidth: 345,
+  },
+  media: {
+    height: 0,
+    paddingTop: "56.25%", // 16:9
+  },
+  expand: {
+    transform: "rotate(0deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: "rotate(180deg)",
+  },
+  avatar: {
+    backgroundColor: red[500],
+  },
+}));
 
 function App() {
   const [click, setClick] = useState(null);
@@ -103,15 +104,12 @@ function App() {
 
   const classes = useStyles();
 
-
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 },
   }));
 
   const Codes = ["JavaScript", "ReactJS", "NodeJS"];
-
- 
 
   //REACT SPRING SLIDER
   const [bind, { delta, down }] = useGesture();
@@ -228,7 +226,11 @@ function App() {
             </Button>
           </a>
           <a href="#resume" style={{ textDecoration: "none" }}>
-            <Button variant="contained" color="disabled" onClick={handleExpandClick}>
+            <Button
+              variant="contained"
+              color="disabled"
+              onClick={handleExpandClick}
+            >
               Resume
             </Button>
           </a>
@@ -340,7 +342,7 @@ function App() {
                 className="trailDiv2"
                 style={{
                   color: "lightgrey",
-                  fontSize: "calc(90px + 1.4vw)",
+                  // fontSize: "calc(90px + 1.4vw)",
                   fontFamily: "Impact",
                   fontWeight: "bold",
                   opacity: "1",
@@ -373,7 +375,7 @@ function App() {
                   data-aos-duration="6000"
                   className="junior"
                   style={{
-                    fontSize: "calc(90px + 1.4vw)",
+                    // fontSize: "calc(90px + 1.4vw)",
                     fontFamily: "Impact",
                     fontWeight: "bold",
                     opacity: "1",
@@ -469,31 +471,63 @@ function App() {
         </div>
       </div>
       {/* <div style={{width: '100%', backgroundColor: '#343136', height: '40px'}}></div> */}
-      <div id='resume' style={{ width: "100%" }}>
-      <Card className={classes.root}>
-      <CardActions disableSpacing>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-         <Cards/>
-          <div
-            style={{ width: "100%", display: "flex", justifyContent: "center" }}
-          >
-            <CV />
-          </div>
-        </CardContent>
-      </Collapse>
-    </Card>
+      <div id="resume" style={{ width: "100%" }}>
+        <Card className={classes.root}>
+          <CardActions disableSpacing>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardActions>
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <div
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <div
+                  style={{
+                    width: "60%",
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <Cards />
+                  <hr style={{ width: "80%", borderColor: "1px solid blue" }} />
+                  <div
+                    style={{
+                      fontFamily: "Quicksand",
+                      fontSize: "20px",
+                      // marginBottom: "20px",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    }}
+                  >
+                    If you want to know more about me and my career path you can have a look at my
+                    resume
+                  </div>
+                  <hr style={{ width: "80%", borderColor: "1px solid blue" }} />
+                  <div className="design"></div>
+                  <img src={CVneu} width="100%" />
+                  {/* <CV /> */}
+                </div>
+              </div>
+            </CardContent>
+          </Collapse>
+        </Card>
       </div>
       {/* <div   
      style={{display: "flex", flexDirection:'column', border: '10px solid yellow', width: 'min-content', position:'sticky', top: '60px'}}>
@@ -510,7 +544,8 @@ function App() {
           height: "100%",
           textAlign: "left",
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-start",
+         
         }}
       >
         <div
@@ -524,9 +559,10 @@ function App() {
             display: "flex",
             lineHeight: "220px",
             minWidth: "100%",
-            textAlign: "left",
+            textAlign: 'left',
             flexDirection: "column",
             marginTop: "10px",
+            
           }}
         >
           <span
@@ -549,16 +585,19 @@ function App() {
         </div>
 
         <div
+        className = 'info'
           style={{
             padding: "40px",
             width: "80%",
             zIndex: "10",
             textAlign: "justify",
-            marginTop: "40px",
             display: "flex",
             justifyContent: "center",
+           
+           
           }}
         >
+        <div style={{minWidth: '100%', marginLeft: '20%'}}>
           {" "}
           Due to the Corona-Pandemie, I started to think about me, myself and my
           future and what I want to do. I remember, that after my Abitur in
@@ -570,6 +609,7 @@ function App() {
           reality. And coding is as closest as it can be to realise ideas and
           visions and to see the final result in reality. This is what I really
           love about coding...
+          </div>
         </div>
       </div>
       {/* <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
@@ -988,7 +1028,11 @@ function App() {
                   data-aos="zoom-out-right"
                   data-aos-offset="160"
                   data-aos-duration="3000"
-                  style={{ border: "2px solid lightgrey", height: "630px", marginBottom: '6%'}}
+                  style={{
+                    border: "2px solid lightgrey",
+                    height: "630px",
+                    marginBottom: "6%",
+                  }}
                 >
                   <a
                     target="_blank"
@@ -1015,7 +1059,7 @@ function App() {
                     </div>
                     {/* <div style={{height: 'max-content', textAlign: 'center'}}>Individual work - created within 2 weeks</div> */}
                   </a>
-                  <Info/>
+                  <Info />
                   {/* <div style={{backgroundColor: 'lightgrey', textAlign: 'center'}}>
                 <IconButton id='clickme'
             // className={clsx(classes.expand, {
@@ -1108,28 +1152,74 @@ function App() {
                     height: "200px",
                   }}
                 >
-                  <div
-                    style={{
-                      fontFamily: "Quicksand",
-                      color: "grey",
-                      textAlign: "center",
-                      fontSize: "16px",
-                    }}
-                  >
-                    <b>COOKBOOK:</b> Our first group project - duration 1 week -
-                    creating a cookbook using just HTML5 and CSS3
-                  </div>
-                  <Carousel autoPlay infiniteLoop>
-                    <div>
-                      <img alt="" src={first1} />
+                  <a href="https://leckerlecker.netlify.app" target="_blanc">
+                    <div
+                      style={{
+                        fontFamily: "Quicksand",
+                        color: "grey",
+                        textAlign: "center",
+                        fontSize: "16px",
+                      }}
+                    >
+                      <b>COOKBOOK:</b> Our first group project - duration 1 week
+                      - creating a cookbook using just HTML5 and CSS3-not
+                      responsive and not 100% finished
                     </div>
-                    <div>
-                      <img alt="" src={first2} />
+                  </a>
+                  <a href="https://leckerlecker.netlify.app" target="_blanc">
+                    <Carousel autoPlay infiniteLoop>
+                      <div>
+                        <img alt="" src={first1} />
+                      </div>
+                      <div>
+                        <img alt="" src={first2} />
+                      </div>
+                      <div>
+                        <img alt="" src={first3} />
+                      </div>
+                    </Carousel>
+                  </a>
+                </div>
+              </div>
+
+              <div
+                data-aos="zoom-out-right"
+                data-aos-offset="160"
+                data-aos-duration="3000"
+                style={{ border: "2px solid lightgrey", height: "540px" }}
+              >
+                <div
+                  style={{
+                    width: "400px",
+                    height: "200px",
+                  }}
+                >
+                  <a href="https://todoodo.netlify.app" target="_blanc">
+                    <div
+                      style={{
+                        fontFamily: "Quicksand",
+                        color: "grey",
+                        textAlign: "center",
+                        fontSize: "16px",
+                      }}
+                    >
+                      <b>TODO LIST:</b> Solo work - duration 1 week - creating a
+                      Todo list using Vanilla JavaScript
                     </div>
-                    <div>
-                      <img alt="" src={first3} />
-                    </div>
-                  </Carousel>
+                  </a>
+                  <a href="https://todoodo.netlify.app" target="_blanc">
+                    <Carousel autoPlay infiniteLoop>
+                      <div>
+                        <img alt="" src={todo1} />
+                      </div>
+                      <div>
+                        <img alt="" src={todo2} />
+                      </div>
+                      <div>
+                        <img alt="" src={todo3} />
+                      </div>
+                    </Carousel>
+                  </a>
                 </div>
               </div>
               <div
@@ -1144,53 +1234,21 @@ function App() {
                     height: "200px",
                   }}
                 >
-                  <div
-                    style={{
-                      fontFamily: "Quicksand",
-                      color: "grey",
-                      textAlign: "center",
-                      fontSize: "16px",
-                    }}
-                  >
-                    <b>TODO LIST:</b> Solo work - duration 1 week - creating a
-                    Todo list using Vanilla JavaScript
-                  </div>
-                  <Carousel autoPlay infiniteLoop>
-                    <div>
-                      <img alt="" src={todo1} />
+                  <a href="https://todoodo.netlify.app" target="_blanc">
+                    <div
+                      style={{
+                        fontFamily: "Quicksand",
+                        color: "grey",
+                        textAlign: "center",
+                        fontSize: "16px",
+                      }}
+                    >
+                      <b>My Portfolio:</b> Surprise - I concider my portfolio,
+                      which I created myself from scratch, as a project on its
+                      own.
                     </div>
-                    <div>
-                      <img alt="" src={todo2} />
-                    </div>
-                    <div>
-                      <img alt="" src={todo3} />
-                    </div>
-                  </Carousel>
-                </div>
-              </div>
-              <div
-                data-aos="zoom-out-right"
-                data-aos-offset="160"
-                data-aos-duration="3000"
-                style={{ border: "2px solid lightgrey", height: "540px" }}
-              >
-                <div
-                  style={{
-                    width: "400px",
-                    height: "200px",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: "Quicksand",
-                      color: "grey",
-                      textAlign: "center",
-                      fontSize: "16px",
-                    }}
-                  >
-                    <b>COOKBOOK:</b> Group project - duration 2 weeks - creating
-                    a cookbook with Contentful using ReactJS and NodeJS...
-                  </div>
+                  </a>
+                  {/* <a href='https://todoodo.netlify.app' target='_blanc'>
                   <Carousel autoPlay infiniteLoop showThumbs={false}>
                     <div>
                       <img alt="" src={ugali1} />
@@ -1202,6 +1260,7 @@ function App() {
                       <img alt="" src={love} />
                     </div>
                   </Carousel>
+                  </a>
                   <div
                     style={{
                       fontFamily: "Quicksand",
@@ -1212,16 +1271,16 @@ function App() {
                     }}
                   >
                     ...and reacreating it using our own backend with Nodejs
-                  </div>
+                  </div> */}
                   <Carousel autoPlay infiniteLoop>
                     <div>
-                      <img alt="" src={ugali1} />
+                      <img alt="" src={portfolio1} />
                     </div>
                     <div>
-                      <img alt="" src={kochen} />
+                      <img alt="" src={portfolio2} />
                     </div>
                     <div>
-                      <img alt="" src={love} />
+                      <img alt="" src={portfolio3} />
                     </div>
                   </Carousel>
                 </div>
