@@ -169,7 +169,7 @@ codingLang > div:hover {
 
 @media (max-width: 400px) {
   .trailDiv2 {
-    font-size: calc(100px + 2.6vw);
+    font-size: calc(90px + 2.6vw);
    
   }
 }
