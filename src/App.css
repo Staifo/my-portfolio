@@ -557,6 +557,43 @@ animation: animated-text 4s steps(29,end) 1s 1 normal both;
 animation-delay: 10s;
 }
 
+.welcome {
+  /* margin-top: 60px, */
+}
+
+@media (max-width: 600px) {
+.welcome {
+  margin-top: 20px
+}
+}
+
+
+.codingCardsDiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .codingCardsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .codingCards {
+    margin-top: 20px;
+    width: max-content;
+  }
+
+  #singleCard {
+    width: 500px;
+  }
+  
+}
 /* text animation */
 
 @keyframes animated-text{

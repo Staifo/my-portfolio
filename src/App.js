@@ -216,12 +216,12 @@ function App() {
           }}
         >
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
-            <Button className="button" variant="contained">
+            <Button className="button" variant="contained" style={{fontSize: '1.4vh'}}>
               My Coding Skills
             </Button>
           </a>
           <a href="#myProjects" style={{ textDecoration: "none" }}>
-            <Button variant="contained" color="disabled">
+            <Button variant="contained" color="disabled" style={{fontSize: '1.4vh'}}>
               My Projects
             </Button>
           </a>
@@ -230,12 +230,13 @@ function App() {
               variant="contained"
               color="disabled"
               onClick={handleExpandClick}
+              style={{fontSize: '1.4vh'}}
             >
               Resume
             </Button>
           </a>
           <a href="#contactMe" style={{ textDecoration: "none" }}>
-            <Button variant="contained" color="disabled">
+            <Button variant="contained" color="disabled" style={{fontSize: '1.4vh'}}>
               contact Me
             </Button>
           </a>
@@ -244,14 +245,14 @@ function App() {
             target="_blanc"
             style={{ textDecoration: "none" }}
           >
-            <LinkedInIcon color="primary" fontSize="large" />
+            <LinkedInIcon color="primary" style={{fontSize: '3.4vh'}}/>
           </a>
           <a
             href="https://github.com/Staifo"
             target="_blanc"
             style={{ textDecoration: "none" }}
           >
-            <GitHubIcon color="primary" fontSize="large" />
+            <GitHubIcon color="primary" style={{fontSize: '3.4vh'}}/>
           </a>
         </div>
       </div>
@@ -431,9 +432,9 @@ function App() {
                   position: "absolute",
                   fontSize: "calc(20px + 1.2vw)",
                   // marginLeft: "26%",
-                  marginTop: "60px",
                   transform: "rotate(-6deg)",
                   zIndex: "10",
+                  marginTop: '60px'
                 }}
               >
                 <div
@@ -551,17 +552,18 @@ function App() {
         <div
           className="about"
           style={{
-            fontSize: "260px",
+            fontSize: "220px",
             position: "absolute",
             zIndex: "0",
             fontFamily: "Impact",
             fontWeight: "bold",
             display: "flex",
-            lineHeight: "220px",
+            lineHeight: "180px",
             minWidth: "100%",
             textAlign: 'left',
             flexDirection: "column",
             marginTop: "10px",
+            marginLeft: '30px'
             
           }}
         >
@@ -673,6 +675,7 @@ function App() {
             // marginTop: "140px",
             width: "max-content",
             // backgroundColor: '#EEF7FF '
+            marginLeft: '20px'
           }}
         >
           <span className="nice">My</span>
@@ -925,6 +928,7 @@ function App() {
                 />
                 <animated.div
                   onClick={handleClick}
+                  onMove={handleClick}
                   class="fg"
                   style={{
                     transform: interpolate(

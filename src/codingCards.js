@@ -597,22 +597,24 @@ export default function CodingCard() {
 
   return (
     <div
+    className='codingCardsDiv'
       style={{
-        display: "flex",
+        // display: "flex",
         //   flexDirection: "column",
-        width: "100%",
-        alignItems: "center",
+        // width: "100%",
+        // alignItems: "center",
         marginTop: "100px",
-        justifyContent: "center"
+        // justifyContent: "center"
       }}
     >
       <div
+      className='codingCards'
         data-aos="zoom-out-right"
         data-aos-offset="160"
         data-aos-duration="3000"
-        style={{ width:'max-content',}}
+        style={{ width:'max-content', marginLeft: '2%'}}
       >
-        <Card className={classes.root}>
+        <Card className={classes.root} id='singleCard'>
           <CardMedia style={{ textAlign: "center" }} >
             {/* <DvrIcon color="disabled" style={{ fontSize: "40px" }} /> */}
           </CardMedia>
@@ -680,12 +682,13 @@ export default function CodingCard() {
       {/*  */}
 
       <div
+       className='codingCards'
         data-aos="zoom-out-right"
         data-aos-offset="160"
         data-aos-duration="3000"
         style={{width:'max-content', marginLeft: '2%',}}
       >
-        <Card className={classes.root}>
+        <Card className={classes.root} id='singleCard'>
           <CardMedia style={{ textAlign: "center" }}>
             {/* <DvrIcon color="disabled" style={{ fontSize: "40px" }} /> */}
           </CardMedia>
@@ -741,12 +744,13 @@ export default function CodingCard() {
 {/*  */}
 
       <div
+       className='codingCards'
         data-aos="zoom-out-right"
         data-aos-offset="160"
         data-aos-duration="3000"
         style={{ width:'max-content', marginLeft: '2%',}}
       >
-        <Card className={classes.root}>
+        <Card className={classes.root} id='singleCard'>
           <CardMedia style={{ textAlign: "center" }}>
             {/* <DvrIcon color="disabled" style={{ fontSize: "40px" }} /> */}
           </CardMedia>
@@ -776,7 +780,7 @@ export default function CodingCard() {
                 <span>DATA</span>
                 <span>
                   BASES{" "}
-                  <StorageIcon style={{ color: "yellow", fontSize: "120px" }} />
+                  <StorageIcon style={{ color: "yellow", fontSize: "80px" }} />
                 </span>
               </div>
               <hr style={{ border: "2px solid yellow", width: "40%" }} />
