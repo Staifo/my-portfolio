@@ -188,15 +188,16 @@ function App() {
   /////
 
   return (
-    <div className="App" style={{ minwidth: "100%" }}>
+    <div className="App" style={{minWidth: "100%"}}>
       <div
+      className = 'navbarDiv'
         // data-aos="zoom-out-left"
         // data-aos-delay="100"
         // data-aos-duration="2000"
         // data-aos-easing="ease-in-cubic"
         style={{
           backgroundColor: "#343136",
-          minWidth: "1200px",
+          minWidth: "100%",
           display: "flex",
           justifyContent: "flex-end",
           position: "sticky",
@@ -206,6 +207,8 @@ function App() {
         }}
       >
         <div
+        className = 'navbar'
+        class
           style={{
             width: "60%",
             display: "flex",
@@ -434,7 +437,7 @@ function App() {
                   // marginLeft: "26%",
                   transform: "rotate(-6deg)",
                   zIndex: "10",
-                  marginTop: '60px'
+                  // marginTop: '6%'
                 }}
               >
                 <div
@@ -506,11 +509,11 @@ function App() {
                   }}
                 >
                   <Cards />
-                  <hr style={{ width: "80%", borderColor: "1px solid blue" }} />
+                  <hr style={{ width: "90%", borderColor: "1px solid blue" }} />
                   <div
                     style={{
                       fontFamily: "Quicksand",
-                      fontSize: "20px",
+                      fontSize: "calc(10px + 0.5vw)",
                       // marginBottom: "20px",
                       display: "flex",
                       flexDirection: "column",
@@ -520,7 +523,7 @@ function App() {
                     If you want to know more about me and my career path you can have a look at my
                     resume
                   </div>
-                  <hr style={{ width: "80%", borderColor: "1px solid blue" }} />
+                  <hr style={{ width: "90%", borderColor: "1px solid blue" }} />
                   <div className="design"></div>
                   <img src={CVneu} width="100%" />
                   {/* <CV /> */}
@@ -928,7 +931,8 @@ function App() {
                 />
                 <animated.div
                   onClick={handleClick}
-                  onMove={handleClick}
+                  onTouchMove={handleClick}
+                  id='slider'
                   class="fg"
                   style={{
                     transform: interpolate(

@@ -632,10 +632,11 @@ export default function CodingCard() {
             >
               <div
                 className="nice"
+                id='nice'
                 style={{
                   listStyleType: "none",
                   fontWeight: "bold",
-                  fontSize: "calc(60px + 3.2vw)",
+                  // fontSize: "calc(60px + 3.2vw)",
                   // position: 'absolute',
                   display: "flex",
                   flexDirection: "column",
@@ -705,10 +706,11 @@ export default function CodingCard() {
             >
               <div
                 className="nice"
+                id='nice'
                 style={{
                   listStyleType: "none",
                   fontWeight: "bold",
-                  fontSize: "calc(60px + 3.2vw)",
+                  // fontSize: "calc(60px + 3.2vw)",
                   // position: 'absolute',
                   display: "flex",
                   flexDirection: "column",
@@ -767,10 +769,11 @@ export default function CodingCard() {
             >
               <div
                 className="nice"
+                id='nice'
                 style={{
                   listStyleType: "none",
                   fontWeight: "bold",
-                  fontSize: "calc(60px + 3.2vw)",
+                  // fontSize: "calc(60px + 3.2vw)",
                   // position: 'absolute',
                   display: "flex",
                   flexDirection: "column",

@@ -10,7 +10,7 @@ const Footer = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
+   emailjs
       .sendForm(
         "gmail",
         "template_w1q8yk8",
@@ -26,7 +26,7 @@ const Footer = () => {
         }
       );
     e.target.reset();
-  }
+  } 
 
   return (
     <div

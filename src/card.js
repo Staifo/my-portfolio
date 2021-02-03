@@ -86,7 +86,8 @@ const Cards = () => {
           justifyContent: "space-around",
           marginTop: "20px",
           marginBottom: "40px",
-          fontFamily: 'Quicksand'
+          fontFamily: 'Quicksand',
+          backgroundColor: '#F7FBFC',
         }}
       >
         <div
@@ -170,8 +171,9 @@ const Cards = () => {
         <div
           style={{
             backgroundColor: "#F7FBFC",
-            width: "20%",
+            width: "max-content",
             textAlign: "center",
+            marginRight: '60px'
           }}
         >
           <div style={{ fontSize: "20px", fontWeight: "bold" }}>

@@ -558,12 +558,13 @@ animation-delay: 10s;
 }
 
 .welcome {
-  /* margin-top: 60px, */
+  margin-top: 10%;
+  
 }
 
 @media (max-width: 600px) {
 .welcome {
-  margin-top: 20px
+  margin-top: 2%;
 }
 }
 
@@ -590,7 +591,8 @@ animation-delay: 10s;
   }
 
   #singleCard {
-    width: 500px;
+    min-width: 800px;
+    
   }
   
 }
@@ -621,6 +623,17 @@ animation-delay: 10s;
   will-change: transform, opacity;
   overflow: hidden;
  
+}
+
+
+#nice {
+  font-size: calc(60px + 3.2vw);
+}
+
+
+@media (max-width: 600px) {
+  #nice {
+    font-size: calc(60px + 12vw);}
 }
 
 
@@ -672,3 +685,25 @@ border-color: #007bff transparent transparent transparent;
 /* margin-top: 6px; */
 margin-bottom: 20px;
 }
+
+
+
+.navbarDiv {
+  background-color: #343136;
+  width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+}
+
+.navbar {
+  width: 60%;
+ display: flex;
+justify-content: space-between;
+margin-top: 10px;
+margin-right: 20px;
+margin-bottom: 10px;
+}
+
