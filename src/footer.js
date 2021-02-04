@@ -6,11 +6,12 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 const Footer = () => {
   const [date, setDate] = useState(new Date().getFullYear());
+  
 
+  
   function sendEmail(e) {
     e.preventDefault();
-
-   emailjs
+  emailjs
       .sendForm(
         "gmail",
         "template_w1q8yk8",
@@ -26,7 +27,8 @@ const Footer = () => {
         }
       );
     e.target.reset();
-  } 
+    alert('Thanks for your message. I will get back to you as soon as possible. Have a good day.')
+  }
 
   return (
     <div

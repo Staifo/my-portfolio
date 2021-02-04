@@ -931,7 +931,7 @@ function App() {
                 />
                 <animated.div
                   onClick={handleClick}
-                  onTouchMove={handleClick}
+                  onTouchEnd={handleClick}
                   id='slider'
                   class="fg"
                   style={{
