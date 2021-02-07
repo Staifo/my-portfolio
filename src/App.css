@@ -184,10 +184,6 @@ codingLang > div:hover {
    
   }
 
-  .jumbo {
-    height: 100vh;
-    width:100vw;
-  }
 }
 
 
@@ -432,7 +428,7 @@ background-color: white;
 100% {background-color: rgb(255, 255, 255,0);}
 }
 
-.junior, .codinSkillsText, .myProjectsText {
+.junior, .codinSkillsText, .myProjectsText, .allCodingLang {
   text-align: center;
 
   color: #fff;
@@ -466,6 +462,11 @@ background-color: white;
   transition-duration: 4000ms;
 }
 
+@media (max-width) {
+  #image {
+
+  }
+}
 
 .square {
   position: relative;
@@ -596,9 +597,11 @@ animation-delay: 10s;
   }
 
   #singleCard {
-    min-width: 800px;
+    min-width: 460px;
     
   }
+
+  
   
 }
 /* text animation */
@@ -634,7 +637,6 @@ animation-delay: 10s;
 #nice {
   font-size: calc(60px + 3.2vw);
 }
-
 
 @media (max-width: 600px) {
   #nice {
@@ -677,7 +679,8 @@ border-color:black transparent transparent transparent
 
 
 .about {
-  color: rgb(128, 128, 128, 0.1);
+  /* color: rgb(128, 128, 128, 0.1); */
+  color: rgb(173, 216, 230, 0.2);
 }
 
 
@@ -712,3 +715,105 @@ margin-right: 20px;
 margin-bottom: 10px;
 }
 
+
+.frontendbutton {
+
+width: 400px;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100%;
+position: relative;
+margin-top: 20px;
+z-index: 10;
+animation-name: frontend;
+animation-duration: 6s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+}
+
+.innerfrontendbutton {
+
+width: 260px;
+height: 260px;
+border-radius: 100%;
+font-size: 4vw;
+font-weight: bold;
+font-family: Quicksand;
+line-height: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color:#272727;
+border: 10px solid lightgrey;
+color: rgb(197, 194, 194)
+/* background-image: url('./images/logo4.png'); */
+}
+
+
+.innerfrontendbutton {
+  cursor: pointer;
+}
+
+.innerfrontendbutton:hover {
+  height: 300px;
+  width:300px;
+  color: lightblue;
+  border:10px solid lightblue;
+  
+  
+}
+
+
+
+/* @keyframes frontend {
+0% {background-color: rgb(255, 255, 255,0); }
+25% {width: 300px; height: 300px; background-color: rgb(219, 244, 250,0); border: 10px solid grey;}
+50% {background-color: rgb(255, 255, 255,0);}
+75% {background-color: rgba(209, 250, 185, 0); border: 10px solid grey;}
+100% {background-color: rgb(219, 244, 250,0);}
+} */
+
+
+.rotate {
+  animation-name: codeRotation;
+  animation-iteration-count:infinite;
+  animation-duration: 100s;
+}
+
+@keyframes codeRotation {
+  100% {transform: rotate(720deg);}
+}
+
+.frontendbutton2 {
+
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: relative;
+  /* animation-name: frontend;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite; */
+  }
+
+  .innerfrontendbutton2 {
+
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: Quicksand;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    }

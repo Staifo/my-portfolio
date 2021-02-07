@@ -296,12 +296,12 @@ function App() {
                 width: "max-content",
                 height: "min-content",
                 // marginTop: "9%",
-                width: "max-content",
                 marginRight: "20px",
               }}
             >
               <img
                 className="image"
+                id='image'
                 src={CVImage}
                 width="360px"
                 style={{ borderRadius: "10%" }}
@@ -533,12 +533,8 @@ function App() {
           </Collapse>
         </Card>
       </div>
-      {/* <div   
-     style={{display: "flex", flexDirection:'column', border: '10px solid yellow', width: 'min-content', position:'sticky', top: '60px'}}>
-      <div  style={{fontSize: '40px'}}>hallo</div>
-      <div style={{fontSize: '40px'}}>hallo</div>
-    </div> */}
-      <div
+    
+      {/* <div
         className="aboutMe"
         style={{
           width: "100%",
@@ -587,6 +583,39 @@ function App() {
           >
             Me
           </span>
+        </div> */}
+
+        <div
+          id="myProjects"
+          className="myProjects"
+          style={{
+            width: "100%",
+            // height: "max-content",
+            // display: "flex",
+            // justifyContent: "space-evenly",
+            // backgroundColor: 'grey'
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: "min-content",
+              marginTop: "20px",
+              width: "100%",
+              height: "max-content",
+              backgroundColor: "rgb(173, 216, 230, 0.1)",
+            }}
+          >
+            <span style={{height: 'max-content', lineHeight: '160px'}} className="nice">About</span>
+            <span  style={{display: 'flex'}} className="nice">
+              Me{" "}
+              <div
+                className="arrow2"
+                style={{ marginLeft: "10px", marginTop: "40px" }}
+              ></div>
+            </span>
+          </div>
         </div>
 
         <div
@@ -602,7 +631,7 @@ function App() {
            
           }}
         >
-        <div style={{minWidth: '100%', marginLeft: '20%'}}>
+        <div style={{minWidth: '100%', marginLeft: '20%', fontSize: '40px', fontFamily: 'Quicksand'}}>
           {" "}
           Due to the Corona-Pandemie, I started to think about me, myself and my
           future and what I want to do. I remember, that after my Abitur in
@@ -616,47 +645,6 @@ function App() {
           love about coding...
           </div>
         </div>
-      </div>
-      {/* <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
-        <div
-          className="skills"
-          style={{
-            // fontFamily: "Impact",
-            fontSize: "40px",
-            // fontWeight: "bold",
-            // backgroundColor: "rgb(230, 225, 225)",
-            width: "80%",
-            textAlign: "center",
-            // color: "white",
-            // textShadow: '6px 6px blue'
-            marginTop: "60px",
-            marginBottom: "40px",
-          }}
-        >
-          <hr
-            style={{ width: "20%" }}
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
-          />
-          <div
-            className="codingSkills"
-            id='codingSkills'
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
-          >
-            <p className='codinSkillsText'>My Coding Skills</p>
-          </div>
-          <hr
-            style={{ width: "20%" }}
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          />
-        </div>
-      </div> */}
-
       <div
         id="codingSkills"
         className="codingLang"
@@ -931,7 +919,7 @@ function App() {
                 />
                 <animated.div
                   onClick={handleClick}
-                  onTouchEnd={handleClick}
+                  // onTouchEnd={handleClick}
                   id='slider'
                   class="fg"
                   style={{
@@ -942,7 +930,7 @@ function App() {
                     fontFamily: "Quicksand",
                   }}
                 >
-                  Slide or Click.
+                 Slide or Click.
                 </animated.div>
               </animated.div>
               {/* <Button
