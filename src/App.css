@@ -766,6 +766,24 @@ color: rgb(197, 194, 194)
   
 }
 
+@media (max-width: 2000px) {
+  .innerfrontendbutton {
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  
+  }
+  @keyframes circle {
+    0% {border: 10px solid lightgrey}
+    50% {border: 10px solid lightblue; }
+    100% {border: 10px solid lightgrey;}
+    }
+    
+}
+
+
+
 
 
 /* @keyframes frontend {
