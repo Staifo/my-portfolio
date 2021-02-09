@@ -100,7 +100,9 @@ function App() {
   const [code, setCode] = useState(null);
   const [logo, setLogo] = useState(null);
   const [counter, setCounter] = useState(12);
+  const [buttonText, setButtonText] = useState(null)
   const counter1 = useRef(null);
+  const button =useRef(null);
 
   const classes = useStyles();
 
@@ -137,7 +139,7 @@ function App() {
       boxShadow: theme.shadows[1],
       fontFamily: "Quicksand",
       fontSize: 26,
-      minWidth: 800,
+      maxWidth: 600,
     },
   }))(Tooltip);
   ///////
@@ -149,6 +151,9 @@ function App() {
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
+    setButtonText(!buttonText);
+    buttonText ? button.current.innerText = 'Resume': button.current.innerText = 'Close Resume'
+    buttonText ? button.current.style.backgroundColor = 'lightgrey': button.current.style.backgroundColor = 'lightgreen'
   };
 
   //////
@@ -219,27 +224,29 @@ function App() {
           }}
         >
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
-            <Button className="button" variant="contained" style={{fontSize: '1.4vh'}}>
+            <Button className="navbutton" variant="contained" style={{fontSize: '1.4vh'}}>
               My Coding Skills
             </Button>
           </a>
           <a href="#myProjects" style={{ textDecoration: "none" }}>
-            <Button variant="contained" color="disabled" style={{fontSize: '1.4vh'}}>
+            <Button className="navbutton" variant="contained" color="disabled" style={{fontSize: '1.4vh'}}>
               My Projects
             </Button>
           </a>
           <a href="#resume" style={{ textDecoration: "none" }}>
             <Button
+            className="navbutton"
               variant="contained"
               color="disabled"
               onClick={handleExpandClick}
               style={{fontSize: '1.4vh'}}
+              ref={button}
             >
               Resume
             </Button>
           </a>
           <a href="#contactMe" style={{ textDecoration: "none" }}>
-            <Button variant="contained" color="disabled" style={{fontSize: '1.4vh'}}>
+            <Button className="navbutton" variant="contained" color="disabled" style={{fontSize: '1.4vh'}}>
               contact Me
             </Button>
           </a>
@@ -248,14 +255,14 @@ function App() {
             target="_blanc"
             style={{ textDecoration: "none" }}
           >
-            <LinkedInIcon color="primary" style={{fontSize: '3.4vh'}}/>
+            <LinkedInIcon className='linkedin' color="primary" style={{fontSize: '3.4vh'}}/>
           </a>
           <a
             href="https://github.com/Staifo"
             target="_blanc"
             style={{ textDecoration: "none" }}
           >
-            <GitHubIcon color="primary" style={{fontSize: '3.4vh'}}/>
+            <GitHubIcon className='git' color="primary" style={{fontSize: '3.4vh'}}/>
           </a>
         </div>
       </div>
@@ -586,7 +593,6 @@ function App() {
         </div> */}
 
         <div
-          id="myProjects"
           className="myProjects"
           style={{
             width: "100%",
@@ -646,7 +652,6 @@ function App() {
           </div>
         </div>
       <div
-        id="codingSkills"
         className="codingLang"
         style={{
           width: "100%",
@@ -840,7 +845,6 @@ function App() {
         /> */}
 
         <div
-          id="myProjects"
           className="myProjects"
           style={{
             width: "100%",
@@ -851,6 +855,7 @@ function App() {
           }}
         >
           <div
+           
             style={{
               display: "flex",
               flexDirection: "column",
@@ -865,6 +870,7 @@ function App() {
             <span style={{ display: "flex" }} className="nice">
               Projects{" "}
               <div
+              id="myProjects"
                 className="arrow2"
                 style={{ marginLeft: "10px", marginTop: "40px" }}
               ></div>
@@ -991,13 +997,6 @@ function App() {
                 Hallo
               </div>
             </div> */}
-            {/* <LightTooltip
-              title="
-              This project was created by me in individual work within 2 weeks. The idea for my final project was to create a platform just for Junior Coders, where they can present themselves 
-              and their skills via short video, CV and other sources to prospective employers and to give employers an opportunity to just look for Junior Coders to give them a better chance to find a way into the industry.
-              I used ReactJS, NodeJS, Express, Material UI, Flexbox, Bootstrap, MongoDB ... to create this project and work is still going on"
-              placement="top"
-            > */}
             <div
               //in case I want to use react spring animated.div
               // class="card"
@@ -1030,6 +1029,7 @@ function App() {
                     marginBottom: "6%",
                   }}
                 >
+                <LightTooltip title="https://junior-coder.netlify.app/" placement="top">
                   <a
                     target="_blank"
                     href="https://junior-coder.netlify.app/"
@@ -1055,6 +1055,8 @@ function App() {
                     </div>
                     {/* <div style={{height: 'max-content', textAlign: 'center'}}>Individual work - created within 2 weeks</div> */}
                   </a>
+                  </LightTooltip>
+                  
                   <Info />
                   {/* <div style={{backgroundColor: 'lightgrey', textAlign: 'center'}}>
                 <IconButton id='clickme'
@@ -1100,32 +1102,8 @@ function App() {
                     </div>
                   </a>
                 </div>
-                {/* <div
-                  style={{
-                    width: "20%",
-                    fontSize: "24px",
-                    marginLeft: "40px",
-                    textAlign: "justify",
-                    fontFamily: "Quicksand",
-                    backgroundColor: "#F7FBFC",
-                  }}
-                >
-                  This project was created by me in individual work within 2
-                  weeks. The idea for my final project was to create a platform
-                  just for Junior Coders, where they can present themselves and
-                  their skills via short video, CV and other sources to
-                  prospective employers and to give employers an opportunity to
-                  just look for Junior Coders to give them a better chance to
-                  find a way into the industry. I used ReactJS, NodeJS, Express,
-                  Material UI, Flexbox, Bootstrap, MongoDB ... to create this
-                  project and work is still going on.
-                </div> */}
-                {/* <Info/> */}
               </div>
-
-              {/* <Cards2 handleExpandClick={handleExpandClick} expanded={expanded} setExpanded={setExpanded}/> */}
             </div>
-            {/* </LightTooltip> */}
             <div
               className="otherProjects"
               style={{
@@ -1148,6 +1126,7 @@ function App() {
                     height: "200px",
                   }}
                 >
+                <LightTooltip title="https://leckerlecker.netlify.app" placement="top">
                   <a href="https://leckerlecker.netlify.app" target="_blanc">
                     <div
                       style={{
@@ -1162,6 +1141,7 @@ function App() {
                       responsive and not 100% finished
                     </div>
                   </a>
+                  </LightTooltip>
                   <a href="https://leckerlecker.netlify.app" target="_blanc">
                     <Carousel autoPlay infiniteLoop>
                       <div>
@@ -1190,6 +1170,7 @@ function App() {
                     height: "200px",
                   }}
                 >
+                <LightTooltip title="https://todoodo.netlify.app" placement="top">
                   <a href="https://todoodo.netlify.app" target="_blanc">
                     <div
                       style={{
@@ -1203,6 +1184,7 @@ function App() {
                       Todo list using Vanilla JavaScript
                     </div>
                   </a>
+                  </LightTooltip>
                   <a href="https://todoodo.netlify.app" target="_blanc">
                     <Carousel autoPlay infiniteLoop>
                       <div>
@@ -1230,7 +1212,8 @@ function App() {
                     height: "200px",
                   }}
                 >
-                  <a href="https://todoodo.netlify.app" target="_blanc">
+                <LightTooltip title="https://portfolio-istayfo-ergun.netlify.app/" placement="top">
+                  <a href="https://portfolio-istayfo-ergun.netlify.app/" target="_blanc">
                     <div
                       style={{
                         fontFamily: "Quicksand",
@@ -1244,6 +1227,7 @@ function App() {
                       own.
                     </div>
                   </a>
+                  </LightTooltip>
                   {/* <a href='https://todoodo.netlify.app' target='_blanc'>
                   <Carousel autoPlay infiniteLoop showThumbs={false}>
                     <div>

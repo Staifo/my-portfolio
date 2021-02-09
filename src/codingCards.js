@@ -871,7 +871,7 @@ const CodingCard = () => {
   //     }, []);
 
   return (
-    <div className="codingLangDiv" style={{ width: "100%", marginTop: '10%' }}>
+    <div  id="codingSkills" className="codingLangDiv" style={{ width: "100%", marginTop: '10%' }}>
       {!openFrontend && (
         <div
           className="frontend"
@@ -970,7 +970,7 @@ const CodingCard = () => {
               zIndex: 0,
               fontSize: "calc(260px + 10vw)",
               fontWeight: "bold",
-              color: "rgb(211, 211, 211, 0.16)",
+              color: "rgb(211, 211, 211, 0.26)",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -1269,7 +1269,7 @@ const CodingCard = () => {
               zIndex: 0,
               fontSize: "calc(260px + 10vw)",
               fontWeight: "bold",
-              color: "rgb(211, 211, 211, 0.16)",
+              color: "rgb(211, 211, 211, 0.26)",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -1453,6 +1453,7 @@ const CodingCard = () => {
                   <li>Express</li>
                   <li>PostgreSQL</li>
                   <li>MongoDB</li>
+                  <li>Heroku</li>
                   <li>Scrum</li>
                 </div>
                 {/* <div style={{fontSize: '60px', lineHeight: '60px'}}>I used</div> */}

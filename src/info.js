@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 1000,
     backgroundColor: "lightgrey",
-    
   },
   media: {
     height: 0,
@@ -65,7 +64,8 @@ const Info = () => {
           {/* A solo project - duration 2 weeks using ReactJS, NodeJS, MongoDB,
           Material UI, Bootstrap and more...For more information about my
           project please {" "} */}
-          <IconButton id='clickme'
+          <IconButton
+            id="clickme"
             className={clsx(classes.expand, {
               [classes.expandOpen]: expanded,
             })}
@@ -78,7 +78,7 @@ const Info = () => {
                 fontSize: "14px",
                 fontFamily: "Quicksand",
                 // fontWeight: "bold",
-                color: 'grey'
+                color: "grey",
               }}
             >
               CLICK ME FOR MORE INFO
@@ -108,11 +108,16 @@ const Info = () => {
           This project was created by me in individual work within 2 weeks. The
           idea for my final project was to create a platform just for Junior
           Coders, where they can present themselves and their skills via short
-          video, CV and other sources to prospective employers and to give
-          employers an opportunity to just look for Junior Coders to give them a
-          better chance to find a way into the industry. I used ReactJS, NodeJS,
-          Express, Material UI, Flexbox, Bootstrap, MongoDB ... to create this
-          project and work is still going on.
+          video, CV and other sources to prospective employers and furthermore
+          to give employers an opportunity to just look for Junior Coders to
+          give them a better chance to find a way into the industry. Not all
+          functions have been implemented yet in order to keep it easily
+          accessible. I omitted the login, edit and the delete function, so not
+          everybody is able to make unwanted changes with regard to deleting and
+          editing the existing users but functions have been prepared in the
+          backend. I used ReactJS, NodeJS, Express, Material UI, Flexbox,
+          Bootstrap, MongoDB ... to create this project and work is still going
+          on.
         </CardContent>
       </Collapse>
     </Card>

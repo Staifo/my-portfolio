@@ -715,6 +715,17 @@ margin-right: 20px;
 margin-bottom: 10px;
 }
 
+.navbutton:hover {
+background-color: lightgreen !important;
+}
+
+.linkedin:hover {
+ color: lightgreen !important;
+  }
+
+  .git:hover {
+    color: lightgreen !important;
+    }
 
 .frontendbutton {
 

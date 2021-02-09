@@ -4,6 +4,7 @@ import CopyrightIcon from "@material-ui/icons/Copyright";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
+
 const Footer = () => {
   const [date, setDate] = useState(new Date().getFullYear());
   
@@ -42,6 +43,8 @@ const Footer = () => {
         height: "max-comtent",
       }}
     >
+    <div>
+    </div>
       <div
         style={{
           color: "white",
@@ -97,6 +100,7 @@ const Footer = () => {
           style={{ textDecoration: "none",}}
         >
           <LinkedInIcon
+          className='linkedin'
             color="primary"
             fontSize="large"
             style={{ marginRight: "10px" }}
@@ -107,7 +111,7 @@ const Footer = () => {
           target="_blanc"
           style={{ textDecoration: "none" }}
         >
-          <GitHubIcon color="primary" fontSize="large" />
+          <GitHubIcon className='git' color="primary" fontSize="large" />
         </a>
       </div>
       <div style={{ color: "white", fontSize: "16px", display: 'flex', justifyContent:'center', alignItems:'center',}}>
