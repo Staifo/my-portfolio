@@ -719,6 +719,12 @@ margin-bottom: 10px;
 background-color: lightgreen !important;
 }
 
+@media (max-width: 800px) {
+  .navbutton {
+    font-size: 16px !important;
+  }
+}
+
 .linkedin:hover {
  color: lightgreen !important;
   }

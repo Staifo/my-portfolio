@@ -36,6 +36,7 @@ import todo3 from "./images/todo3.jpg";
 import portfolio1 from "./images/portfolio1.jpg";
 import portfolio2 from "./images/portfolio2.jpg";
 import portfolio3 from "./images/portfolio3.jpg";
+import portfolio4 from "./images/portfolio4.jpg";
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useSpring, animated, interpolate } from "react-spring";
 import { useGesture } from "react-with-gesture";
@@ -1257,7 +1258,7 @@ function App() {
                       <img alt="" src={portfolio1} />
                     </div>
                     <div>
-                      <img alt="" src={portfolio2} />
+                      <img alt="" src={portfolio4} />
                     </div>
                     <div>
                       <img alt="" src={portfolio3} />
