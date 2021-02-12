@@ -1229,7 +1229,7 @@ const CodingCard = () => {
                   marginRight: '14px',}} className="innerfrontendbutton" onClick={handleBackend}>
               <div
                 id="innerfrontendbutton"
-                style={{fontSize: 'calc(40px + 2.0vw)'}}
+                style={{fontSize: 'calc(40px + 2.1vw)'}}
                 // style={{
                 //   fontFamily: "Quicksand",
                 //   fontSize: "3.6vw",
