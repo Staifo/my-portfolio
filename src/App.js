@@ -686,7 +686,7 @@ function App() {
           coding is somehow a 'back to the roots'. I love the idea of ideas,
           thoughts and visions take shape and come to live in reality. And
           coding is as closest as it can be to realise ideas and visions and to
-          see the final result in reality. This is what I really love about
+          see the final result in front of you. This is what I really love about
           coding...
         </div>
       </div>
