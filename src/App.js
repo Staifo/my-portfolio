@@ -58,6 +58,7 @@ import clsx from "clsx";
 import Card from "@material-ui/core/Card";
 import { red } from "@material-ui/core/colors";
 import CVneu from "./images/CVneu.jpg";
+import TemporaryDrawer from "./navbarneu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -101,9 +102,9 @@ function App() {
   const [code, setCode] = useState(null);
   const [logo, setLogo] = useState(null);
   const [counter, setCounter] = useState(12);
-  const [buttonText, setButtonText] = useState(null)
+  const [buttonText, setButtonText] = useState(null);
   const counter1 = useRef(null);
-  const button =useRef(null);
+  const button = useRef(null);
 
   const classes = useStyles();
 
@@ -153,8 +154,12 @@ function App() {
   const handleExpandClick = () => {
     setExpanded(!expanded);
     setButtonText(!buttonText);
-    buttonText ? button.current.innerText = 'Resume': button.current.innerText = 'Close Resume'
-    buttonText ? button.current.style.backgroundColor = 'lightgrey': button.current.style.backgroundColor = 'lightgreen'
+    buttonText
+      ? (button.current.innerText = "Resume")
+      : (button.current.innerText = "Close Resume");
+    buttonText
+      ? (button.current.style.backgroundColor = "lightgrey")
+      : (button.current.style.backgroundColor = "lightgreen");
   };
 
   //////
@@ -194,9 +199,9 @@ function App() {
   /////
 
   return (
-    <div className="App" style={{minWidth: "100%"}}>
+    <div className="App" style={{ minWidth: "100%" }}>
       <div
-      className = 'navbarDiv'
+        className="navbarDiv"
         // data-aos="zoom-out-left"
         // data-aos-delay="100"
         // data-aos-duration="2000"
@@ -213,8 +218,8 @@ function App() {
         }}
       >
         <div
-        className = 'navbar'
-        class
+          className="navbar"
+          class
           style={{
             width: "60%",
             display: "flex",
@@ -225,29 +230,43 @@ function App() {
           }}
         >
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
-            <Button className="navbutton" variant="contained" style={{fontSize: '1.4vh'}}>
+            <Button
+              className="navbutton"
+              variant="contained"
+              style={{ fontSize: "1.4vh" }}
+            >
               My Coding Skills
             </Button>
           </a>
           <a href="#myProjects" style={{ textDecoration: "none" }}>
-            <Button className="navbutton" variant="contained" color="disabled" style={{fontSize: '1.4vh'}}>
+            <Button
+              className="navbutton"
+              variant="contained"
+              color="disabled"
+              style={{ fontSize: "1.4vh" }}
+            >
               My Projects
             </Button>
           </a>
           <a href="#resume" style={{ textDecoration: "none" }}>
             <Button
-            className="navbutton"
+              className="navbutton"
               variant="contained"
               color="disabled"
               onClick={handleExpandClick}
-              style={{fontSize: '1.4vh'}}
+              style={{ fontSize: "1.4vh" }}
               ref={button}
             >
               Resume
             </Button>
           </a>
           <a href="#contactMe" style={{ textDecoration: "none" }}>
-            <Button className="navbutton" variant="contained" color="disabled" style={{fontSize: '1.4vh'}}>
+            <Button
+              className="navbutton"
+              variant="contained"
+              color="disabled"
+              style={{ fontSize: "1.4vh" }}
+            >
               contact Me
             </Button>
           </a>
@@ -256,14 +275,22 @@ function App() {
             target="_blanc"
             style={{ textDecoration: "none" }}
           >
-            <LinkedInIcon className='linkedin' color="primary" style={{fontSize: '3.4vh'}}/>
+            <LinkedInIcon
+              className="linkedin"
+              color="primary"
+              style={{ fontSize: "3.4vh" }}
+            />
           </a>
           <a
             href="https://github.com/Staifo"
             target="_blanc"
             style={{ textDecoration: "none" }}
           >
-            <GitHubIcon className='git' color="primary" style={{fontSize: '3.4vh'}}/>
+            <GitHubIcon
+              className="git"
+              color="primary"
+              style={{ fontSize: "3.4vh" }}
+            />
           </a>
         </div>
       </div>
@@ -309,7 +336,7 @@ function App() {
             >
               <img
                 className="image"
-                id='image'
+                id="image"
                 src={CVImage}
                 width="360px"
                 style={{ borderRadius: "10%" }}
@@ -528,8 +555,8 @@ function App() {
                       alignItems: "center",
                     }}
                   >
-                    If you want to know more about me and my career path you can have a look at my
-                    resume
+                    If you want to know more about me and my career path you can
+                    have a look at my resume
                   </div>
                   <hr style={{ width: "90%", borderColor: "1px solid blue" }} />
                   <div className="design"></div>
@@ -541,7 +568,7 @@ function App() {
           </Collapse>
         </Card>
       </div>
-    
+
       {/* <div
         className="aboutMe"
         style={{
@@ -593,65 +620,76 @@ function App() {
           </span>
         </div> */}
 
+      <div
+        className="myProjects"
+        style={{
+          width: "100%",
+          // height: "max-content",
+          // display: "flex",
+          // justifyContent: "space-evenly",
+          // backgroundColor: 'grey'
+        }}
+      >
         <div
-          className="myProjects"
           style={{
-            width: "100%",
-            // height: "max-content",
-            // display: "flex",
-            // justifyContent: "space-evenly",
-            // backgroundColor: 'grey'
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "min-content",
-              marginTop: "20px",
-              width: "100%",
-              height: "max-content",
-              backgroundColor: "rgb(173, 216, 230, 0.1)",
-            }}
-          >
-            <span style={{height: 'max-content', lineHeight: '160px'}} className="nice">About</span>
-            <span  style={{display: 'flex'}} className="nice">
-              Me{" "}
-              <div
-                className="arrow2"
-                style={{ marginLeft: "10px", marginTop: "40px" }}
-              ></div>
-            </span>
-          </div>
-        </div>
-
-        <div
-        className = 'info'
-          style={{
-            padding: "40px",
-            width: "80%",
-            zIndex: "10",
-            textAlign: "justify",
             display: "flex",
-            justifyContent: "center",
-           
-           
+            flexDirection: "column",
+            width: "min-content",
+            marginTop: "20px",
+            width: "100%",
+            height: "max-content",
+            backgroundColor: "rgb(173, 216, 230, 0.1)",
           }}
         >
-        <div style={{minWidth: '100%', marginLeft: '20%', fontSize: '40px', fontFamily: 'Quicksand'}}>
+          <span
+            style={{ height: "max-content", lineHeight: "160px" }}
+            className="nice"
+          >
+            About
+          </span>
+          <span style={{ display: "flex" }} className="nice">
+            Me{" "}
+            <div
+              className="arrow2"
+              style={{ marginLeft: "10px", marginTop: "40px" }}
+            ></div>
+          </span>
+        </div>
+      </div>
+
+      <div
+        className="info"
+        style={{
+          padding: "40px",
+          width: "80%",
+          zIndex: "10",
+          textAlign: "justify",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            minWidth: "100%",
+            marginLeft: "20%",
+            fontSize: "40px",
+            fontFamily: "Quicksand",
+          }}
+        >
           {" "}
-          Due to the Corona-Pandemie, I started to think about me, myself and my
+          Due to the Corona-Pandemie, I started to think about myself and my
           future and what I want to do. I remember, that after my Abitur in
           2001, for some reason, I wanted to learn to code. So I went to the
-          library an grapped a book about HTML and started reading. But once I
-          started studying International Business I forgot about it. For me to
-          change careers and go into coding is somehow a 'back to the roots'. I
-          love the idea of ideas and visions take shape and come to live in
-          reality. And coding is as closest as it can be to realise ideas and
-          visions and to see the final result in reality. This is what I really
-          love about coding...
-          </div>
+          library and grapped a book about HTML and started reading. The
+          following year I began my studies but decided for a different subject,
+          I studied International Business. For me to change careers and go into
+          coding is somehow a 'back to the roots'. I love the idea of ideas,
+          thoughts and visions take shape and come to live in reality. And
+          coding is as closest as it can be to realise ideas and visions and to
+          see the final result in reality. This is what I really love about
+          coding...
         </div>
+      </div>
       <div
         className="codingLang"
         style={{
@@ -672,7 +710,7 @@ function App() {
             // marginTop: "140px",
             width: "max-content",
             // backgroundColor: '#EEF7FF '
-            marginLeft: '20px'
+            marginLeft: "20px",
           }}
         >
           <span className="nice">My</span>
@@ -856,7 +894,6 @@ function App() {
           }}
         >
           <div
-           
             style={{
               display: "flex",
               flexDirection: "column",
@@ -871,7 +908,7 @@ function App() {
             <span style={{ display: "flex" }} className="nice">
               Projects{" "}
               <div
-              id="myProjects"
+                id="myProjects"
                 className="arrow2"
                 style={{ marginLeft: "10px", marginTop: "40px" }}
               ></div>
@@ -927,7 +964,7 @@ function App() {
                 <animated.div
                   onClick={handleClick}
                   onTouchMove={handleClick}
-                  id='slider'
+                  id="slider"
                   class="fg"
                   style={{
                     transform: interpolate(
@@ -937,7 +974,7 @@ function App() {
                     fontFamily: "Quicksand",
                   }}
                 >
-                 Slide or Click.
+                  Slide or Click.
                 </animated.div>
               </animated.div>
               {/* <Button
@@ -1030,34 +1067,37 @@ function App() {
                     marginBottom: "6%",
                   }}
                 >
-                <LightTooltip title="https://junior-coder.netlify.app/" placement="top">
-                  <a
-                    target="_blank"
-                    href="https://junior-coder.netlify.app/"
-                    style={{ color: "white" }}
+                  <LightTooltip
+                    title="https://junior-coder.netlify.app/"
+                    placement="top"
                   >
-                    <div
-                      className="juniorCoder"
-                      style={{
-                        fontFamily: "Impact",
-                        fontSize: "70px",
-                        width: "100%",
-                        textAlign: "center",
-                        backgroundColor: "lightgrey",
-                      }}
+                    <a
+                      target="_blank"
+                      href="https://junior-coder.netlify.app/"
+                      style={{ color: "white" }}
                     >
-                      JuniorCoder{" "}
-                      <span
-                        style={{ fontSize: "70px", fontFamily: "Quicksand" }}
+                      <div
+                        className="juniorCoder"
+                        style={{
+                          fontFamily: "Impact",
+                          fontSize: "70px",
+                          width: "100%",
+                          textAlign: "center",
+                          backgroundColor: "lightgrey",
+                        }}
                       >
-                        {" "}
-                        - My Final Project
-                      </span>
-                    </div>
-                    {/* <div style={{height: 'max-content', textAlign: 'center'}}>Individual work - created within 2 weeks</div> */}
-                  </a>
+                        JuniorCoder{" "}
+                        <span
+                          style={{ fontSize: "70px", fontFamily: "Quicksand" }}
+                        >
+                          {" "}
+                          - My Final Project
+                        </span>
+                      </div>
+                      {/* <div style={{height: 'max-content', textAlign: 'center'}}>Individual work - created within 2 weeks</div> */}
+                    </a>
                   </LightTooltip>
-                  
+
                   <Info />
                   {/* <div style={{backgroundColor: 'lightgrey', textAlign: 'center'}}>
                 <IconButton id='clickme'
@@ -1127,21 +1167,24 @@ function App() {
                     height: "200px",
                   }}
                 >
-                <LightTooltip title="https://leckerlecker.netlify.app" placement="top">
-                  <a href="https://leckerlecker.netlify.app" target="_blanc">
-                    <div
-                      style={{
-                        fontFamily: "Quicksand",
-                        color: "grey",
-                        textAlign: "center",
-                        fontSize: "16px",
-                      }}
-                    >
-                      <b>COOKBOOK:</b> Our first group project - duration 1 week
-                      - creating a cookbook using just HTML5 and CSS3-not
-                      responsive and not 100% finished
-                    </div>
-                  </a>
+                  <LightTooltip
+                    title="https://leckerlecker.netlify.app"
+                    placement="top"
+                  >
+                    <a href="https://leckerlecker.netlify.app" target="_blanc">
+                      <div
+                        style={{
+                          fontFamily: "Quicksand",
+                          color: "grey",
+                          textAlign: "center",
+                          fontSize: "16px",
+                        }}
+                      >
+                        <b>COOKBOOK:</b> Our first group project - duration 1
+                        week - creating a cookbook using just HTML5 and CSS3-not
+                        responsive and not 100% finished
+                      </div>
+                    </a>
                   </LightTooltip>
                   <a href="https://leckerlecker.netlify.app" target="_blanc">
                     <Carousel autoPlay infiniteLoop>
@@ -1171,20 +1214,23 @@ function App() {
                     height: "200px",
                   }}
                 >
-                <LightTooltip title="https://todoodo.netlify.app" placement="top">
-                  <a href="https://todoodo.netlify.app" target="_blanc">
-                    <div
-                      style={{
-                        fontFamily: "Quicksand",
-                        color: "grey",
-                        textAlign: "center",
-                        fontSize: "16px",
-                      }}
-                    >
-                      <b>TODO LIST:</b> Solo work - duration 1 week - creating a
-                      Todo list using Vanilla JavaScript
-                    </div>
-                  </a>
+                  <LightTooltip
+                    title="https://todoodo.netlify.app"
+                    placement="top"
+                  >
+                    <a href="https://todoodo.netlify.app" target="_blanc">
+                      <div
+                        style={{
+                          fontFamily: "Quicksand",
+                          color: "grey",
+                          textAlign: "center",
+                          fontSize: "16px",
+                        }}
+                      >
+                        <b>TODO LIST:</b> Solo work - duration 1 week - creating
+                        a Todo list using Vanilla JavaScript
+                      </div>
+                    </a>
                   </LightTooltip>
                   <a href="https://todoodo.netlify.app" target="_blanc">
                     <Carousel autoPlay infiniteLoop>
@@ -1213,21 +1259,27 @@ function App() {
                     height: "200px",
                   }}
                 >
-                <LightTooltip title="https://portfolio-istayfo-ergun.netlify.app/" placement="top">
-                  <a href="https://portfolio-istayfo-ergun.netlify.app/" target="_blanc">
-                    <div
-                      style={{
-                        fontFamily: "Quicksand",
-                        color: "grey",
-                        textAlign: "center",
-                        fontSize: "16px",
-                      }}
+                  <LightTooltip
+                    title="https://portfolio-istayfo-ergun.netlify.app/"
+                    placement="top"
+                  >
+                    <a
+                      href="https://portfolio-istayfo-ergun.netlify.app/"
+                      target="_blanc"
                     >
-                      <b>My Portfolio:</b> Surprise - I concider my portfolio,
-                      which I created myself from scratch, as a project on its
-                      own.
-                    </div>
-                  </a>
+                      <div
+                        style={{
+                          fontFamily: "Quicksand",
+                          color: "grey",
+                          textAlign: "center",
+                          fontSize: "16px",
+                        }}
+                      >
+                        <b>My Portfolio:</b> Surprise - I concider my portfolio,
+                        which I created myself from scratch, as a project on its
+                        own.
+                      </div>
+                    </a>
                   </LightTooltip>
                   {/* <a href='https://todoodo.netlify.app' target='_blanc'>
                   <Carousel autoPlay infiniteLoop showThumbs={false}>

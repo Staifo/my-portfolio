@@ -852,3 +852,10 @@ color: rgb(197, 194, 194)
     align-items: center;
     background-color: lightgrey;
     }
+
+
+   @media (max-width: 800px) {
+     .navbarneue {
+visibility: visible !important;
+     }
+   }
