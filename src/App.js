@@ -677,7 +677,7 @@ function App() {
           }}
         >
           {" "}
-          Due to the Corona-Pandemie, I started to think about myself and my
+          Due to the Corona pandemic, I started to think about myself and my
           future and what I want to do. I remember that after my Abitur in
           2001, for some reason, I wanted to learn to code. So I went to the
           library and grapped a book about HTML and started reading. The
