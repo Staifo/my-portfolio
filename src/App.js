@@ -301,7 +301,7 @@ function App() {
         className="jumbo"
         style={{
           width: "100%",
-          height: "100vh",
+          height: "110vh",
           display: "flex",
           justifyContent: "center",
         }}

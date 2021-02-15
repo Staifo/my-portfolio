@@ -565,13 +565,6 @@ animation-delay: 10s;
 
 .welcome {
   margin-top: 10%;
-  
-}
-
-@media (max-width: 600px) {
-.welcome {
-  margin-top: 2%;
-}
 }
 
 

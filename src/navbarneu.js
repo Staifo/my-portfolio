@@ -91,7 +91,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-const Navbarneu = ({handleExpandClick, button}) => {
+const Navbarneu = ({ handleExpandClick, button }) => {
   return (
     <div
       className="navbarneuDiv"
@@ -141,39 +141,36 @@ const Navbarneu = ({handleExpandClick, button}) => {
         >
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
             <Button
-           
-            data-aos="fade-up"
-     data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="2000"
               className="navbuttonneu"
               variant="contained"
-              style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke', }}
+              style={{ fontSize: "1.4vh", backgroundColor: "whitesmoke" }}
             >
               My Coding Skills
             </Button>
           </a>
           <a href="#myProjects" style={{ textDecoration: "none" }}>
             <Button
-              
-            data-aos="fade-up"
-     data-aos-duration="2200"
+              data-aos="fade-up"
+              data-aos-duration="2200"
               className="navbuttonneu"
               variant="contained"
               // color="disabled"
-              style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke',}}
+              style={{ fontSize: "1.4vh", backgroundColor: "whitesmoke" }}
             >
               My Projects
             </Button>
           </a>
           <a href="#resume" style={{ textDecoration: "none" }}>
             <Button
-             
-            data-aos="fade-up"
-     data-aos-duration="2400"
+              data-aos="fade-up"
+              data-aos-duration="2400"
               className="navbuttonneu"
               variant="contained"
               // color="disabled"
               onClick={handleExpandClick}
-              style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke', }}
+              style={{ fontSize: "1.4vh", backgroundColor: "whitesmoke" }}
               ref={button}
             >
               Resume
@@ -181,48 +178,51 @@ const Navbarneu = ({handleExpandClick, button}) => {
           </a>
           <a href="#contactMe" style={{ textDecoration: "none" }}>
             <Button
-              
-            data-aos="fade-up"
-     data-aos-duration="2600"
+              data-aos="fade-up"
+              data-aos-duration="2600"
               className="navbuttonneu"
               variant="contained"
               // color="disabled"
-              style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke', }}
+              style={{ fontSize: "1.4vh", backgroundColor: "whitesmoke" }}
             >
               Contact Me
             </Button>
           </a>
-          <div style={{display: 'flex', justifyContent: 'space-around', width: '120px'}}>
-          <a
-            href="https://www.linkedin.com/in/istayfo-ergun-a606a564/"
-            target="_blanc"
-            style={{ textDecoration: "none" }}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              width: "120px",
+            }}
           >
-            <LinkedInIcon
-             
-            data-aos="fade-up"
-     data-aos-duration="2800"
-              className="linkedin"
-              id="linkedin"
-              color="disabled"
-              style={{ fontSize: "3.4vh", }}
-            />
-          </a>
-          <a
-            href="https://github.com/Staifo"
-            target="_blanc"
-            style={{ textDecoration: "none" }}
-          >
-            <GitHubIcon
-              
-            data-aos="fade-up"
-     data-aos-duration="3000"
-              className="git"
-              id="git"
-              color="disabled"
-              style={{ fontSize: "3.4vh" ,}}
-            />
-          </a>
+            <a
+              href="https://www.linkedin.com/in/istayfo-ergun-a606a564/"
+              target="_blanc"
+              style={{ textDecoration: "none" }}
+            >
+              <LinkedInIcon
+                data-aos="fade-up"
+                data-aos-duration="2800"
+                className="linkedin"
+                id="linkedin"
+                color="disabled"
+                style={{ fontSize: "3.4vh" }}
+              />
+            </a>
+            <a
+              href="https://github.com/Staifo"
+              target="_blanc"
+              style={{ textDecoration: "none" }}
+            >
+              <GitHubIcon
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="git"
+                id="git"
+                color="disabled"
+                style={{ fontSize: "3.4vh" }}
+              />
+            </a>
           </div>
         </div>
       </div>
