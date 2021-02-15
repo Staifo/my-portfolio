@@ -87,6 +87,9 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Button from "@material-ui/core/Button";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Navbarneu = ({handleExpandClick, button}) => {
   return (
@@ -138,6 +141,9 @@ const Navbarneu = ({handleExpandClick, button}) => {
         >
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
             <Button
+           
+            data-aos="fade-up"
+     data-aos-duration="2000"
               className="navbuttonneu"
               variant="contained"
               style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke', }}
@@ -147,6 +153,9 @@ const Navbarneu = ({handleExpandClick, button}) => {
           </a>
           <a href="#myProjects" style={{ textDecoration: "none" }}>
             <Button
+              
+            data-aos="fade-up"
+     data-aos-duration="2200"
               className="navbuttonneu"
               variant="contained"
               // color="disabled"
@@ -157,6 +166,9 @@ const Navbarneu = ({handleExpandClick, button}) => {
           </a>
           <a href="#resume" style={{ textDecoration: "none" }}>
             <Button
+             
+            data-aos="fade-up"
+     data-aos-duration="2400"
               className="navbuttonneu"
               variant="contained"
               // color="disabled"
@@ -169,6 +181,9 @@ const Navbarneu = ({handleExpandClick, button}) => {
           </a>
           <a href="#contactMe" style={{ textDecoration: "none" }}>
             <Button
+              
+            data-aos="fade-up"
+     data-aos-duration="2600"
               className="navbuttonneu"
               variant="contained"
               // color="disabled"
@@ -184,6 +199,9 @@ const Navbarneu = ({handleExpandClick, button}) => {
             style={{ textDecoration: "none" }}
           >
             <LinkedInIcon
+             
+            data-aos="fade-up"
+     data-aos-duration="2800"
               className="linkedin"
               id="linkedin"
               color="disabled"
@@ -196,6 +214,9 @@ const Navbarneu = ({handleExpandClick, button}) => {
             style={{ textDecoration: "none" }}
           >
             <GitHubIcon
+              
+            data-aos="fade-up"
+     data-aos-duration="3000"
               className="git"
               id="git"
               color="disabled"
