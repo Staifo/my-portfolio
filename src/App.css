@@ -854,8 +854,46 @@ color: rgb(197, 194, 194)
     }
 
 
-   @media (max-width: 800px) {
-     .navbarneue {
+    .navbarneuDiv {
+      background-color: rgb(255, 255, 255, 0);
+    }
+  
+/*   
+    @media (max-width: 800px) {
+     .navbarneuDiv {
 visibility: visible !important;
      }
+   } */
+
+
+   .navbuttonneu {
+     width: 200px;
+     right: -40px;
+     margin-top:20px !important;
    }
+
+   @media (max-width: 800px) {
+    .navbuttonneu {
+      font-size: 16px !important;
+    }
+  }
+
+   #linkedin, #git {
+     margin-top: 20px;
+   }
+
+   .navbuttonneu:hover {
+    right: 0;
+    background-color: lightgreen !important;
+  }
+
+  /* .navbarneuDiv {
+    visibility: hidden;
+  } */
+
+
+  @media (max-width: 800px) {
+    .navbarneuDiv {
+      visibility: visible;
+    }
+  }

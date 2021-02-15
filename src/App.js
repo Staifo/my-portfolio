@@ -58,7 +58,9 @@ import clsx from "clsx";
 import Card from "@material-ui/core/Card";
 import { red } from "@material-ui/core/colors";
 import CVneu from "./images/CVneu.jpg";
-import TemporaryDrawer from "./navbarneu";
+// import TemporaryDrawer from "./navbarneu";
+import Navbarneu from "./navbarneu";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -294,6 +296,7 @@ function App() {
           </a>
         </div>
       </div>
+      <Navbarneu handleExpandClick={handleExpandClick} button={button} />
       <div
         className="jumbo"
         style={{
@@ -677,17 +680,17 @@ function App() {
           }}
         >
           {" "}
-          Due to the Corona pandemic, I started to think about myself and my
-          future and what I want to do. I remember that after my Abitur in
-          2001, for some reason, I wanted to learn to code. So I went to the
-          library and grapped a book about HTML and started reading. The
-          following year I began my studies but decided for a different subject,
-          I studied International Business. For me to change careers and go into
-          coding is somehow a 'back to the roots'. I love the idea of ideas,
-          thoughts and visions take shape and come to live in reality. And
-          coding is as closest as it can be to realise ideas and visions and to
-          see the final result in front of you. This is what I really love about
-          coding...
+          Due to the Corona pandemic I started to think about myself and my
+          future and what I want to do. I remember that after my Abitur in 2001,
+          I got interested in Coding and I decided that I wanted to learn to
+          code. So I went to the public library and grapped a book about HTML and
+          started reading. The following year I began my studies but decided for
+          a different subject, I studied International Business. For me to
+          change careers and go into coding is somehow a 'back to the roots'. I
+          love the idea of ideas, thoughts and visions take shape and come to
+          live in reality. And coding is as closest as it can be to realise
+          ideas and visions and to see the final result in front of you. This is
+          what I really love about coding...
         </div>
       </div>
       <div
