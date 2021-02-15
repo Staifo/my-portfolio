@@ -160,7 +160,7 @@ function App() {
       ? (button.current.innerText = "Resume")
       : (button.current.innerText = "Close Resume");
     buttonText
-      ? (button.current.style.backgroundColor = "lightgrey")
+      ? (button.current.style.backgroundColor = "whitesmoke")
       : (button.current.style.backgroundColor = "lightgreen");
   };
 
