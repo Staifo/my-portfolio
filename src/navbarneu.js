@@ -140,7 +140,7 @@ const Navbarneu = ({handleExpandClick, button}) => {
             <Button
               className="navbuttonneu"
               variant="contained"
-              style={{ fontSize: "1.4vh" }}
+              style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke', }}
             >
               My Coding Skills
             </Button>
@@ -149,8 +149,8 @@ const Navbarneu = ({handleExpandClick, button}) => {
             <Button
               className="navbuttonneu"
               variant="contained"
-              color="disabled"
-              style={{ fontSize: "1.4vh" }}
+              // color="disabled"
+              style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke',}}
             >
               My Projects
             </Button>
@@ -159,9 +159,9 @@ const Navbarneu = ({handleExpandClick, button}) => {
             <Button
               className="navbuttonneu"
               variant="contained"
-              color="disabled"
+              // color="disabled"
               onClick={handleExpandClick}
-              style={{ fontSize: "1.4vh" }}
+              style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke', }}
               ref={button}
             >
               Resume
@@ -171,10 +171,10 @@ const Navbarneu = ({handleExpandClick, button}) => {
             <Button
               className="navbuttonneu"
               variant="contained"
-              color="disabled"
-              style={{ fontSize: "1.4vh" }}
+              // color="disabled"
+              style={{ fontSize: "1.4vh", backgroundColor: 'whitesmoke', }}
             >
-              contact Me
+              Contact Me
             </Button>
           </a>
           <div style={{display: 'flex', justifyContent: 'space-around', width: '120px'}}>
@@ -186,8 +186,8 @@ const Navbarneu = ({handleExpandClick, button}) => {
             <LinkedInIcon
               className="linkedin"
               id="linkedin"
-              color="primary"
-              style={{ fontSize: "3.4vh" }}
+              color="disabled"
+              style={{ fontSize: "3.4vh", }}
             />
           </a>
           <a
@@ -198,8 +198,8 @@ const Navbarneu = ({handleExpandClick, button}) => {
             <GitHubIcon
               className="git"
               id="git"
-              color="primary"
-              style={{ fontSize: "3.4vh" }}
+              color="disabled"
+              style={{ fontSize: "3.4vh" ,}}
             />
           </a>
           </div>

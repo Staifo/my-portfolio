@@ -269,7 +269,7 @@ function App() {
               color="disabled"
               style={{ fontSize: "1.4vh" }}
             >
-              contact Me
+              Contact Me
             </Button>
           </a>
           <a
