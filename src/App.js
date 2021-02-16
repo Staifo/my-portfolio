@@ -901,7 +901,7 @@ function App() {
               display: "flex",
               flexDirection: "column",
               width: "min-content",
-              marginTop: "140px",
+              marginTop: "160px",
               width: "100%",
               height: "max-content",
               backgroundColor: "rgb(173, 216, 230, 0.1)",
@@ -929,7 +929,7 @@ function App() {
               flexDirection: "column",
               alignItems: "center",
               marginBottom: "20%",
-              marginTop: "60px",
+              marginTop: "120px",
             }}
           >
             <Projects />
@@ -1334,6 +1334,7 @@ function App() {
           backgroundColor: "#343136",
           position: "sticky",
           bottom: "0",
+          zIndex: '10'
         }}
       ></div>
     </div>

@@ -616,14 +616,14 @@ animation-delay: 10s;
   position: relative;
   width: max-content;
   height: 160px;
-  line-height: 80px;
+  line-height: 90px;
   color: black;
-  font-size: 8em;
+  font-size: 6.4em;
   font-weight: 800;
   letter-spacing: -9px;
   will-change: transform, opacity;
   overflow: hidden;
- 
+
 }
 
 
