@@ -176,6 +176,18 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               Resume
             </Button>
           </a>
+          <a href="#aboutMe" style={{ textDecoration: "none" }}>
+            <Button
+              data-aos="fade-up"
+              data-aos-duration="2500"
+              className="navbuttonneu"
+              variant="contained"
+              // color="disabled"
+              style={{ fontSize: "1.4vh", }}
+            >
+              About me
+            </Button>
+          </a>
           <a href="#contactMe" style={{ textDecoration: "none" }}>
             <Button
               data-aos="fade-up"
@@ -186,6 +198,18 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               style={{ fontSize: "1.4vh", }}
             >
               Contact Me
+            </Button>
+          </a>
+          <a href="#top" style={{ textDecoration: "none" }}>
+            <Button
+              data-aos="fade-up"
+              data-aos-duration="2600"
+              className="navbuttonneu"
+              variant="contained"
+              // color="disabled"
+              style={{ fontSize: "1.4vh", }}
+            >
+              Top
             </Button>
           </a>
           <div

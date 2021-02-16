@@ -212,7 +212,7 @@ function App() {
           backgroundColor: "#343136",
           minWidth: "100%",
           display: "flex",
-          justifyContent: "flex-end",
+          // justifyContent: "flex-end",
           position: "fixed",
           top: "0%",
           zIndex: "10",
@@ -262,6 +262,16 @@ function App() {
               Resume
             </Button>
           </a>
+          <a href="#aboutMe" style={{ textDecoration: "none" }}>
+            <Button
+              className="navbutton"
+              variant="contained"
+              color="disabled"
+              style={{ fontSize: "1.4vh" }}
+            >
+              About me
+            </Button>
+          </a>
           <a href="#contactMe" style={{ textDecoration: "none" }}>
             <Button
               className="navbutton"
@@ -298,6 +308,7 @@ function App() {
       </div>
       <Navbarneu handleExpandClick={handleExpandClick} button={button} />
       <div
+       id='top'
         className="jumbo"
         style={{
           width: "100%",
@@ -650,7 +661,7 @@ function App() {
           >
             About
           </span>
-          <span style={{ display: "flex" }} className="nice">
+          <span id='aboutMe' className="nice" style={{ display: "flex" }} >
             Me{" "}
             <div
               className="arrow2"
