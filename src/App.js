@@ -308,7 +308,7 @@ function App() {
       </div>
       <Navbarneu handleExpandClick={handleExpandClick} button={button} />
       <div
-       id='top'
+        id="top"
         className="jumbo"
         style={{
           width: "100%",
@@ -661,7 +661,7 @@ function App() {
           >
             About
           </span>
-          <span id='aboutMe' className="nice" style={{ display: "flex" }} >
+          <span id="aboutMe" className="nice" style={{ display: "flex" }}>
             Me{" "}
             <div
               className="arrow2"
@@ -675,33 +675,30 @@ function App() {
         className="info"
         style={{
           padding: "40px",
-          width: "80%",
+          width: "100%",
           zIndex: "10",
           textAlign: "justify",
           display: "flex",
           justifyContent: "center",
+          marginTop: '140px'
         }}
       >
         <div
           style={{
-            minWidth: "100%",
-            marginLeft: "20%",
-            fontSize: "40px",
+            width: "60%",
+            fontSize: "25px",
             fontFamily: "Quicksand",
           }}
         >
           {" "}
-          Due to the Corona pandemic I started to think about myself and my
-          future and what I want to do. I remember that after my Abitur in 2001,
-          I got interested in Coding and I decided that I wanted to learn to
-          code. So I went to the public library and grapped a book about HTML and
-          started reading. The following year I began my studies but decided for
-          a different subject, I studied International Business. For me to
-          change careers and go into coding is somehow a 'back to the roots'. I
-          love the idea of ideas, thoughts and visions take shape and come to
-          live in reality. And coding is as closest as it can be to realise
-          ideas and visions and to see the final result in front of you. This is
-          what I really love about coding...
+          "Coding is the manifestation of ideas and visions into reality! As far
+          as I can remember I was interested in coding. After finishing
+          highschool I went to the public library, grabbed a book about HTML and
+          wrote my first code. However, I studied International Business, gained
+          experience in Sales and traveled the world, just to realize that
+          coding is my calling. I love seeing how code has an immediate impact
+          and result. I love solving problems and communicating. Let’s create
+          great things!"
         </div>
       </div>
       <div
@@ -713,7 +710,7 @@ function App() {
           // justifyContent: "space-evenly",
           // backgroundColor: 'grey'
           height: "min-content",
-          marginTop: "260px",
+          marginTop: "160px",
         }}
       >
         <div
@@ -1345,7 +1342,7 @@ function App() {
           backgroundColor: "#343136",
           position: "sticky",
           bottom: "0",
-          zIndex: '10'
+          zIndex: "10",
         }}
       ></div>
     </div>
