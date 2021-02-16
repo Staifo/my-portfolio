@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import CopyrightIcon from "@material-ui/icons/Copyright";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import Button from "@material-ui/core/Button";
 
 
 const Footer = () => {
@@ -40,7 +41,8 @@ const Footer = () => {
         justifyContent: "center",
         flexDirection: "column",
         backgroundColor: "#343136",
-        height: "max-comtent",
+        height: "max-content",
+       
       }}
     >
     <div>
@@ -73,6 +75,7 @@ const Footer = () => {
             fontSize: "20px",
             marginTop: "40px",
             width: "40%",
+            zIndex: '10',
           }}
           className="contact-form"
           onSubmit={sendEmail}
@@ -86,11 +89,12 @@ const Footer = () => {
           <input type="email" name="email" style={{ color: "grey" }} />
           <label>Message</label>
           <textarea name="message" style={{ height: "160px", color: "grey" }} />
-          <input
+          <Button
+          className='send'
             type="submit"
             value="Send"
-            style={{ backgroundColor: "blue" }}
-          />
+            style={{ backgroundColor: "blue", fontSize: '16px', fontWeight: 'bold', color: 'white' }}
+          >Send</Button>
         </form>
       </div>
       <div style={{ width: "100%", textAlign: "center", marginBottom: "10px", }}>

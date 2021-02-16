@@ -213,7 +213,7 @@ function App() {
           minWidth: "100%",
           display: "flex",
           justifyContent: "flex-end",
-          position: "sticky",
+          position: "fixed",
           top: "0%",
           zIndex: "10",
           // marginLeft: '40%'
@@ -223,9 +223,9 @@ function App() {
           className="navbar"
           class
           style={{
-            width: "60%",
+            width: "100%",
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
             marginTop: "10px",
             marginRight: "20px",
             marginBottom: "10px",

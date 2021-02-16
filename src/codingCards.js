@@ -30,7 +30,7 @@ import { SiNetlify } from "react-icons/si";
 import { DiScrum } from "react-icons/di";
 import { GiSpring } from "react-icons/gi";
 import { IoLogoNodejs } from "react-icons/io";
-import { GrHeroku} from "react-icons/gr";
+import { GrHeroku } from "react-icons/gr";
 import zIndex from "@material-ui/core/styles/zIndex";
 
 // const useStyles = makeStyles((theme) => ({
@@ -845,7 +845,7 @@ import zIndex from "@material-ui/core/styles/zIndex";
 
 const CodingCard = () => {
   const [openFrontend, setOpenFrontend] = useState(null);
-  const [openBackend, setOpenBackend]=useState(null);
+  const [openBackend, setOpenBackend] = useState(null);
   const [logo, setLogo] = useState(null);
   console.log(openFrontend);
 
@@ -854,8 +854,8 @@ const CodingCard = () => {
   };
 
   const handleBackend = (e) => {
-    setOpenBackend(e.target)
-  }
+    setOpenBackend(e.target);
+  };
 
   // const logos = [
   //       <DvrIcon style={{ color: "yellow", fontSize: "120px" }} />,
@@ -871,14 +871,18 @@ const CodingCard = () => {
   //     }, []);
 
   return (
-    <div  id="codingSkills" className="codingLangDiv" style={{ width: "100%", marginTop: '10%' }}>
+    <div
+      id="codingSkills"
+      className="codingLangDiv"
+      style={{ width: "100%", marginTop: "10%" }}
+    >
       {!openFrontend && (
         <div
           className="frontend"
           style={{
             display: "flex",
             justifyContent: "center",
-            marginBottom: '60px'
+            marginBottom: "60px",
           }}
         >
           <div
@@ -931,23 +935,34 @@ const CodingCard = () => {
             </div>
           </div>
           <div className="frontendbutton">
-            <div style={{marginTop: "14px",
-                  marginLeft: '14px',
-                  marginBottom: '14px',
-                  marginRight: '14px',}} className="innerfrontendbutton" onClick={handleClick}>
+            <div
+              style={{
+                marginTop: "14px",
+                marginLeft: "14px",
+                marginBottom: "14px",
+                marginRight: "14px",
+              }}
+              className="innerfrontendbutton"
+              onClick={handleClick}
+            >
               <div
-                id="innerfrontendbutton"  style={{fontSize: 'calc(40px + 2.0vw)'}}>
+                id="innerfrontendbutton"
+                style={{ fontSize: "calc(40px + 2.0vw)" }}
+              >
                 Front
               </div>
-              <div id="innerfrontendbutton"  
-              style={{fontSize: 'calc(40px + 2.0vw)'}} 
-              // style={{
-              //     fontFamily: "Quicksand",
-              //     fontSize: "3.6vw",
-              //     fontWeight: "bold",
-              //     lineHeight: "50px",
-              //   }} 
-                >End</div>
+              <div
+                id="innerfrontendbutton"
+                style={{ fontSize: "calc(40px + 2.0vw)" }}
+                // style={{
+                //     fontFamily: "Quicksand",
+                //     fontSize: "3.6vw",
+                //     fontWeight: "bold",
+                //     lineHeight: "50px",
+                //   }}
+              >
+                End
+              </div>
             </div>
           </div>
         </div>
@@ -960,7 +975,7 @@ const CodingCard = () => {
             zIndex: "10",
             display: "flex",
             justifyContent: "space-around",
-            marginBottom: '60px',
+            marginBottom: "60px",
           }}
         >
           <div
@@ -999,7 +1014,6 @@ const CodingCard = () => {
                 borderRadius: "100%",
                 position: "absolute",
                 zIndex: "0",
-                
               }}
             >
               <div
@@ -1007,7 +1021,6 @@ const CodingCard = () => {
                   width: "60%",
                   display: "flex",
                   justifyContent: "center",
-                  
                 }}
               >
                 <DiCss3 style={{}} />
@@ -1020,7 +1033,6 @@ const CodingCard = () => {
                   justifyContent: "space-between",
                   marginTop: "120px",
                   marginBottom: "120px",
-                  
                 }}
               >
                 <SiJavascript style={{ fontSize: "50px" }} />
@@ -1031,7 +1043,6 @@ const CodingCard = () => {
                   width: "60%",
                   display: "flex",
                   justifyContent: "center",
-                  
                 }}
               >
                 <AiOutlineHtml5 style={{}} />
@@ -1042,9 +1053,9 @@ const CodingCard = () => {
                 className="innerfrontendbutton"
                 style={{
                   marginTop: "14px",
-                  marginLeft: '14px',
-                  marginBottom: '14px',
-                  marginRight: '14px',
+                  marginLeft: "14px",
+                  marginBottom: "14px",
+                  marginRight: "14px",
                   width: "300px",
                   height: "300px",
                   color: "lightblue",
@@ -1088,7 +1099,6 @@ const CodingCard = () => {
                 borderRadius: "100%",
                 position: "absolute",
                 zIndex: "0",
-                
               }}
             >
               <div
@@ -1096,7 +1106,6 @@ const CodingCard = () => {
                   width: "60%",
                   display: "flex",
                   justifyContent: "space-between",
-                  
                 }}
               >
                 <GitHubIcon style={{ fontSize: "60px" }} />
@@ -1109,7 +1118,6 @@ const CodingCard = () => {
                   justifyContent: "space-between",
                   marginTop: "100px",
                   marginBottom: "100px",
-                  
                 }}
               >
                 <SiMaterialUi />
@@ -1120,11 +1128,10 @@ const CodingCard = () => {
                   width: "60%",
                   display: "flex",
                   justifyContent: "space-between",
-                  
                 }}
               >
                 <GiSpring />
-              <DiScrum />
+                <DiScrum />
               </div>
             </div>
             <div className="frontendbutton">
@@ -1132,9 +1139,9 @@ const CodingCard = () => {
                 className="innerfrontendbutton"
                 style={{
                   marginTop: "14px",
-                  marginLeft: '14px',
-                  marginBottom: '14px',
-                  marginRight: '14px',
+                  marginLeft: "14px",
+                  marginBottom: "14px",
+                  marginRight: "14px",
                   width: "300px",
                   height: "300px",
                   color: "lightblue",
@@ -1209,7 +1216,7 @@ const CodingCard = () => {
               }}
             >
               <SiMongodb />
-              <GitHubIcon  style={{fontSize: '60px'}}/>
+              <GitHubIcon style={{ fontSize: "60px" }} />
             </div>
             <div
               style={{
@@ -1223,13 +1230,19 @@ const CodingCard = () => {
             </div>
           </div>
           <div className="frontendbutton">
-            <div style={{   marginTop: "14px",
-                  marginLeft: '14px',
-                  marginBottom: '14px',
-                  marginRight: '14px',}} className="innerfrontendbutton" onClick={handleBackend}>
+            <div
+              style={{
+                marginTop: "14px",
+                marginLeft: "14px",
+                marginBottom: "14px",
+                marginRight: "14px",
+              }}
+              className="innerfrontendbutton"
+              onClick={handleBackend}
+            >
               <div
                 id="innerfrontendbutton"
-                style={{fontSize: 'calc(40px + 2.1vw)'}}
+                style={{ fontSize: "calc(40px + 2.1vw)" }}
                 // style={{
                 //   fontFamily: "Quicksand",
                 //   fontSize: "3.6vw",
@@ -1239,15 +1252,18 @@ const CodingCard = () => {
               >
                 Back
               </div>
-              <div id="innerfrontendbutton"  
-              style={{fontSize: 'calc(40px + 2.0vw)'}} 
-              // style={{
-              //     fontFamily: "Quicksand",
-              //     fontSize: "3.6vw",
-              //     fontWeight: "bold",
-              //     lineHeight: "50px",
-              //   }} 
-                >End</div>
+              <div
+                id="innerfrontendbutton"
+                style={{ fontSize: "calc(40px + 2.0vw)" }}
+                // style={{
+                //     fontFamily: "Quicksand",
+                //     fontSize: "3.6vw",
+                //     fontWeight: "bold",
+                //     lineHeight: "50px",
+                //   }}
+              >
+                End
+              </div>
             </div>
           </div>
         </div>
@@ -1298,14 +1314,13 @@ const CodingCard = () => {
                 borderRadius: "100%",
                 position: "absolute",
                 zIndex: "0",
-                
               }}
             >
               <div
                 style={{
                   width: "60%",
                   display: "flex",
-                  justifyContent: "center", 
+                  justifyContent: "center",
                 }}
               >
                 {/* <IoLogoNodejs style={{}} /> */}
@@ -1318,10 +1333,9 @@ const CodingCard = () => {
                   justifyContent: "space-between",
                   marginTop: "120px",
                   marginBottom: "120px",
-                  
                 }}
               >
-               <IoLogoNodejs style={{}} />
+                <IoLogoNodejs style={{}} />
                 {/* <SiJavascript style={{ fontSize: "50px" }} />
                 <DiReact /> */}
               </div>
@@ -1330,7 +1344,6 @@ const CodingCard = () => {
                   width: "60%",
                   display: "flex",
                   justifyContent: "center",
-                  
                 }}
               >
                 {/* <AiOutlineHtml5 style={{}} /> */}
@@ -1341,9 +1354,9 @@ const CodingCard = () => {
                 className="innerfrontendbutton"
                 style={{
                   marginTop: "14px",
-                  marginLeft: '14px',
-                  marginBottom: '14px',
-                  marginRight: '14px',
+                  marginLeft: "14px",
+                  marginBottom: "14px",
+                  marginRight: "14px",
                   width: "300px",
                   height: "300px",
                   color: "lightblue",
@@ -1362,7 +1375,6 @@ const CodingCard = () => {
                   }}
                 >
                   <li>NodeJS</li>
-                  
                 </div>
                 {/* <div style={{fontSize: '54px', lineHeight: '60px'}}>guages</div> */}
               </div>
@@ -1385,7 +1397,6 @@ const CodingCard = () => {
                 borderRadius: "100%",
                 position: "absolute",
                 zIndex: "0",
-                
               }}
             >
               <div
@@ -1393,7 +1404,6 @@ const CodingCard = () => {
                   width: "60%",
                   display: "flex",
                   justifyContent: "space-between",
-                  
                 }}
               >
                 <GitHubIcon style={{ fontSize: "60px" }} />
@@ -1406,7 +1416,6 @@ const CodingCard = () => {
                   justifyContent: "space-between",
                   marginTop: "100px",
                   marginBottom: "100px",
-                  
                 }}
               >
                 <DiPostgresql />
@@ -1417,11 +1426,10 @@ const CodingCard = () => {
                   width: "60%",
                   display: "flex",
                   justifyContent: "space-between",
-                  
                 }}
               >
-                <div style={{fontSize: '40px'}}>EX</div>
-              <DiScrum />
+                <div style={{ fontSize: "40px" }}>EX</div>
+                <DiScrum />
               </div>
             </div>
             <div className="frontendbutton">
@@ -1429,9 +1437,9 @@ const CodingCard = () => {
                 className="innerfrontendbutton"
                 style={{
                   marginTop: "14px",
-                  marginLeft: '14px',
-                  marginBottom: '14px',
-                  marginRight: '14px',
+                  marginLeft: "14px",
+                  marginBottom: "14px",
+                  marginRight: "14px",
                   width: "300px",
                   height: "300px",
                   color: "lightblue",
@@ -1462,7 +1470,6 @@ const CodingCard = () => {
           </div>
         </div>
       )}
-      
     </div>
   );
 };
