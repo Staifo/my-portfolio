@@ -145,7 +145,7 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               data-aos-duration="2000"
               className="navbuttonneu"
               variant="contained"
-              style={{ fontSize: "1.4vh", backgroundColor: "whitesmoke" }}
+              style={{ fontSize: "1.4vh",}}
             >
               My Coding Skills
             </Button>
@@ -157,7 +157,7 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               className="navbuttonneu"
               variant="contained"
               // color="disabled"
-              style={{ fontSize: "1.4vh", backgroundColor: "whitesmoke" }}
+              style={{ fontSize: "1.4vh",}}
             >
               My Projects
             </Button>
@@ -170,7 +170,7 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               variant="contained"
               // color="disabled"
               onClick={handleExpandClick}
-              style={{ fontSize: "1.4vh", backgroundColor: "whitesmoke" }}
+              style={{ fontSize: "1.4vh",}}
               ref={button}
             >
               Resume
@@ -183,7 +183,7 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               className="navbuttonneu"
               variant="contained"
               // color="disabled"
-              style={{ fontSize: "1.4vh", backgroundColor: "whitesmoke" }}
+              style={{ fontSize: "1.4vh", }}
             >
               Contact Me
             </Button>
