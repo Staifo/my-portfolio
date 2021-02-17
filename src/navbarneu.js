@@ -91,7 +91,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-const Navbarneu = ({ handleExpandClick, button }) => {
+const Navbarneu = ({
+  handleExpandClick,
+  button,
+  codingSkills,
+  projectsButton,
+  aboutMeButton,
+  contactMeButton,
+}) => {
   return (
     <div
       className="navbarneuDiv"
@@ -145,7 +152,11 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               data-aos-duration="2000"
               className="navbuttonneu"
               variant="contained"
-              style={{ fontSize: "1.4vh",}}
+              style={{
+                fontSize: "1.4vh",
+                backgroundColor: "rgb(245, 245, 245,0.2)",
+              }}
+              ref={codingSkills}
             >
               My Coding Skills
             </Button>
@@ -156,8 +167,11 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               data-aos-duration="2200"
               className="navbuttonneu"
               variant="contained"
-              // color="disabled"
-              style={{ fontSize: "1.4vh",}}
+              style={{
+                fontSize: "1.4vh",
+                backgroundColor: "rgb(245, 245, 245,0.2)",
+              }}
+              ref={projectsButton}
             >
               My Projects
             </Button>
@@ -168,9 +182,11 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               data-aos-duration="2400"
               className="navbuttonneu"
               variant="contained"
-              // color="disabled"
               onClick={handleExpandClick}
-              style={{ fontSize: "1.4vh",}}
+              style={{
+                fontSize: "1.4vh",
+                backgroundColor: "rgb(245, 245, 245,0.2)",
+              }}
               ref={button}
             >
               Resume
@@ -179,11 +195,14 @@ const Navbarneu = ({ handleExpandClick, button }) => {
           <a href="#aboutMe" style={{ textDecoration: "none" }}>
             <Button
               data-aos="fade-up"
-              data-aos-duration="2500"
+              data-aos-duration="2600"
               className="navbuttonneu"
               variant="contained"
-              // color="disabled"
-              style={{ fontSize: "1.4vh", }}
+              style={{
+                fontSize: "1.4vh",
+                backgroundColor: "rgb(245, 245, 245,0.2)",
+              }}
+              ref={aboutMeButton}
             >
               About me
             </Button>
@@ -194,8 +213,11 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               data-aos-duration="2600"
               className="navbuttonneu"
               variant="contained"
-              // color="disabled"
-              style={{ fontSize: "1.4vh", }}
+              style={{
+                fontSize: "1.4vh",
+                backgroundColor: "rgb(245, 245, 245,0.2)",
+              }}
+              ref={contactMeButton}
             >
               Contact Me
             </Button>
@@ -206,8 +228,10 @@ const Navbarneu = ({ handleExpandClick, button }) => {
               data-aos-duration="2600"
               className="navbuttonneu"
               variant="contained"
-              // color="disabled"
-              style={{ fontSize: "1.4vh", }}
+              style={{
+                fontSize: "1.4vh",
+                backgroundColor: "rgb(245, 245, 245,0.2)",
+              }}
             >
               Top
             </Button>

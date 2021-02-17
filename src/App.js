@@ -60,6 +60,12 @@ import { red } from "@material-ui/core/colors";
 import CVneu from "./images/CVneu.jpg";
 // import TemporaryDrawer from "./navbarneu";
 import Navbarneu from "./navbarneu";
+import { IoMdGlobe } from "react-icons/io";
+import { GiPalmTree } from "react-icons/gi";
+import { MdBeachAccess } from "react-icons/md";
+import { GiGraduateCap } from "react-icons/gi";
+import { MdPeopleOutline } from "react-icons/md";
+import { HiOutlineCode } from "react-icons/hi";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -105,8 +111,17 @@ function App() {
   const [logo, setLogo] = useState(null);
   const [counter, setCounter] = useState(12);
   const [buttonText, setButtonText] = useState(null);
+  const [skills, setSkills] = useState(null);
+  const [projects, setProjects] = useState(null);
+  const [about, setAbout] = useState(null);
+  const [contact, setContact] = useState(null);
   const counter1 = useRef(null);
   const button = useRef(null);
+  const button1 = useRef(null);
+  const codingSkills = useRef(null);
+  const projectsButton = useRef(null);
+  const aboutMeButton = useRef(null);
+  const contactMeButton = useRef(null);
 
   const classes = useStyles();
 
@@ -160,8 +175,57 @@ function App() {
       ? (button.current.innerText = "Resume")
       : (button.current.innerText = "Close Resume");
     buttonText
-      ? (button.current.style.backgroundColor = "whitesmoke")
+      ? (button.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
       : (button.current.style.backgroundColor = "lightgreen");
+    buttonText
+      ? (button1.current.innerText = "Resume")
+      : (button1.current.innerText = "Close Resume");
+    buttonText
+      ? (button1.current.style.backgroundColor = "#E0E0E0")
+      : (button1.current.style.backgroundColor = "lightgreen");
+    !buttonText
+      ? (button.current.style.right = "0")
+      : (button.current.style.right = "-40px");
+  };
+
+  const handleSkills = () => {
+    setSkills(!skills);
+    skills
+      ? (codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
+      : (codingSkills.current.style.backgroundColor = "lightgreen");
+      projectsButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+      contactMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+      aboutMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+  };
+
+  const handleProjects = () => {
+    setProjects(!projects);
+    projects
+      ? (projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
+      : (projectsButton.current.style.backgroundColor = "lightgreen");
+      codingSkills.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+      contactMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+      aboutMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+  };
+
+  const handleAboutMe = () => {
+    setAbout(!about);
+    about
+      ? (aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
+      : (aboutMeButton.current.style.backgroundColor = "lightgreen");
+      codingSkills.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+      contactMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+      projectsButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+  };
+
+  const handleContactMe = () => {
+    setContact(!contact);
+    contact
+      ? (contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
+      : (contactMeButton.current.style.backgroundColor = "lightgreen");
+      projectsButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+      codingSkills.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+      aboutMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
   };
 
   //////
@@ -236,6 +300,7 @@ function App() {
               className="navbutton"
               variant="contained"
               style={{ fontSize: "1.4vh" }}
+              onClick={handleSkills}
             >
               My Coding Skills
             </Button>
@@ -246,6 +311,7 @@ function App() {
               variant="contained"
               color="disabled"
               style={{ fontSize: "1.4vh" }}
+              onClick={handleProjects}
             >
               My Projects
             </Button>
@@ -257,7 +323,7 @@ function App() {
               color="disabled"
               onClick={handleExpandClick}
               style={{ fontSize: "1.4vh" }}
-              ref={button}
+              ref={button1}
             >
               Resume
             </Button>
@@ -268,6 +334,7 @@ function App() {
               variant="contained"
               color="disabled"
               style={{ fontSize: "1.4vh" }}
+              onClick={handleAboutMe}
             >
               About me
             </Button>
@@ -278,6 +345,7 @@ function App() {
               variant="contained"
               color="disabled"
               style={{ fontSize: "1.4vh" }}
+              onClick={handleContactMe}
             >
               Contact Me
             </Button>
@@ -306,7 +374,14 @@ function App() {
           </a>
         </div>
       </div>
-      <Navbarneu handleExpandClick={handleExpandClick} button={button} />
+      <Navbarneu
+        handleExpandClick={handleExpandClick}
+        button={button}
+        codingSkills={codingSkills}
+        projectsButton={projectsButton}
+        aboutMeButton={aboutMeButton}
+        contactMeButton={contactMeButton}
+      />
       <div
         id="top"
         className="jumbo"
@@ -670,7 +745,41 @@ function App() {
           </span>
         </div>
       </div>
-
+      <div
+        style={{
+          width: "100%",
+          height: "40%",
+          position: "absolute",
+          zIndex: "-1",
+        }}
+      >
+        <div className="globe">
+          <IoMdGlobe
+            // className="globe"
+            style={{ fontSize: "40px", zIndex: "0" }}
+          />
+        </div>
+        <GiPalmTree
+          className="palmtree"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <MdBeachAccess
+          className="umbrella"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <GiGraduateCap
+          className="student"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <MdPeopleOutline
+          className="people"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <HiOutlineCode
+          className="code"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+      </div>
       <div
         className="info"
         style={{
@@ -680,7 +789,7 @@ function App() {
           textAlign: "justify",
           display: "flex",
           justifyContent: "center",
-          marginTop: '140px'
+          marginTop: "140px",
         }}
       >
         <div
