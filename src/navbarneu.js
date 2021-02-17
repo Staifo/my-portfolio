@@ -98,6 +98,11 @@ const Navbarneu = ({
   projectsButton,
   aboutMeButton,
   contactMeButton,
+  handleAboutMeSide,
+  handleContactMeSide,
+  handleProjectsSide,
+  handleSkillsSide,
+  handleTop
 }) => {
   return (
     <div
@@ -157,6 +162,7 @@ const Navbarneu = ({
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               ref={codingSkills}
+              onClick={handleSkillsSide}
             >
               My Coding Skills
             </Button>
@@ -172,6 +178,7 @@ const Navbarneu = ({
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               ref={projectsButton}
+              onClick={handleProjectsSide}
             >
               My Projects
             </Button>
@@ -203,6 +210,7 @@ const Navbarneu = ({
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               ref={aboutMeButton}
+              onClick={handleAboutMeSide}
             >
               About me
             </Button>
@@ -218,6 +226,7 @@ const Navbarneu = ({
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               ref={contactMeButton}
+              onClick={handleContactMeSide}
             >
               Contact Me
             </Button>
@@ -232,6 +241,7 @@ const Navbarneu = ({
                 fontSize: "1.4vh",
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
+              onClick={handleTop}
             >
               Top
             </Button>

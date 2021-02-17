@@ -115,6 +115,7 @@ function App() {
   const [projects, setProjects] = useState(null);
   const [about, setAbout] = useState(null);
   const [contact, setContact] = useState(null);
+  const [top, setTop] = useState(null);
   const counter1 = useRef(null);
   const button = useRef(null);
   const button1 = useRef(null);
@@ -193,9 +194,9 @@ function App() {
     skills
       ? (codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
       : (codingSkills.current.style.backgroundColor = "lightgreen");
-      projectsButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
-      contactMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
-      aboutMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+    projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
   };
 
   const handleProjects = () => {
@@ -203,9 +204,9 @@ function App() {
     projects
       ? (projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
       : (projectsButton.current.style.backgroundColor = "lightgreen");
-      codingSkills.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
-      contactMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
-      aboutMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+    codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
   };
 
   const handleAboutMe = () => {
@@ -213,9 +214,9 @@ function App() {
     about
       ? (aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
       : (aboutMeButton.current.style.backgroundColor = "lightgreen");
-      codingSkills.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
-      contactMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
-      projectsButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+    codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
   };
 
   const handleContactMe = () => {
@@ -223,11 +224,42 @@ function App() {
     contact
       ? (contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
       : (contactMeButton.current.style.backgroundColor = "lightgreen");
-      projectsButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
-      codingSkills.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
-      aboutMeButton.current.style.backgroundColor = 'rgb(245, 245, 245,0.2)';
+    projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
   };
 
+  const handleTop = () => {
+    codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
+    aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+  };
+
+  const handleSkillsSide = () => {
+    projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
+  }
+
+  const handleProjectsSide = () => {
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
+    codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+  }
+
+  const handleAboutMeSide = () => {
+    codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
+  }
+
+  const handleContactMeSide = () => {
+    codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
+    aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+  }
   //////
 
   ////REACT SPRING TRAIL
@@ -381,6 +413,11 @@ function App() {
         projectsButton={projectsButton}
         aboutMeButton={aboutMeButton}
         contactMeButton={contactMeButton}
+        handleSkillsSide={handleSkills}
+        handleAboutMeSide={handleAboutMe}
+        handleContactMeSide={handleContactMe}
+        handleProjectsSide={handleProjects}
+        handleTop={handleTop}
       />
       <div
         id="top"
