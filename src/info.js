@@ -113,7 +113,7 @@ const Info = () => {
           Coders to give them a better chance to find a way into the industry.
           Not all functions have been implemented yet in order to keep it easily
           accessible but functions have been prepared in the backend. The videos
-          are improvised. The persons in the videos are fellwo students. I used
+          are improvised. The persons in the videos are fellow students. I used
           ReactJS, NodeJS, Express, Material UI, Flexbox, Bootstrap, MongoDB ...
           to create this project and work is still going on.
         </CardContent>
