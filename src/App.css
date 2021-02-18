@@ -51,7 +51,7 @@ z-index: -1; */
 }
 
 .logo {
-  color: rgb(173, 216, 230, 0.1)
+  color: rgb(173, 216, 230, 0.1);
 }
 
 .codeCard {
@@ -61,10 +61,11 @@ z-index: -1; */
   /* background-color:#EEF7FF */
 }
 .codingLang {
-  background-color: rgb(173, 216, 230, 0.1)
+  background-color: rgb(173, 216, 230, 0.1);
 }
 
-.codingLang > div, .myProjects > div {
+.codingLang > div,
+.myProjects > div {
   /* border-radius: 60px; */
   /* margin-top: 60px; */
   /* border-top: 2px solid blue; */
@@ -83,7 +84,7 @@ border-left: 4px solid rgb(173, 216, 230, 0.4); */
 
 codingLang > div:hover {
   box-shadow: 0 0 30px 15px white,
-  /* inner white */ 0 0 50px 30px rgb(235, 232, 232),
+    /* inner white */ 0 0 50px 30px rgb(235, 232, 232),
     /* middle white */ 0 0 60px 20px rgb(170, 213, 248); /* outer white */
   color: rgb(190, 186, 186);
 }
@@ -119,7 +120,6 @@ codingLang > div:hover {
   align-items: center;
   text-align: left;
   /* margin-bottom: 60px; */
-
 }
 
 .trails-text {
@@ -140,10 +140,7 @@ codingLang > div:hover {
   /* overflow: hidden; */
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  
-  
 }
-
 
 /* .trailDiv {
   color: rgb(255, 255, 255);
@@ -163,29 +160,24 @@ codingLang > div:hover {
 @media (max-width: 860px) {
   .trailDiv2 {
     font-size: calc(100px + 1.4vw);
-   
   }
 }
 
 @media (max-width: 400px) {
   .trailDiv2 {
     font-size: calc(90px + 2.6vw);
-   
   }
 }
 
-.junior { 
-  font-size: calc(100px + 1.0vw);
+.junior {
+  font-size: calc(100px + 1vw);
 }
 
 @media (max-width: 400px) {
   .junior {
     font-size: calc(100px + 2.6vw);
-   
   }
-
 }
-
 
 .info {
   margin-top: 40px;
@@ -194,7 +186,6 @@ codingLang > div:hover {
 @media (min-width: 350px) {
   .info {
     margin-top: 0px;
-   
   }
 }
 
@@ -261,8 +252,6 @@ width: 260px;
 height: 360px;
   }
 } */
-
-
 
 /* .projectsButton :hover{
   box-shadow:
@@ -409,7 +398,7 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
 } */
 
 #clickme:hover {
-background-color: white;
+  background-color: white;
 }
 
 #clickme {
@@ -421,14 +410,29 @@ background-color: white;
 }
 
 @keyframes click {
-0% {background-color: rgb(255, 255, 255,0); }
-25% {background-color: rgb(250, 250, 242); color: white}
-50% {background-color: rgb(255, 255, 255,0);}
-75% {background-color: rgb(255, 255, 248); color: white}
-100% {background-color: rgb(255, 255, 255,0);}
+  0% {
+    background-color: rgb(255, 255, 255, 0);
+  }
+  25% {
+    background-color: rgb(250, 250, 242);
+    color: white;
+  }
+  50% {
+    background-color: rgb(255, 255, 255, 0);
+  }
+  75% {
+    background-color: rgb(255, 255, 248);
+    color: white;
+  }
+  100% {
+    background-color: rgb(255, 255, 255, 0);
+  }
 }
 
-.junior, .codinSkillsText, .myProjectsText, .allCodingLang {
+.junior,
+.codinSkillsText,
+.myProjectsText,
+.allCodingLang {
   text-align: center;
 
   color: #fff;
@@ -458,13 +462,13 @@ background-color: white;
   }
 }
 
-.image [data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+.image [data-aos-duration="4000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="4000"] {
   transition-duration: 4000ms;
 }
 
 @media (max-width) {
   #image {
-
   }
 }
 
@@ -481,7 +485,7 @@ background-color: white;
     align-self: flex-start;
     width: 200px;
     height: 200px;
-   
+
     /* position: relative;
     opacity: 1; */
   }
@@ -544,13 +548,10 @@ background-color: white;
    }
 }  */
 
-
-
-
 .welcome2 {
   /* border-right: solid 3px rgba(0,255,0,.75); */
   white-space: nowrap;
-  overflow: hidden;    
+  overflow: hidden;
   /* font-family: 'Source Code Pro', monospace;   */
   /* font-size: 28px; */
   /* color: rgba(255,255,255,.70); */
@@ -559,14 +560,13 @@ background-color: white;
 
 /* Animation */
 .welcome2 {
-animation: animated-text 4s steps(29,end) 1s 1 normal both;
-animation-delay: 10s;
+  animation: animated-text 4s steps(29, end) 1s 1 normal both;
+  animation-delay: 10s;
 }
 
 .welcome {
   margin-top: 10%;
 }
-
 
 .codingCardsDiv {
   display: flex;
@@ -581,7 +581,6 @@ animation-delay: 10s;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
   }
 
   .codingCards {
@@ -591,17 +590,17 @@ animation-delay: 10s;
 
   #singleCard {
     min-width: 460px;
-    
   }
-
-  
-  
 }
 /* text animation */
 
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 600px;}
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 600px;
+  }
 }
 
 /* cursor animations */
@@ -610,7 +609,6 @@ animation-delay: 10s;
   from{border-right-color: rgba(0,255,0,.75);}
   to{border-right-color: transparent;}
 } */
-
 
 .nice {
   position: relative;
@@ -623,9 +621,7 @@ animation-delay: 10s;
   letter-spacing: -9px;
   will-change: transform, opacity;
   overflow: hidden;
-
 }
-
 
 #nice {
   font-size: calc(60px + 3.2vw);
@@ -633,10 +629,9 @@ animation-delay: 10s;
 
 @media (max-width: 600px) {
   #nice {
-    font-size: calc(60px + 12vw);}
+    font-size: calc(60px + 12vw);
+  }
 }
-
-
 
 /* .arrow {
   width: 0;
@@ -646,12 +641,13 @@ border-width: 54px 0 54px 54px;
 border-color: transparent transparent transparent black;
 } */
 
-.arrow2, .arrow {
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 54px 54px 0 54px;
-border-color:black transparent transparent transparent
+.arrow2,
+.arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 54px 54px 0 54px;
+  border-color: black transparent transparent transparent;
 }
 
 .hi {
@@ -663,31 +659,37 @@ border-color:black transparent transparent transparent
 }
 
 @keyframes move {
-  0% {opacity: 0}
-  25% {opacity: 0.2}
-  50% {opacity: 0.6}
-  75% {opacity: 0.8}
-  100% {opacity: 1}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 .about {
   /* color: rgb(128, 128, 128, 0.1); */
   color: rgb(173, 216, 230, 0.2);
 }
 
-
 .design {
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 10px 10px 0 10px;
-border-color: #007bff transparent transparent transparent;
-/* margin-top: 6px; */
-margin-bottom: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #007bff transparent transparent transparent;
+  /* margin-top: 6px; */
+  margin-bottom: 20px;
 }
-
-
 
 .navbarDiv {
   background-color: #343136;
@@ -701,15 +703,15 @@ margin-bottom: 20px;
 
 .navbar {
   width: 60%;
- display: flex;
-justify-content: space-between;
-margin-top: 10px;
-margin-right: 20px;
-margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .navbutton:hover {
-background-color: lightgreen !important;
+  background-color: lightgreen !important;
 }
 
 @media (max-width: 800px) {
@@ -719,49 +721,46 @@ background-color: lightgreen !important;
 }
 
 .linkedin:hover {
- color: lightgreen !important;
-  }
+  color: lightgreen !important;
+}
 
-  .git:hover {
-    color: lightgreen !important;
-    }
+.git:hover {
+  color: lightgreen !important;
+}
 
 .frontendbutton {
-
-width: 400px;
-height: 400px;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 100%;
-position: relative;
-margin-top: 20px;
-z-index: 9;
-animation-name: frontend;
-animation-duration: 6s;
-animation-delay: 0s;
-animation-iteration-count: infinite;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: relative;
+  margin-top: 20px;
+  z-index: 9;
+  animation-name: frontend;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
 
 .innerfrontendbutton {
-
-width: 260px;
-height: 260px;
-border-radius: 100%;
-font-size: 4vw;
-font-weight: bold;
-font-family: Quicksand;
-line-height: 50px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color:#272727;
-border: 10px solid lightgrey;
-color: rgb(197, 194, 194)
-/* background-image: url('./images/logo4.png'); */
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  font-size: 4vw;
+  font-weight: bold;
+  font-family: Quicksand;
+  line-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  border: 10px solid lightgrey;
+  color: rgb(197, 194, 194);
+  /* background-image: url('./images/logo4.png'); */
 }
-
 
 .innerfrontendbutton {
   cursor: pointer;
@@ -769,11 +768,9 @@ color: rgb(197, 194, 194)
 
 .innerfrontendbutton:hover {
   height: 300px;
-  width:300px;
+  width: 300px;
   color: lightblue;
-  border:10px solid lightblue;
-  
-  
+  border: 10px solid lightblue;
 }
 
 @media (max-width: 2000px) {
@@ -782,19 +779,19 @@ color: rgb(197, 194, 194)
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-  
   }
   @keyframes circle {
-    0% {border: 10px solid lightgrey}
-    50% {border: 10px solid lightblue; }
-    100% {border: 10px solid lightgrey;}
+    0% {
+      border: 10px solid lightgrey;
     }
-    
+    50% {
+      border: 10px solid lightblue;
+    }
+    100% {
+      border: 10px solid lightgrey;
+    }
+  }
 }
-
-
-
-
 
 /* @keyframes frontend {
 0% {background-color: rgb(255, 255, 255,0); }
@@ -804,19 +801,19 @@ color: rgb(197, 194, 194)
 100% {background-color: rgb(219, 244, 250,0);}
 } */
 
-
 .rotate {
   animation-name: codeRotation;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
   animation-duration: 100s;
 }
 
 @keyframes codeRotation {
-  100% {transform: rotate(720deg);}
+  100% {
+    transform: rotate(720deg);
+  }
 }
 
 .frontendbutton2 {
-
   width: 400px;
   height: 400px;
   display: flex;
@@ -828,29 +825,27 @@ color: rgb(197, 194, 194)
   animation-duration: 6s;
   animation-delay: 0s;
   animation-iteration-count: infinite; */
-  }
+}
 
-  .innerfrontendbutton2 {
+.innerfrontendbutton2 {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  font-size: 4vw;
+  font-weight: bold;
+  font-family: Quicksand;
+  line-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+}
 
-    width: 260px;
-    height: 260px;
-    border-radius: 100%;
-    font-size: 4vw;
-    font-weight: bold;
-    font-family: Quicksand;
-    line-height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgrey;
-    }
+.navbarneuDiv {
+  background-color: rgb(255, 255, 255, 0);
+}
 
-
-    .navbarneuDiv {
-      background-color: rgb(255, 255, 255, 0);
-    }
-  
 /*   
     @media (max-width: 800px) {
      .navbarneuDiv {
@@ -858,149 +853,219 @@ visibility: visible !important;
      }
    } */
 
+.navbuttonneu {
+  width: 200px;
+  right: -40px;
+  margin-top: 20px !important;
+  /* background-color: lightgrey !important; */
+}
 
-   .navbuttonneu {
-     width: 200px;
-     right: -40px;
-     margin-top:20px !important;
-     /* background-color: lightgrey !important; */
-   }
-
-   @media (max-width: 800px) {
-    .navbuttonneu {
-      font-size: 16px !important;
-    }
+@media (max-width: 800px) {
+  .navbuttonneu {
+    font-size: 16px !important;
   }
+}
 
-   #linkedin, #git {
-     margin-top: 20px;
-   }
+#linkedin,
+#git {
+  margin-top: 20px;
+}
 
-   .navbuttonneu:hover {
-    right: 0;
-    background-color: lightgreen !important;
-  }
+.navbuttonneu:hover {
+  right: 0;
+  background-color: lightgreen !important;
+}
 
-  /* .navbarneuDiv {
+/* .navbarneuDiv {
     visibility: hidden;
   } */
 
-
-  @media (max-width: 800px) {
-    .navbarneuDiv {
-      visibility: visible;
-    }
+@media (max-width: 800px) {
+  .navbarneuDiv {
+    visibility: visible;
   }
+}
 
-  .send:hover {
-    background-color: lightgreen !important;
+.send:hover {
+  background-color: lightgreen !important;
+}
+
+.globe {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: globe;
+  animation-iteration-count: 1;
+  animation-duration: 40s;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: lightgrey;
+}
+
+@keyframes globe {
+  0% {
+    color: blue;
+    transform: rotate(0deg);
+    left: 0;
+    top: 80%;
   }
-
-
-  .globe {
-    position: absolute;
-    z-index: 0 !important;
-    animation-name: globe;
-    animation-iteration-count:1;
-    animation-duration: 40s;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color: lightgrey;
+  100% {
+    color: blue;
+    transform: rotate(360deg);
+    left: 100%;
+    top: 10%;
+    margin-top: 0;
   }
-
-  @keyframes globe {
-      0% {color: blue; transform: rotate(0deg); left:0; top:80%}
-      100% {color: blue; transform: rotate(360deg); left:100%; top: 10%;}
-      
-    }
+}
 
 .palmtree {
   position: absolute;
   z-index: 0 !important;
   animation-name: palmtree;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
   animation-duration: 30s;
   color: lightgrey;
 }
 
-
 @keyframes palmtree {
-  0% {color: lightgreen; transform: rotate(0deg); left:20%; top:80%}
-  100% {color: lightgreen; transform: rotate(360deg); left:100%; top: 10%;}
-  
+  0% {
+    color: lightgreen;
+    transform: rotate(0deg);
+    left: 20%;
+    top: 80%;
+  }
+  100% {
+    color: lightgreen;
+    transform: rotate(360deg);
+    left: 100%;
+    top: 10%;
+    margin-top: 0;
+  }
 }
 
 .umbrella {
   position: absolute;
   z-index: 0 !important;
   animation-name: umbrella;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
   animation-duration: 36s;
   margin-top: 80px;
   margin-bottom: 80px;
   color: lightgrey;
 }
 
-
-@keyframes umbrella{
-  0% {color: orange; transform: rotate(0deg); right:0; top:80%}
-  100% {color: orange; transform: rotate(360deg); right:100%; top: 10%;}
-  
+@keyframes umbrella {
+  0% {
+    color: orange;
+    transform: rotate(0deg);
+    right: 0;
+    top: 80%;
+  }
+  100% {
+    color: orange;
+    transform: rotate(360deg);
+    right: 100%;
+    top: 10%;
+    margin-top: 0;
+  }
 }
 
 .student {
   position: absolute;
   z-index: 0 !important;
   animation-name: student;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
   animation-duration: 38s;
   margin-top: 120px;
   margin-bottom: 120px;
   color: lightgrey;
 }
 
-
 @keyframes student {
-  0% {color: black; transform: rotate(0deg); right:20%; top:80%}
-  100% {color: black; transform: rotate(360deg); right:100%; top: 30%;}
-  
+  0% {
+    color: black;
+    transform: rotate(0deg);
+    right: 20%;
+    top: 80%;
+  }
+  100% {
+    color: black;
+    transform: rotate(360deg);
+    right: 100%;
+    top: 30%;
+    margin-top: 0;
+  }
 }
 
 .people {
   position: absolute;
   z-index: 0 !important;
   animation-name: people;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
   animation-duration: 20s;
   margin-top: 160px;
   margin-bottom: 160px;
   color: lightgrey;
 }
 
-
 @keyframes people {
-  0% {color: lightblue; transform: rotate(0deg); left:40%; top:80%}
-  100% {color: lightblue; transform: rotate(360deg); left:60%; top: 0;}
-  
+  0% {
+    color: lightblue;
+    transform: rotate(0deg);
+    left: 40%;
+    top: 80%;
+  }
+  100% {
+    color: lightblue;
+    transform: rotate(360deg);
+    left: 60%;
+    top: 0;
+    margin-top: 0;
+  }
 }
 
 .code {
   position: absolute;
   z-index: 0 !important;
   animation-name: code;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
   animation-duration: 40s;
   margin-top: 200px;
   margin-bottom: 200px;
   color: lightgrey;
 }
 
-
 @keyframes code {
-  0% {color: yellow; transform: rotate(0deg); right:40%; top:80%}
-  80% {color: yellow; transform: rotate(360deg); right:80%; top: 0;}
-  90% {color: yellow; font-size: 100px; transform: rotate(360deg) !important; right:80%; top: 0;}
-  100% {color: yellow; font-size: 100px; transform: rotate(360deg) !important; right:80%; top: 0;}
-  
+  0% {
+    color: yellow;
+    transform: rotate(0deg);
+    right: 40%;
+    top: 80%;
+  }
+  80% {
+    color: yellow;
+    transform: rotate(360deg);
+    right: 80%;
+    top: 0;
+  }
+  90% {
+    color: yellow;
+    font-size: 100px;
+    transform: rotate(360deg) !important;
+    right: 80%;
+    top: 0;
+  }
+  100% {
+    color: yellow;
+    font-size: 100px;
+    transform: rotate(360deg) !important;
+    right: 80%;
+    top: 0;
+  }
 }
 
+@media (max-width: 500px) {
+  .iconContainer {
+    width: 280vw !important;
+    height: 80% !important;
+  }
+}

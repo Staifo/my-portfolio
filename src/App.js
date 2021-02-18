@@ -783,6 +783,7 @@ function App() {
         </div>
       </div>
       <div
+      className='iconContainer'
         style={{
           width: "100%",
           height: "40%",
