@@ -1069,3 +1069,16 @@ visibility: visible !important;
     height: 80% !important;
   }
 }
+
+
+.sendIcon {
+  position: relative;
+  animation-name: send;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+@keyframes send {
+0% {left: 0}
+100% {left: 40%}
+}

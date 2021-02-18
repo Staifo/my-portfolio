@@ -5,6 +5,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Button from "@material-ui/core/Button";
 import Icon from '@material-ui/core/Icon';
+import SendIcon from '@material-ui/icons/Send';
 
 
 const Footer = () => {
@@ -94,8 +95,8 @@ const Footer = () => {
           className='send'
             type="submit"
             value="Send"
-            style={{ backgroundColor: "blue", fontSize: '16px', fontWeight: 'bold', color: 'white' }}
-          >Send</Button>
+            style={{ backgroundColor: "blue", fontSize: '16px', fontWeight: 'bold', color: 'white', width: '100%' }}
+          ><span>Send</span> <SendIcon fontSize = 'large' className = 'sendIcon' style={{marginLeft: '20px',}}/></Button>
         </form>
       </div>
       <div style={{ width: "100%", textAlign: "center", marginBottom: "10px", }}>
