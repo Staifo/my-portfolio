@@ -105,19 +105,17 @@ const Info = () => {
             textAlign: "justify",
           }}
         >
-          This project was created by me in individual work within 2 weeks. The
-          idea for my final project was to create a platform just for Junior
-          Coders, where they can present themselves and their skills via short
-          video, CV and other sources to prospective employers and furthermore
-          to give employers an opportunity to just look for Junior Coders to
-          give them a better chance to find a way into the industry. Not all
-          functions have been implemented yet in order to keep it easily
-          accessible. I omitted the login, edit and the delete function, so not
-          everybody is able to make unwanted changes with regard to deleting and
-          editing the existing users but functions have been prepared in the
-          backend. I used ReactJS, NodeJS, Express, Material UI, Flexbox,
-          Bootstrap, MongoDB ... to create this project and work is still going
-          on.
+          This project was created by me in individual work within around 2
+          weeks. The idea for my final project was to create a platform just for
+          Junior Coders, where they can present themselves and their skills via
+          short video, CV and other sources to prospective employers and
+          furthermore to give employers an opportunity to just look for Junior
+          Coders to give them a better chance to find a way into the industry.
+          Not all functions have been implemented yet in order to keep it easily
+          accessible but functions have been prepared in the backend. The videos
+          are improvised. The persons in the videos are fellwo students. I used
+          ReactJS, NodeJS, Express, Material UI, Flexbox, Bootstrap, MongoDB ...
+          to create this project and work is still going on.
         </CardContent>
       </Collapse>
     </Card>
