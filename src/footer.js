@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import CopyrightIcon from "@material-ui/icons/Copyright";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -10,8 +10,14 @@ import SendIcon from '@material-ui/icons/Send';
 
 const Footer = () => {
   const [date, setDate] = useState(new Date().getFullYear());
+  const [sendMessage, setSendMessage] = useState(null);
+  const sendMessageClick = useRef(null);
+
   
 
+  const handleClick = (e) => {
+setSendMessage(e.target);
+  }
   
   function sendEmail(e) {
     e.preventDefault();
@@ -31,7 +37,7 @@ const Footer = () => {
         }
       );
     e.target.reset();
-    alert('Thanks for your message. I will get back to you as soon as possible. Have a good day.')
+    setTimeout(()=>{ alert('Thanks for your message. I will get back to you as soon as possible. Have a good day.')}, 4000);
   }
 
   return (
@@ -96,7 +102,10 @@ const Footer = () => {
             type="submit"
             value="Send"
             style={{ backgroundColor: "blue", fontSize: '16px', fontWeight: 'bold', color: 'white', width: '100%' }}
-          ><span>Send</span> <SendIcon fontSize = 'large' className = 'sendIcon' style={{marginLeft: '20px',}}/></Button>
+            onClick={handleClick}
+          ><span className='moveSend'>Send</span> 
+          {!sendMessage && <SendIcon ref={sendMessageClick} fontSize = 'large' className='moveOne' style={{marginLeft: '20px', visibility: 'visible'}}/>}
+          { sendMessage && <SendIcon ref={sendMessageClick} fontSize = 'large' className = 'sendIcon' style={{marginLeft: '20px', visibility: 'visible'}}/>}</Button>
         </form>
       </div>
       <div style={{ width: "100%", textAlign: "center", marginBottom: "10px", }}>

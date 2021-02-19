@@ -1070,15 +1070,26 @@ visibility: visible !important;
   }
 }
 
-
 .sendIcon {
   position: relative;
   animation-name: send;
-  animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-duration: 2s;
 }
 
 @keyframes send {
 0% {left: 0}
 100% {left: 40%}
+}
+
+.moveSend:hover + .moveOne{
+  position:relative;
+  animation-name: moveicon;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+}
+@keyframes moveicon {
+  0% {left: 0}
+  50% {left:2%}
+  100% {left:0}
 }
