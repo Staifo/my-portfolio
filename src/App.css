@@ -773,6 +773,10 @@ border-color: transparent transparent transparent black;
   border: 10px solid lightblue;
 }
 
+.clickIt:hover {
+  color: lightblue !important;
+}
+
 @media (max-width: 2000px) {
   .innerfrontendbutton {
     animation-name: circle;

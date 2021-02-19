@@ -963,6 +963,21 @@ const CodingCard = () => {
               >
                 End
               </div>
+              <div
+              className = 'clickIt'
+                style={{
+                  fontSize: "calc(20px + 0.6vw)",
+                  color: "rgb(197, 194, 194)",
+                  position: "absolute",
+                  height: "200px",
+                  width: '200px',
+                  justifyContent:'center',
+                  display: "flex",
+                  alignItems: "flex-end",
+                }}
+              >
+                click.
+              </div>
             </div>
           </div>
         </div>
@@ -1263,6 +1278,21 @@ const CodingCard = () => {
                 //   }}
               >
                 End
+              </div>
+              <div
+              className = 'clickIt'
+                style={{
+                  fontSize: "calc(20px + 0.6vw)",
+                  color: "rgb(197, 194, 194)",
+                  position: "absolute",
+                  height: "200px",
+                  width: '200px',
+                  justifyContent:'center',
+                  display: "flex",
+                  alignItems: "flex-end",
+                }}
+              >
+                click.
               </div>
             </div>
           </div>
