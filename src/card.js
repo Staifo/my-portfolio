@@ -183,6 +183,18 @@ const Cards = () => {
           <li style={{ listStyleType: "none", fontSize: "16px" }}>
             Agile Methods/Scrum
           </li>
+          <li style={{ listStyleType: "none", fontSize: "16px" }}>
+            First Experiences with:
+          </li>
+          <li style={{ listStyleType: "none", fontSize: "16px" }}>
+          Jira
+          </li>
+          <li style={{ listStyleType: "none", fontSize: "16px" }}>
+         Trello
+          </li>
+          <li style={{ listStyleType: "none", fontSize: "16px" }}>
+         Discord
+          </li>
           {/* </ol> */}
         </div>
       </div>
