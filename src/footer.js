@@ -11,9 +11,17 @@ import SendIcon from '@material-ui/icons/Send';
 const Footer = () => {
   const [date, setDate] = useState(new Date().getFullYear());
   const [sendMessage, setSendMessage] = useState(null);
+  const [visitors, setVisitors] = useState(null);
   const sendMessageClick = useRef(null);
+  const visitor = useRef(null);
 
   
+const handleVisitor = () => {
+setVisitors(!visitors);
+visitors 
+? visitor.current.style.visibility = 'visible' 
+: visitor.current.style.visibility = 'hidden' 
+}
 
   const handleClick = (e) => {
 setSendMessage(e.target);

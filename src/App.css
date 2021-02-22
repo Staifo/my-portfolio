@@ -1097,3 +1097,8 @@ visibility: visible !important;
   50% {left:2%}
   100% {left:0}
 }
+
+
+#hiddenDiv:hover {
+  visibility: visible !important;
+}
