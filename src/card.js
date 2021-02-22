@@ -113,7 +113,7 @@ const Cards = () => {
             Tools I used
           </div>
          
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>GitHub</li>
+          <li style={{ listStyleType: "none", fontSize: "16px" }}>Git/GitHub</li>
           <li style={{ listStyleType: "none", fontSize: "16px" }}>
             Material UI
           </li>
@@ -144,7 +144,7 @@ const Cards = () => {
             Tools I used
           </div>
           
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>GitHub</li>
+          <li style={{ listStyleType: "none", fontSize: "16px" }}>Git/GitHub</li>
           <li style={{ listStyleType: "none", fontSize: "16px" }}>Express</li>
           <li style={{ listStyleType: "none", fontSize: "16px" }}>PostgreSQL</li>
           <li style={{ listStyleType: "none", fontSize: "16px" }}>MongoDB</li>

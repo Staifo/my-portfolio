@@ -1174,7 +1174,7 @@ const CodingCard = () => {
                     lineHeight: "26px",
                   }}
                 >
-                  <li>GitHub</li>
+                  <li>Git/GitHub</li>
                   <li>Material UI</li>
                   <li>Bootstrap</li>
                   <li>Netlify</li>
@@ -1487,7 +1487,7 @@ const CodingCard = () => {
                     lineHeight: "26px",
                   }}
                 >
-                  <li>GitHub</li>
+                  <li>Git/GitHub</li>
                   <li>Express</li>
                   <li>PostgreSQL</li>
                   <li>MongoDB</li>
