@@ -108,16 +108,18 @@ const Info = () => {
           This project was created by me in individual work in around 2 weeks.
           The idea for my final project was to create a platform just for Junior
           Coders, where they can present themselves and their skills via short
-          video, CV and other sources to prospective employers and furthermore
+          video, which can be recorded directly on this platform during the
+          registration process via build in component with access to the local
+          webcam, CV and other sources to prospective employers and furthermore
           to give employers an opportunity to just look for Junior Coders to
           give them a better chance to find a way into the industry. Not all
           functions have been implemented yet in order to keep it easily
           accessible but functions have been prepared in the backend. Once you
-          go through the registration process a new user card and the appropriate
-          personal space is created automatically. The videos are improvised.
-          The persons in the videos are fellow students. I used ReactJS, NodeJS,
-          Express, Material UI, Bootstrap, MongoDB ... to create this project
-          and work is still going on.
+          go through the registration process a new user card and the
+          appropriate personal space is created automatically. The current
+          videos are improvised. The persons in the videos are fellow students.
+          I used ReactJS, NodeJS, Express, Material UI, Bootstrap, MongoDB ...
+          to create this project and work is still going on.
         </CardContent>
       </Collapse>
     </Card>
