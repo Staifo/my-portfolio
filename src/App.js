@@ -1092,7 +1092,7 @@ function App() {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                zIndex: "10",
+                zIndex: "9",
                 position: "absolute",
                 marginTop: "130px",
               }}

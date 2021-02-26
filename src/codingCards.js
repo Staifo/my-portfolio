@@ -987,7 +987,7 @@ const CodingCard = () => {
           className="frontend2"
           style={{
             position: "relative",
-            zIndex: "10",
+            zIndex: "0",
             display: "flex",
             justifyContent: "space-around",
             marginBottom: "60px",
@@ -997,7 +997,7 @@ const CodingCard = () => {
             style={{
               width: "100%",
               position: "absolute",
-              zIndex: 0,
+              zIndex: '0',
               fontSize: "calc(260px + 10vw)",
               fontWeight: "bold",
               color: "rgb(211, 211, 211, 0.26)",
@@ -1303,7 +1303,7 @@ const CodingCard = () => {
           className="frontend2"
           style={{
             position: "relative",
-            zIndex: "10",
+            zIndex: "0",
             display: "flex",
             justifyContent: "space-around",
           }}
