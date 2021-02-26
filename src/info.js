@@ -61,9 +61,6 @@ const Info = () => {
             textAlign: "center",
           }}
         >
-          {/* A solo project - duration 2 weeks using ReactJS, NodeJS, MongoDB,
-          Material UI, Bootstrap and more...For more information about my
-          project please {" "} */}
           <IconButton
             id="clickme"
             className={clsx(classes.expand, {

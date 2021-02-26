@@ -850,12 +850,12 @@ border-color: transparent transparent transparent black;
   background-color: rgb(255, 255, 255, 0);
 }
 
-/*   
-    @media (max-width: 800px) {
+  
+    @media (max-width: 600px) {
      .navbarneuDiv {
 visibility: visible !important;
      }
-   } */
+   }
 
 .navbuttonneu {
   width: 200px;
@@ -1097,8 +1097,3 @@ visibility: visible !important;
   50% {left:2%}
   100% {left:0}
 }
-
-#hiddenDiv:hover {
-  visibility: visible !important;
-}
-

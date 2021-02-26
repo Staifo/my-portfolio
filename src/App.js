@@ -1255,7 +1255,6 @@ function App() {
                       {/* <div style={{height: 'max-content', textAlign: 'center'}}>Individual work - created within 2 weeks</div> */}
                     </a>
                   </LightTooltip>
-
                   <Info />
                   {/* <div style={{backgroundColor: 'lightgrey', textAlign: 'center'}}>
                 <IconButton id='clickme'
@@ -1285,7 +1284,7 @@ function App() {
                       className="button"
                       color="primary"
                       onClick={handleClick}
-                      style={{ width: "1000px", height: "400px" }}
+                      style={{ width: "1000px", height: "400px",}}
                     >
                       <Carousel autoPlay infiniteLoop>
                         <div>

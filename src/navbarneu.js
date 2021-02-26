@@ -114,6 +114,7 @@ const Navbarneu = ({
         top: "40%",
         height: "max-content",
         width: "100%",
+        visibility: "hidden",
       }}
     >
       <div
