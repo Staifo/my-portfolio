@@ -686,8 +686,8 @@ function App() {
                   </div>
                   <hr style={{ width: "90%", borderColor: "1px solid blue" }} />
                   <div className="design"></div>
-                  <img src={CVneu} width="100%" />
-                  {/* <CV /> */}
+                  {/* <img src={CVneu} width="100%" /> */}
+                  <CV />
                 </div>
               </div>
             </CardContent>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import testPdf from "./CV.pdf";
+import testPdf from "./images/CVNeuEV.pdf";
 import './index.css'
 
 
@@ -19,10 +19,10 @@ const CV = () => {
   };
   return (
     <>
-      <div id="ResumeContainer">
+      <div id="ResumeContainer" style={{border: '1px solid lightgrey'}}>
         <Document className={"PDFDocument"} width='200' file={testPdf} onLoadSuccess={onDocumentLoadSuccess}>
           {Array.from(new Array(numPages), (el, index) => (
-            <Page className={"PDFPage PDFPageOne"} key={`page_${index + 1}`} pageNumber={index + 1} />
+            <Page className={"PDFPage PDFPageOne"} key={`page_${index + 1}`} pageNumber={index + 1} scale={2} />
           ))}
         </Document>
       </div>
