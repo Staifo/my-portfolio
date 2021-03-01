@@ -75,7 +75,7 @@ const Cards = () => {
         }}
       >
       <div style={{fontSize: '16px', color: 'lightgrey', marginLeft: '10px'}}>Location: WBS Coding School</div>
-        <div style={{fontSize: '20px'}}>Junior Webdeveloper</div>
+        <div style={{fontSize: '20px'}}>Junior Full-Stack Web Developer</div>
         <div style={{fontSize: '16px', color: 'lightgrey', marginRight: '10px'}}>31.08.2020 - 11.12.2020</div>
       </div>
       <div style={{width: '100%', fontSize: '16px', textAlign: 'center', marginTop: '20px', fontFamily: 'Quicksand'}}>Languages, Mehods and Tools I learned and used</div>
@@ -103,10 +103,12 @@ const Cards = () => {
           
           <li style={{ listStyleType: "none", fontSize: "16px" }}>HTML5</li>
           <li style={{ listStyleType: "none", fontSize: "16px" }}>CSS3</li>
+          <li style={{ listStyleType: "none", fontSize: "16px" }}>SASS</li>
           <li style={{ listStyleType: "none", fontSize: "16px" }}>
             JavaScript
           </li>
           <li style={{ listStyleType: "none", fontSize: "16px" }}>ReactJS</li>
+          <li style={{ listStyleType: "none", fontSize: "16px" }}>Restful API's</li>
           <hr style={{width: '40%', borderColor: 'blue'}}/>
         
           <div style={{ fontSize: "16px", fontWeight: "bold", marginTop: '10px' }}>
@@ -138,7 +140,7 @@ const Cards = () => {
           <li style={{ listStyleType: "none", fontSize: "16px" }}>NoSQL</li>
           <li style={{ listStyleType: "none", fontSize: "16px" }}>SQL</li>
 
-          <hr style={{width: '40%', borderColor: 'blue', marginTop: '36px'}}/>
+          <hr style={{width: '40%', borderColor: 'blue', marginTop: '82px'}}/>
          
           <div style={{ fontSize: "16px", fontWeight: "bold", }}>
             Tools I used

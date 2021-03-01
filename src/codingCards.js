@@ -1090,8 +1090,10 @@ const CodingCard = () => {
                 >
                   <li>HTML5</li>
                   <li>CSS3</li>
+                  <li>SASS</li>
                   <li>JavaScript</li>
                   <li>ReactJS</li>
+                  <li>RESTFUL API's</li>
                 </div>
                 {/* <div style={{fontSize: '54px', lineHeight: '60px'}}>guages</div> */}
               </div>
