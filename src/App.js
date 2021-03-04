@@ -67,6 +67,7 @@ import { GiGraduateCap } from "react-icons/gi";
 import { MdPeopleOutline } from "react-icons/md";
 import { HiOutlineCode } from "react-icons/hi";
 
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();

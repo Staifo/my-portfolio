@@ -116,7 +116,8 @@ const Info = () => {
           have been prepared in the backend.The current videos are improvised.
           The persons in the videos are fellow students. I used ReactJS, NodeJS,
           Express, Material UI, Bootstrap, MongoDB ... to create this project
-          and work is still going on.
+          and work is still going on. 
+          On iOS: Videos dont't play on iOS since the videos are recorded and saved in WebM format.
         </CardContent>
       </Collapse>
     </Card>
