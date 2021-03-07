@@ -5,6 +5,10 @@ body,
   min-width: 1200px;
 }
 
+.App {
+  min-width: 100%;
+}
+
 .list {
   position: relative;
   z-index: 0;
@@ -39,6 +43,26 @@ body,
   /* background-image: url('./images/logo4.png');
 z-index: -1; */
   background-color: white;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbo1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.jumbo2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
 }
 
 .projects {
@@ -693,21 +717,24 @@ border-color: transparent transparent transparent black;
 
 .navbarDiv {
   background-color: #343136;
-  width: 1200px;
+  /* width: 1200px; */
   display: flex;
   justify-content: flex-end;
   position: sticky;
   top: 0%;
   z-index: 10;
+  min-width: 100%;
 }
 
 .navbar {
-  width: 60%;
+  /* width: 60%; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 10px;
   margin-right: 20px;
   margin-bottom: 10px;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .navbutton:hover {
@@ -848,14 +875,32 @@ border-color: transparent transparent transparent black;
 
 .navbarneuDiv {
   background-color: rgb(255, 255, 255, 0);
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 40%;
+  height: max-content;
+  width: 100%;
+  visibility: hidden;
 }
 
-  
-    @media (max-width: 600px) {
-     .navbarneuDiv {
-visibility: visible !important;
-     }
-   }
+.navbarneuDiv1 {
+  background-color: rgb(255, 255, 255, 0);
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 10;
+  height: max-content;
+}
+
+@media (max-width: 600px) {
+  .navbarneuDiv,
+  .navbarneuDiv1 {
+    visibility: visible !important;
+  }
+}
 
 .navbuttonneu {
   width: 200px;
@@ -885,9 +930,115 @@ visibility: visible !important;
   } */
 
 @media (max-width: 800px) {
-  .navbarneuDiv {
+  .navbarneuDiv,
+  .navbarneuDiv1 {
     visibility: visible;
   }
+}
+
+.navbarneu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.cardmain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardmain1 {
+  width: 95%;
+  font-size: 20px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Quicksand;
+}
+
+.wbsDiv {
+  font-size: 16px;
+  color: lightgrey;
+  margin-left: 10px;
+}
+
+.duration {
+  font-size: 16px;
+  color: lightgrey;
+  margin-right: 10px;
+}
+
+.whatilearned {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Quicksand;
+}
+
+.listmaindiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: Quicksand;
+  background-color: "#F7FBFC";
+}
+
+.frontend1 {
+  background-color: #f7fbfc;
+  width: 20%;
+  text-align: center;
+}
+
+.frontend1 > li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.backend1 {
+  background-color: #f7fbfc;
+  width: 20%;
+  text-align: center;
+}
+
+.backend1 > li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.databases {
+  background-color: #f7fbfc;
+  width: 20%;
+  text-align: center;
+}
+
+.databases > li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.projectmanagement {
+  background-color: #f7fbfc;
+  width: max-content;
+  text-align: center;
+  margin-right: 60px;
+}
+
+.projectmanagement > li {
+  list-style-type: none;
+  font-size: 16px;
 }
 
 .send:hover {
@@ -1082,18 +1233,28 @@ visibility: visible !important;
 }
 
 @keyframes send {
-0% {left: 0}
-100% {left: 40%}
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 40%;
+  }
 }
 
-.moveSend:hover + .moveOne{
-  position:relative;
+.moveSend:hover + .moveOne {
+  position: relative;
   animation-name: moveicon;
   animation-iteration-count: infinite;
   animation-duration: 0.5s;
 }
 @keyframes moveicon {
-  0% {left: 0}
-  50% {left:2%}
-  100% {left:0}
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 2%;
+  }
+  100% {
+    left: 0;
+  }
 }

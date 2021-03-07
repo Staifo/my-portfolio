@@ -50,154 +50,155 @@ const Cards = () => {
 
   return (
     <div
-      style={{
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
+      className="cardmain"
+      // style={{
+      //   width: "100%",
+      //   display: "flex",
+      //   justifyContent: "center",
+      //   flexDirection: "column",
+      //   alignItems: "center",
+      // }}
     >
       <div
-        style={{
-          width: "95%",
-          // textAlign: "center",
-          fontSize: "20px",
-          // backgroundColor: "rgb(211, 211, 211, 0.4)",
-          borderTop: "1px solid lightgrey",
-          borderBottom: "1px solid lightgrey",
-          fontWeight: 'bold',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          fontFamily: 'Quicksand'
-          
-        }}
-      >
-      <div style={{fontSize: '16px', color: 'lightgrey', marginLeft: '10px'}}>Location: WBS Coding School</div>
-        <div style={{fontSize: '20px'}}>Junior Full-Stack Web Developer</div>
-        <div style={{fontSize: '16px', color: 'lightgrey', marginRight: '10px'}}>31.08.2020 - 11.12.2020</div>
-      </div>
-      <div style={{width: '100%', fontSize: '16px', textAlign: 'center', marginTop: '20px', fontFamily: 'Quicksand'}}>Languages, Mehods and Tools I learned and used</div>
-      <div
-        style={{
-          display: "flex",
-          width: "100%",
-          justifyContent: "space-around",
-          marginTop: "20px",
-          marginBottom: "40px",
-          fontFamily: 'Quicksand',
-          backgroundColor: '#F7FBFC',
-        }}
+        className="cardmain1"
+        // style={{
+        //   width: "95%",
+        //   fontSize: "20px",
+        //   borderTop: "1px solid lightgrey",
+        //   borderBottom: "1px solid lightgrey",
+        //   fontWeight: 'bold',
+        //   display: 'flex',
+        //   justifyContent: 'space-between',
+        //   alignItems: 'center',
+        //   fontFamily: 'Quicksand'
+        // }}
       >
         <div
-          style={{
-            backgroundColor: "#F7FBFC",
-            width: "20%",
-            textAlign: "center",
-          }}
+          className="wbsDiv"
+          // style={{ fontSize: "16px", color: "lightgrey", marginLeft: "10px" }}
+        >
+          Location: WBS Coding School
+        </div>
+        <div style={{ fontSize: "20px" }}>Junior Full-Stack Web Developer</div>
+        <div
+          className="duration"
+          // style={{ fontSize: "16px", color: "lightgrey", marginRight: "10px" }}
+        >
+          31.08.2020 - 11.12.2020
+        </div>
+      </div>
+      <div
+        className="whatilearned"
+        // style={{
+        //   width: "100%",
+        //   fontSize: "16px",
+        //   textAlign: "center",
+        //   marginTop: "20px",
+        //   fontFamily: "Quicksand",
+        // }}
+      >
+        Languages, Mehods and Tools I learned and used
+      </div>
+      <div
+        className="listmaindiv"
+        // style={{
+        //   display: "flex",
+        //   width: "100%",
+        //   justifyContent: "space-around",
+        //   marginTop: "20px",
+        //   marginBottom: "40px",
+        //   fontFamily: "Quicksand",
+        //   backgroundColor: "#F7FBFC",
+        // }}
+      >
+        <div
+          className="frontend1"
+          // style={{
+          //   backgroundColor: "#F7FBFC",
+          //   width: "20%",
+          //   textAlign: "center",
+          // }}
         >
           <div style={{ fontSize: "20px", fontWeight: "bold", width: "100%" }}>
             Frontend
           </div>
-          
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>HTML5</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>CSS3</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>SASS</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>
-            JavaScript
-          </li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>ReactJS</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>Restful API's</li>
-          <hr style={{width: '40%', borderColor: 'blue'}}/>
-        
-          <div style={{ fontSize: "16px", fontWeight: "bold", marginTop: '10px' }}>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>SASS</li>
+          <li>JavaScript</li>
+          <li>ReactJS</li>
+          <li>Restful API's</li>
+          <hr style={{ width: "40%", borderColor: "blue" }} />
+
+          <div
+            style={{ fontSize: "16px", fontWeight: "bold", marginTop: "10px" }}
+          >
             Tools I used
           </div>
-         
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>Git/GitHub</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>
-            Material UI
-          </li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>Bootstrap</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>
-            ReactSpring
-          </li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>Netlify</li>
 
-      
+          <li>Git/GitHub</li>
+          <li>Material UI</li>
+          <li>Bootstrap</li>
+          <li>ReactSpring</li>
+          <li>Netlify</li>
         </div>
         <div
-          style={{
-            backgroundColor: "#F7FBFC",
-            width: "20%",
-            textAlign: "center",
-          }}
+          className="backend1"
+          // style={{
+          //   backgroundColor: "#F7FBFC",
+          //   width: "20%",
+          //   textAlign: "center",
+          // }}
         >
           <div style={{ fontSize: "20px", fontWeight: "bold" }}>Backend</div>
-          
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>NodeJS</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>NoSQL</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>SQL</li>
 
-          <hr style={{width: '40%', borderColor: 'blue', marginTop: '82px'}}/>
-         
-          <div style={{ fontSize: "16px", fontWeight: "bold", }}>
+          <li>NodeJS</li>
+          <li>NoSQL</li>
+          <li>SQL</li>
+
+          <hr
+            style={{ width: "40%", borderColor: "blue", marginTop: "82px" }}
+          />
+
+          <div style={{ fontSize: "16px", fontWeight: "bold" }}>
             Tools I used
           </div>
-          
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>Git/GitHub</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>Express</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>PostgreSQL</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>MongoDB</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>Heroku</li>
-      
+          <li>Git/GitHub</li>
+          <li>Express</li>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>Heroku</li>
         </div>
         <div
-          style={{
-            backgroundColor: "#F7FBFC",
-            width: "20%",
-            textAlign: "center",
-          }}
+          className="databases"
+          // style={{
+          //   backgroundColor: "#F7FBFC",
+          //   width: "20%",
+          //   textAlign: "center",
+          // }}
         >
           <div style={{ fontSize: "20px", fontWeight: "bold" }}>Databases</div>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>PostgreSQL</li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>MongoDB</li>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
         </div>
-        {/* <div>
-                <div style={{fontSize:'20px'}}>Hosting and Collabo</div>
-                <ol style={{ listStyleType: "none", fontSize: '16px' }}>
-                  <li>Git Hub</li>
-                </ol>
-              </div> */}
         <div
-          style={{
-            backgroundColor: "#F7FBFC",
-            width: "max-content",
-            textAlign: "center",
-            marginRight: '60px'
-          }}
+          className="projectmanagement"
+          // style={{
+          //   backgroundColor: "#F7FBFC",
+          //   width: "max-content",
+          //   textAlign: "center",
+          //   marginRight: "60px",
+          // }}
         >
           <div style={{ fontSize: "20px", fontWeight: "bold" }}>
             Projectmanagement
           </div>
-          {/* <ol style={{ listStyleType: "none", fontSize: '16px' }}> */}
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>
-            Agile Methods/Scrum
-          </li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>
-            First Experiences with:
-          </li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>
-          Jira
-          </li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>
-         Trello
-          </li>
-          <li style={{ listStyleType: "none", fontSize: "16px" }}>
-         Discord
-          </li>
-          {/* </ol> */}
+          <li>Agile Methods/Scrum</li>
+          <br/>
+          <li>First Experiences with:</li>
+          <li>Jira</li>
+          <li>Trello</li>
+          <li>Discord</li>
         </div>
       </div>
     </div>

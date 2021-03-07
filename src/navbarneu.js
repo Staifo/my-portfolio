@@ -107,50 +107,43 @@ const Navbarneu = ({
   return (
     <div
       className="navbarneuDiv"
-      style={{
-        display: "flex",
-        justifyContent: "flex-end",
-        position: "fixed",
-        top: "40%",
-        height: "max-content",
-        width: "100%",
-        visibility: "hidden",
-      }}
+      // style={{
+      //   display: "flex",
+      //   justifyContent: "flex-end",
+      //   position: "fixed",
+      //   top: "40%",
+      //   height: "max-content",
+      //   width: "100%",
+      //   visibility: "hidden",
+      // }}
     >
       <div
-        className="navbarneuDiv"
+        className="navbarneuDiv1"
         // data-aos="zoom-out-left"
         // data-aos-delay="100"
         // data-aos-duration="2000"
         // data-aos-easing="ease-in-cubic"
-        style={{
-          // backgroundColor: "#343136",
-          // backgroundColor: "white",
-          width: "10%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-end",
-          alignItems: "flex-end",
-          // position: "sticky",
-          // top: "0",
-          zIndex: "10",
-          height: "max-content",
-          // marginLeft: '40%'
-        }}
+        // style={{
+        //   width: "10%",
+        //   display: "flex",
+        //   flexDirection: "column",
+        //   justifyContent: "flex-end",
+        //   alignItems: "flex-end",
+        //   zIndex: "10",
+        //   height: "max-content",
+        // }}
       >
         <div
           className="navbarneu"
-          class
-          style={{
-            // width: "60%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-end",
-            alignItems: "flex-end",
-            marginTop: "10px",
-            marginRight: "20px",
-            marginBottom: "10px",
-          }}
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "column",
+          //   justifyContent: "flex-end",
+          //   alignItems: "flex-end",
+          //   marginTop: "10px",
+          //   marginRight: "20px",
+          //   marginBottom: "10px",
+          // }}
         >
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
             <Button

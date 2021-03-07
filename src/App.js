@@ -298,35 +298,34 @@ function App() {
   /////
 
   return (
-    <div className="App" style={{ minWidth: "100%" }}>
+    <div className="App" 
+    // style={{ minWidth: "100%" }}
+    >
       <div
         className="navbarDiv"
         // data-aos="zoom-out-left"
         // data-aos-delay="100"
         // data-aos-duration="2000"
         // data-aos-easing="ease-in-cubic"
-        style={{
-          backgroundColor: "#343136",
-          minWidth: "100%",
-          display: "flex",
-          // justifyContent: "flex-end",
-          position: "fixed",
-          top: "0%",
-          zIndex: "10",
-          // marginLeft: '40%'
-        }}
+        // style={{
+        //   backgroundColor: "#343136",
+        //   minWidth: "100%",
+        //   display: "flex",
+        //   position: "fixed",
+        //   top: "0%",
+        //   zIndex: "10",
+        // }}
       >
         <div
           className="navbar"
-          class
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "space-around",
-            marginTop: "10px",
-            marginRight: "20px",
-            marginBottom: "10px",
-          }}
+          // style={{
+          //   width: "100%",
+          //   display: "flex",
+          //   justifyContent: "space-around",
+          //   marginTop: "10px",
+          //   marginRight: "20px",
+          //   marginBottom: "10px",
+          // }}
         >
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
             <Button
@@ -423,33 +422,35 @@ function App() {
       <div
         id="top"
         className="jumbo"
-        style={{
-          width: "100%",
-          height: "110vh",
-          display: "flex",
-          justifyContent: "center",
-        }}
+        // style={{
+        //   width: "100%",
+        //   height: "110vh",
+        //   display: "flex",
+        //   justifyContent: "center",
+        // }}
       >
         <div
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            alignItems: "center",
-            height: "100vh",
-          }}
+        className='jumbo1'
+          // style={{
+          //   width: "100%",
+          //   display: "flex",
+          //   justifyContent: "center",
+          //   alignItems: "center",
+          //   height: "100vh",
+          // }}
         >
           <div
-            style={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "max-content",
-            }}
+          className='jumbo2'
+            // style={{
+            //   width: "100%",
+            //   display: "flex",
+            //   justifyContent: "center",
+            //   alignItems: "center",
+            //   height: "max-content",
+            // }}
           >
             <div
+            className='jumbo3'
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="4000"
