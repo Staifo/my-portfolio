@@ -847,7 +847,7 @@ const CodingCard = () => {
   const [openFrontend, setOpenFrontend] = useState(null);
   const [openBackend, setOpenBackend] = useState(null);
   const [logo, setLogo] = useState(null);
-  console.log(openFrontend);
+  // console.log(openFrontend);
 
   const handleClick = (e) => {
     setOpenFrontend(e.target);
