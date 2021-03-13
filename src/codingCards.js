@@ -1095,7 +1095,6 @@ const CodingCard = () => {
                   <li>ReactJS</li>
                   <li>RESTFUL API's</li>
                 </div>
-                {/* <div style={{fontSize: '54px', lineHeight: '60px'}}>guages</div> */}
               </div>
             </div>
           </div>
