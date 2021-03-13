@@ -882,6 +882,7 @@ border-color: transparent transparent transparent black;
   height: max-content;
   width: 100%;
   visibility: hidden;
+  z-index: 10;
 }
 
 .navbarneuDiv1 {
@@ -900,10 +901,13 @@ border-color: transparent transparent transparent black;
   .navbarneuDiv1 {
     visibility: visible !important;
   }
+  .navbar {
+    visibility: hidden;
+  }
 }
 
 .navbuttonneu {
-  width: 200px;
+  width: 240px;
   right: -40px;
   margin-top: 20px !important;
   /* background-color: lightgrey !important; */
@@ -911,7 +915,7 @@ border-color: transparent transparent transparent black;
 
 @media (max-width: 800px) {
   .navbuttonneu {
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
 }
 

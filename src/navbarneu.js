@@ -152,7 +152,7 @@ const Navbarneu = ({
               className="navbuttonneu"
               variant="contained"
               style={{
-                fontSize: "1.4vh",
+                fontSize: "1.4vw",
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               ref={codingSkills}
@@ -168,7 +168,7 @@ const Navbarneu = ({
               className="navbuttonneu"
               variant="contained"
               style={{
-                fontSize: "1.4vh",
+                fontSize: "1.4vw",
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               ref={projectsButton}
@@ -185,7 +185,7 @@ const Navbarneu = ({
               variant="contained"
               onClick={handleExpandClick}
               style={{
-                fontSize: "1.4vh",
+                fontSize: "1.wvh",
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               ref={button}
@@ -200,7 +200,7 @@ const Navbarneu = ({
               className="navbuttonneu"
               variant="contained"
               style={{
-                fontSize: "1.4vh",
+                fontSize: "1.4vw",
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               ref={aboutMeButton}
@@ -232,7 +232,7 @@ const Navbarneu = ({
               className="navbuttonneu"
               variant="contained"
               style={{
-                fontSize: "1.4vh",
+                fontSize: "1.4vw",
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               onClick={handleTop}
@@ -244,7 +244,7 @@ const Navbarneu = ({
             style={{
               display: "flex",
               justifyContent: "space-around",
-              width: "120px",
+              width: "160px",
             }}
           >
             <a
@@ -258,7 +258,7 @@ const Navbarneu = ({
                 className="linkedin"
                 id="linkedin"
                 color="disabled"
-                style={{ fontSize: "3.4vh" }}
+                style={{ fontSize: '40px'}}
               />
             </a>
             <a
@@ -272,7 +272,7 @@ const Navbarneu = ({
                 className="git"
                 id="git"
                 color="disabled"
-                style={{ fontSize: "3.4vh" }}
+                style={{ fontSize: '40px'}}
               />
             </a>
           </div>
