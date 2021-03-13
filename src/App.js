@@ -117,6 +117,7 @@ function App() {
   const [contact, setContact] = useState(null);
   const [top, setTop] = useState(null);
   const [changeNavigation, setChangeNavigation] = useState(null);
+  const [changeToSide, setChangeToSide]=useState(null);
   const counter1 = useRef(null);
   const button = useRef(null);
   const button1 = useRef(null);
@@ -129,6 +130,7 @@ function App() {
   const navbarNeuDivHidden = useRef(null);
   const topButton = useRef(null);
   const icons = useRef(null);
+  const navbarVisible=useRef(null);
 
   const classes = useStyles();
 
@@ -269,7 +271,7 @@ function App() {
     aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
   };
 
-  const handleNav = () => {
+  const handleNav = (e) => {
     setChangeNavigation(!changeNavigation);
     changeNavigation
       ? (mainNav.current.style.visibility = "hidden")
@@ -282,7 +284,21 @@ function App() {
     topButton.current.style.visibility = "hidden";
     icons.current.style.visibility = "hidden";
     changeNavbar.current.style.visibility = 'hidden';
+    navbarVisible.current.style.visibility='visible';
   };
+
+  const handleVisible = (e) => {
+    setChangeToSide(e.target);
+    codingSkills.current.style.visibility = "visible";
+    projectsButton.current.style.visibility = "visible";
+    contactMeButton.current.style.visibility = "visible";
+    aboutMeButton.current.style.visibility = "visible";
+    button.current.style.visibility = "visible";
+    topButton.current.style.visibility = "visible";
+    icons.current.style.visibility = "visible";
+    changeNavbar.current.style.visibility = 'visible';
+    navbarVisible.current.style.visibility = 'hidden';
+  }
   //////
 
   ////REACT SPRING TRAIL
@@ -351,6 +367,14 @@ function App() {
           // }}
           ref={mainNav}
         >
+      {/* {changeToSide && <Button
+              className="navbutton"
+              variant="contained"
+              style={{ fontSize: "1.4vh"}}
+              
+            >
+              NAVBAR SIDE
+            </Button>} */}
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
             <Button
               className="navbutton"
@@ -447,6 +471,8 @@ function App() {
         navbarNeuDivHidden={navbarNeuDivHidden}
         topButton={topButton}
         icons={icons}
+        navbarVisible={navbarVisible}
+        handleVisible={handleVisible}
       />
       <div
         id="top"

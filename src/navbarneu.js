@@ -107,7 +107,9 @@ const Navbarneu = ({
   changeNavbar,
   navbarNeuDivHidden,
   topButton,
-  icons
+  icons,
+  navbarVisible,
+  handleVisible,
 }) => {
   return (
     <div
@@ -150,6 +152,26 @@ const Navbarneu = ({
           //   marginBottom: "10px",
           // }}
         >
+          <div
+            style={{
+              position: "absolute",
+              marginBottom: "160px",
+              fontSize: "16px",
+              visibility: "hidden",
+              marginRight: "-20px",
+              fontFamily: "Quicksand",
+              border: "1px solid lightgrey",
+              width: "40px",
+              textAlign: "center",
+            }}
+            className="toggleVisible"
+            ref={navbarVisible}
+            onClick={handleVisible}
+            // variant="contained"
+          >
+            N<br />A<br />V<br />B<br />A<br />R <br />
+            <br />H<br />E<br />R<br />E
+          </div>
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
             <Button
               data-aos="fade-up"
@@ -247,19 +269,19 @@ const Navbarneu = ({
             </Button>
           </a>
           <Button
-              data-aos="fade-up"
-              data-aos-duration="2600"
-              className="navbuttonneu"
-              variant="contained"
-              style={{
-                fontSize: "1.4vw",
-                backgroundColor: "rgb(245, 245, 245,0.2)",
-              }}
-              onClick={handleNav}
-              ref={changeNavbar}
-            >
+            data-aos="fade-up"
+            data-aos-duration="2600"
+            className="navbuttonneu"
+            variant="contained"
+            style={{
+              fontSize: "1.4vw",
+              backgroundColor: "rgb(245, 245, 245,0.2)",
+            }}
+            onClick={handleNav}
+            ref={changeNavbar}
+          >
             NAVBAR TOP
-            </Button>
+          </Button>
           <div
             style={{
               display: "flex",
@@ -279,7 +301,7 @@ const Navbarneu = ({
                 className="linkedin"
                 id="linkedin"
                 color="disabled"
-                style={{ fontSize: '40px'}}
+                style={{ fontSize: "40px" }}
               />
             </a>
             <a
@@ -293,7 +315,7 @@ const Navbarneu = ({
                 className="git"
                 id="git"
                 color="disabled"
-                style={{ fontSize: '40px'}}
+                style={{ fontSize: "40px" }}
               />
             </a>
           </div>
