@@ -102,7 +102,12 @@ const Navbarneu = ({
   handleContactMeSide,
   handleProjectsSide,
   handleSkillsSide,
-  handleTop
+  handleTop,
+  handleNav,
+  changeNavbar,
+  navbarNeuDivHidden,
+  topButton,
+  icons
 }) => {
   return (
     <div
@@ -236,16 +241,32 @@ const Navbarneu = ({
                 backgroundColor: "rgb(245, 245, 245,0.2)",
               }}
               onClick={handleTop}
+              ref={topButton}
             >
               Top
             </Button>
           </a>
+          <Button
+              data-aos="fade-up"
+              data-aos-duration="2600"
+              className="navbuttonneu"
+              variant="contained"
+              style={{
+                fontSize: "1.4vw",
+                backgroundColor: "rgb(245, 245, 245,0.2)",
+              }}
+              onClick={handleNav}
+              ref={changeNavbar}
+            >
+            NAVBAR TOP
+            </Button>
           <div
             style={{
               display: "flex",
               justifyContent: "space-around",
               width: "160px",
             }}
+            ref={icons}
           >
             <a
               href="https://www.linkedin.com/in/istayfo-ergun-a606a564/"

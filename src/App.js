@@ -67,7 +67,6 @@ import { GiGraduateCap } from "react-icons/gi";
 import { MdPeopleOutline } from "react-icons/md";
 import { HiOutlineCode } from "react-icons/hi";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -117,6 +116,7 @@ function App() {
   const [about, setAbout] = useState(null);
   const [contact, setContact] = useState(null);
   const [top, setTop] = useState(null);
+  const [changeNavigation, setChangeNavigation] = useState(null);
   const counter1 = useRef(null);
   const button = useRef(null);
   const button1 = useRef(null);
@@ -124,6 +124,11 @@ function App() {
   const projectsButton = useRef(null);
   const aboutMeButton = useRef(null);
   const contactMeButton = useRef(null);
+  const changeNavbar = useRef(null);
+  const mainNav = useRef(null);
+  const navbarNeuDivHidden = useRef(null);
+  const topButton = useRef(null);
+  const icons = useRef(null);
 
   const classes = useStyles();
 
@@ -203,7 +208,8 @@ function App() {
   const handleProjects = () => {
     setProjects(!projects);
     projects
-      ? (projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
+      ? (projectsButton.current.style.backgroundColor =
+          "rgb(245, 245, 245,0.2)")
       : (projectsButton.current.style.backgroundColor = "lightgreen");
     codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
@@ -223,7 +229,8 @@ function App() {
   const handleContactMe = () => {
     setContact(!contact);
     contact
-      ? (contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)")
+      ? (contactMeButton.current.style.backgroundColor =
+          "rgb(245, 245, 245,0.2)")
       : (contactMeButton.current.style.backgroundColor = "lightgreen");
     projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
@@ -233,34 +240,49 @@ function App() {
   const handleTop = () => {
     codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
-    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
   };
 
   const handleSkillsSide = () => {
     projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
-    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
-  }
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+  };
 
   const handleProjectsSide = () => {
-    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
-  }
+  };
 
   const handleAboutMeSide = () => {
     codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
-    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
-  }
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
+  };
 
   const handleContactMeSide = () => {
     codingSkills.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     projectsButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
-    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)"
+    contactMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
     aboutMeButton.current.style.backgroundColor = "rgb(245, 245, 245,0.2)";
-  }
+  };
+
+  const handleNav = () => {
+    setChangeNavigation(!changeNavigation);
+    changeNavigation
+      ? (mainNav.current.style.visibility = "hidden")
+      : (mainNav.current.style.visibility = "visible");
+    codingSkills.current.style.visibility = "hidden";
+    projectsButton.current.style.visibility = "hidden";
+    contactMeButton.current.style.visibility = "hidden";
+    aboutMeButton.current.style.visibility = "hidden";
+    button.current.style.visibility = "hidden";
+    topButton.current.style.visibility = "hidden";
+    icons.current.style.visibility = "hidden";
+    changeNavbar.current.style.visibility = 'hidden';
+  };
   //////
 
   ////REACT SPRING TRAIL
@@ -298,8 +320,9 @@ function App() {
   /////
 
   return (
-    <div className="App" 
-    // style={{ minWidth: "100%" }}
+    <div
+      className="App"
+      // style={{ minWidth: "100%" }}
     >
       <div
         className="navbarDiv"
@@ -326,6 +349,7 @@ function App() {
           //   marginRight: "20px",
           //   marginBottom: "10px",
           // }}
+          ref={mainNav}
         >
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
             <Button
@@ -418,6 +442,11 @@ function App() {
         handleContactMeSide={handleContactMe}
         handleProjectsSide={handleProjects}
         handleTop={handleTop}
+        handleNav={handleNav}
+        changeNavbar={changeNavbar}
+        navbarNeuDivHidden={navbarNeuDivHidden}
+        topButton={topButton}
+        icons={icons}
       />
       <div
         id="top"
@@ -430,7 +459,7 @@ function App() {
         // }}
       >
         <div
-        className='jumbo1'
+          className="jumbo1"
           // style={{
           //   width: "100%",
           //   display: "flex",
@@ -440,7 +469,7 @@ function App() {
           // }}
         >
           <div
-          className='jumbo2'
+            className="jumbo2"
             // style={{
             //   width: "100%",
             //   display: "flex",
@@ -450,7 +479,7 @@ function App() {
             // }}
           >
             <div
-            className='jumbo3'
+              className="jumbo3"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="4000"
@@ -785,7 +814,7 @@ function App() {
         </div>
       </div>
       <div
-      className='iconContainer'
+        className="iconContainer"
         style={{
           width: "100%",
           height: "40%",
@@ -1286,7 +1315,7 @@ function App() {
                       className="button"
                       color="primary"
                       onClick={handleClick}
-                      style={{ width: "1000px", height: "400px",}}
+                      style={{ width: "1000px", height: "400px" }}
                     >
                       <Carousel autoPlay infiniteLoop>
                         <div>
