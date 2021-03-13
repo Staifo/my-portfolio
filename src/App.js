@@ -298,6 +298,7 @@ function App() {
     icons.current.style.visibility = "visible";
     changeNavbar.current.style.visibility = 'visible';
     navbarVisible.current.style.visibility = 'hidden';
+    mainNav.current.style.visibility = "hidden"
   }
   //////
 
