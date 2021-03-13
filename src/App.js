@@ -272,10 +272,11 @@ function App() {
   };
 
   const handleNav = (e) => {
-    setChangeNavigation(!changeNavigation);
-    changeNavigation
-      ? (mainNav.current.style.visibility = "hidden")
-      : (mainNav.current.style.visibility = "visible");
+    // setChangeNavigation(!changeNavigation);
+    // changeNavigation
+    //   ? (mainNav.current.style.visibility = "hidden")
+    //   : (mainNav.current.style.visibility = "visible");
+    mainNav.current.style.visibility = "visible";
     codingSkills.current.style.visibility = "hidden";
     projectsButton.current.style.visibility = "hidden";
     contactMeButton.current.style.visibility = "hidden";
