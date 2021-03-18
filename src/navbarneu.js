@@ -163,6 +163,7 @@ const Navbarneu = ({
               border: "1px solid lightgrey",
               width: "40px",
               textAlign: "center",
+              visibility: "hidden",
             }}
             className="toggleVisible"
             ref={navbarVisible}

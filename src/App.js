@@ -117,7 +117,7 @@ function App() {
   const [contact, setContact] = useState(null);
   const [top, setTop] = useState(null);
   const [changeNavigation, setChangeNavigation] = useState(null);
-  const [changeToSide, setChangeToSide]=useState(null);
+  const [changeToSide, setChangeToSide] = useState(null);
   const counter1 = useRef(null);
   const button = useRef(null);
   const button1 = useRef(null);
@@ -130,7 +130,7 @@ function App() {
   const navbarNeuDivHidden = useRef(null);
   const topButton = useRef(null);
   const icons = useRef(null);
-  const navbarVisible=useRef(null);
+  const navbarVisible = useRef(null);
 
   const classes = useStyles();
 
@@ -284,8 +284,8 @@ function App() {
     button.current.style.visibility = "hidden";
     topButton.current.style.visibility = "hidden";
     icons.current.style.visibility = "hidden";
-    changeNavbar.current.style.visibility = 'hidden';
-    navbarVisible.current.style.visibility='visible';
+    changeNavbar.current.style.visibility = "hidden";
+    navbarVisible.current.style.visibility = "visible";
   };
 
   const handleVisible = (e) => {
@@ -297,10 +297,10 @@ function App() {
     button.current.style.visibility = "visible";
     topButton.current.style.visibility = "visible";
     icons.current.style.visibility = "visible";
-    changeNavbar.current.style.visibility = 'visible';
-    navbarVisible.current.style.visibility = 'hidden';
-    mainNav.current.style.visibility = "hidden"
-  }
+    changeNavbar.current.style.visibility = "visible";
+    navbarVisible.current.style.visibility = "hidden";
+    mainNav.current.style.visibility = "hidden";
+  };
   //////
 
   ////REACT SPRING TRAIL
@@ -321,7 +321,7 @@ function App() {
   }, []);
   /////
 
-  ///counter
+  ///counter///
 
   useEffect(() => {
     // if(counter > 0){
@@ -369,7 +369,7 @@ function App() {
           // }}
           ref={mainNav}
         >
-      {/* {changeToSide && <Button
+          {/* {changeToSide && <Button
               className="navbutton"
               variant="contained"
               style={{ fontSize: "1.4vh"}}
@@ -507,17 +507,16 @@ function App() {
             // }}
           >
             <div
-              className="jumbo3"
+              className="jumbo4"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="4000"
-              className="image"
-              style={{
-                width: "max-content",
-                height: "min-content",
-                // marginTop: "9%",
-                marginRight: "20px",
-              }}
+              // className="image"
+              // style={{
+              //   width: "max-content",
+              //   height: "min-content",
+              //   marginRight: "20px",
+              // }}
             >
               <img
                 className="image"
@@ -529,12 +528,15 @@ function App() {
             </div>
             <div
               className="square2"
-              style={{ display: "flex", height: "100%" }}
+              // style={{ display: "flex", height: "100%" }}
             >
-              <div className="square" style={{ width: "20px" }}>
+              <div
+                className="square"
+                // style={{ width: "20px" }}
+              >
                 <div
                   id="square1"
-                  style={{ width: "100%", height: "100%" }}
+                  // style={{ width: "100%", height: "100%" }}
                 ></div>
               </div>
             </div>
@@ -542,19 +544,19 @@ function App() {
               className="trailDiv"
               data-aos="fade-up-right"
               data-aos-duration="4000"
-              style={{
-                lineHeight: "100px",
-                marginLeft: "20px",
-                // color: "white",
-                // height: "100%",
+              // style={{
+              // lineHeight: "100px",
+              // marginLeft: "20px",
+              // color: "white",
+              // height: "100%",
 
-                // textAlign: "center",
-                // display: "flex",
-                // alignItems: "center",
-                // marginTop: "64px",
-                // marginLeft: "20px",
-                // border: '10px solid green'
-              }}
+              // textAlign: "center",
+              // display: "flex",
+              // alignItems: "center",
+              // marginTop: "64px",
+              // marginLeft: "20px",
+              // border: '10px solid green'
+              // }}
             >
               {" "}
               {/* <Trail
@@ -564,20 +566,17 @@ function App() {
               > */}
               <div
                 className="trailDiv2"
-                style={{
-                  color: "lightgrey",
-                  // fontSize: "calc(90px + 1.4vw)",
-                  fontFamily: "Impact",
-                  fontWeight: "bold",
-                  opacity: "1",
-                  color: "grey",
-                  // color: "#343136",
-                  // textShadow: "4px 4px blue",
-                  textAlign: "left",
-                  display: "flex",
-                  flexDirection: "column",
-                  height: "max-content",
-                }}
+                // style={{
+                //   color: "lightgrey",
+                //   fontFamily: "Impact",
+                //   fontWeight: "bold",
+                //   opacity: "1",
+                //   color: "grey",
+                //   textAlign: "left",
+                //   display: "flex",
+                //   flexDirection: "column",
+                //   height: "max-content",
+                // }}
               >
                 <div
                   data-aos="zoom-in-up"
@@ -598,20 +597,17 @@ function App() {
                   data-aos="zoom-in-up"
                   data-aos-duration="6000"
                   className="junior"
-                  style={{
-                    // fontSize: "calc(90px + 1.4vw)",
-                    fontFamily: "Impact",
-                    fontWeight: "bold",
-                    opacity: "1",
-                    color: "grey",
-                    // color: "#343136",
-                    // textShadow: "4px 4px blue",
-                    textAlign: "left",
-                    display: "flex",
-                    flexDirection: "column",
-                    height: "max-content",
-                    // marginTop: '100px'
-                  }}
+                  id='junior'
+                  // style={{
+                  //   fontFamily: "Impact",
+                  //   fontWeight: "bold",
+                  //   opacity: "1",
+                  //   color: "grey",
+                  //   textAlign: "left",
+                  //   display: "flex",
+                  //   flexDirection: "column",
+                  //   height: "max-content",
+                  // }}
                 >
                   <div style={{ height: "max-content" }}>Junior</div>
                   <div style={{ height: "max-content" }}>Web</div>
@@ -649,16 +645,14 @@ function App() {
                 // data-aos="fade-up-left"
                 // data-aos-delay="1600"
                 // data-aos-duration="2000"
-                style={{
-                  color: "lightgrey",
-                  fontFamily: "Indie Flower",
-                  position: "absolute",
-                  fontSize: "calc(20px + 1.2vw)",
-                  // marginLeft: "26%",
-                  transform: "rotate(-6deg)",
-                  zIndex: "10",
-                  // marginTop: '6%'
-                }}
+                // style={{
+                //   color: "lightgrey",
+                //   fontFamily: "Indie Flower",
+                //   position: "absolute",
+                //   fontSize: "calc(20px + 1.2vw)",
+                //   transform: "rotate(-6deg)",
+                //   zIndex: "10",
+                // }}
               >
                 <div
                   className="welcome2"
@@ -672,29 +666,28 @@ function App() {
           </div>
         </div>
         <div
+        className='count'
           ref={counter1}
-          style={{
-            // border: "10px solid red",
-            position: "absolute",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            // height: '72%'
-          }}
+          // style={{
+          //   position: "absolute",
+          //   display: "flex",
+          //   justifyContent: "center",
+          //   alignItems: "center",
+          // }}
         >
           <div
-            style={{
-              fontSize: "200px",
-              fontFamily: "Impact",
-              color: "lightgrey",
-              opacity: "0.2",
-            }}
+          className='count1'
+            // style={{
+            //   fontSize: "200px",
+            //   fontFamily: "Impact",
+            //   color: "lightgrey",
+            //   opacity: "0.2",
+            // }}
           >
             {/* {counter} */}
           </div>
         </div>
       </div>
-      {/* <div style={{width: '100%', backgroundColor: '#343136', height: '40px'}}></div> */}
       <div id="resume" style={{ width: "100%" }}>
         <Card className={classes.root}>
           <CardActions disableSpacing>
@@ -712,33 +705,35 @@ function App() {
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
               <div
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+              className='codeList'
+                // style={{
+                //   width: "100%",
+                //   display: "flex",
+                //   justifyContent: "center",
+                //   alignItems: "center",
+                // }}
               >
                 <div
-                  style={{
-                    width: "60%",
-                    display: "flex",
-                    justifyContent: "center",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
+                className='codeList1'
+                  // style={{
+                  //   width: "60%",
+                  //   display: "flex",
+                  //   justifyContent: "center",
+                  //   flexDirection: "column",
+                  //   alignItems: "center",
+                  // }}
                 >
                   <Cards />
                   <hr style={{ width: "90%", borderColor: "1px solid blue" }} />
                   <div
-                    style={{
-                      fontFamily: "Quicksand",
-                      fontSize: "calc(10px + 0.5vw)",
-                      // marginBottom: "20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
+                  className='codeList2'
+                    // style={{
+                    //   fontFamily: "Quicksand",
+                    //   fontSize: "calc(10px + 0.5vw)",
+                    //   display: "flex",
+                    //   flexDirection: "column",
+                    //   alignItems: "center",
+                    // }}
                   >
                     If you want to know more about me and my career path you can
                     have a look at my resume
@@ -808,23 +803,20 @@ function App() {
       <div
         className="myProjects"
         style={{
-          width: "100%",
-          // height: "max-content",
-          // display: "flex",
-          // justifyContent: "space-evenly",
-          // backgroundColor: 'grey'
+          width: "100%"
         }}
       >
         <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            width: "min-content",
-            marginTop: "20px",
-            width: "100%",
-            height: "max-content",
-            backgroundColor: "rgb(173, 216, 230, 0.1)",
-          }}
+        className="myProjects2"
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "column",
+          //   width: "min-content",
+          //   marginTop: "20px",
+          //   width: "100%",
+          //   height: "max-content",
+          //   backgroundColor: "rgb(173, 216, 230, 0.1)",
+          // }}
         >
           <span
             style={{ height: "max-content", lineHeight: "160px" }}
@@ -843,16 +835,15 @@ function App() {
       </div>
       <div
         className="iconContainer"
-        style={{
-          width: "100%",
-          height: "40%",
-          position: "absolute",
-          zIndex: "-1",
-        }}
+        // style={{
+        //   width: "100%",
+        //   height: "40%",
+        //   position: "absolute",
+        //   zIndex: "-1",
+        // }}
       >
         <div className="globe">
           <IoMdGlobe
-            // className="globe"
             style={{ fontSize: "40px", zIndex: "0" }}
           />
         </div>
@@ -878,23 +869,24 @@ function App() {
         />
       </div>
       <div
-        className="info"
-        style={{
-          padding: "40px",
-          width: "100%",
-          zIndex: "10",
-          textAlign: "justify",
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "140px",
-        }}
+        id="info"
+        // style={{
+        //   padding: "40px",
+        //   width: "100%",
+        //   zIndex: "10",
+        //   textAlign: "justify",
+        //   display: "flex",
+        //   justifyContent: "center",
+        //   marginTop: "140px",
+        // }}
       >
         <div
-          style={{
-            width: "60%",
-            fontSize: "25px",
-            fontFamily: "Quicksand",
-          }}
+        id='info2'
+          // style={{
+          //   width: "60%",
+          //   fontSize: "25px",
+          //   fontFamily: "Quicksand",
+          // }}
         >
           {" "}
           "Coding is the manifestation of ideas and visions into reality! As far
@@ -911,10 +903,7 @@ function App() {
         className="codingLang"
         style={{
           width: "100%",
-          // height: "max-content",
           display: "flex",
-          // justifyContent: "space-evenly",
-          // backgroundColor: 'grey'
           height: "min-content",
           marginTop: "160px",
         }}
@@ -924,9 +913,7 @@ function App() {
             display: "flex",
             flexDirection: "column",
             width: "min-content",
-            // marginTop: "140px",
             width: "max-content",
-            // backgroundColor: '#EEF7FF '
             marginLeft: "20px",
           }}
         >
@@ -935,7 +922,6 @@ function App() {
             Coding{" "}
             <div
               className="arrow"
-              // style={{ marginLeft: "20px", marginTop: "10px" }}
               style={{ marginLeft: "20px", marginTop: "60px" }}
             ></div>
           </span>

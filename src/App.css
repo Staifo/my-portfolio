@@ -65,6 +65,12 @@ z-index: -1; */
   height: max-content;
 }
 
+.jumbo4 {
+  width: max-content;
+  height: min-content;
+  margin-right: 20px;
+}
+
 .projects {
   overflow: hidden;
   user-select: none;
@@ -82,27 +88,18 @@ z-index: -1; */
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  /* background-color:#EEF7FF */
 }
+
 .codingLang {
   background-color: rgb(173, 216, 230, 0.1);
 }
 
 .codingLang > div,
-.myProjects > div {
-  /* border-radius: 60px; */
-  /* margin-top: 60px; */
-  /* border-top: 2px solid blue; */
-  /* border-bottom: 2px solid blue; */
+.myProjects > div { 
   margin-bottom: 20px;
   font-size: 20px;
   height: 400px;
-  /* font-weight: bold; */
-  /* background-color: rgba(166, 217, 252, 0.1); */
-  /* color: rgb(228, 211, 211); */
-  /* border-right: 4px solid rgb(173, 216, 230, 0.4);
-border-left: 4px solid rgb(173, 216, 230, 0.4); */
-  font-family: "Quicksand";
+  font-family: Quicksand;
   color: black;
 }
 
@@ -118,20 +115,9 @@ codingLang > div:hover {
 }
 
 .codingSkills {
-  /* color: lightgrey; */
   color: grey;
-  /* opacity: 0.4; */
   font-family: Quicksand;
 }
-
-/* .codingSkills:hover {
-  color: white;
-  opacity: 1;
-} */
-
-/* .myProjects:hover {
-  color: grey
-} */
 
 .trails-main {
   position: relative;
@@ -152,33 +138,33 @@ codingLang > div:hover {
   height: 100px;
   line-height: 100px;
   color: white;
-  /* font-size: 1.4em; */
   font-weight: 600;
   letter-spacing: 4px;
   will-change: transform, opacity;
-  /* overflow: hidden; */
   height: max-content;
 }
 
 .trails-text > div {
-  /* overflow: hidden; */
-  font-family: "Quicksand", sans-serif;
+  font-family: Quicksand, sans-serif;
   font-weight: 500;
 }
 
-/* .trailDiv {
-  color: rgb(255, 255, 255);
-  height: 100%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin-top: 64px;
+.trailDiv {
+  line-height: 100px;
   margin-left: 20px;
- 
-} */
+}
 
 .trailDiv2 {
   font-size: calc(100px + 1.2vw);
+  color: lightgrey;
+  font-family: Impact;
+  font-weight: bold;
+  opacity: 1;
+  color: grey;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
 }
 
 @media (max-width: 860px) {
@@ -195,16 +181,53 @@ codingLang > div:hover {
 
 .junior {
   font-size: calc(100px + 1vw);
+  font-family: Impact;
+  font-weight: bold;
+  opacity: 1;
+  color: grey;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+
+#junior {
+  font-size: calc(100px + 1vw);
+  font-family: Impact;
+  font-weight: bold;
+  opacity: 1;
+  color: grey;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
 }
 
 @media (max-width: 400px) {
   .junior {
     font-size: calc(100px + 2.6vw);
+    font-family: Impact;
   }
 }
 
 .info {
   margin-top: 40px;
+}
+
+#info2 {
+  width: 60%;
+  font-size: 25px;
+  font-family: Quicksand;
+}
+
+#info {
+  padding: 40px;
+  width: 100%;
+  z-index: 10;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
 }
 
 @media (min-width: 350px) {
@@ -215,6 +238,11 @@ codingLang > div:hover {
 
 .square {
   height: 498px;
+}
+
+.square2 {
+  display: flex;
+  height: 100%;
 }
 
 /* @media (max-width:600px) {
@@ -499,6 +527,7 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
 .square {
   position: relative;
   animation: mymove 14s;
+  width: 20px;
   animation-delay: 0s;
   animation-iteration-count: 1;
 }
@@ -509,9 +538,6 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
     align-self: flex-start;
     width: 200px;
     height: 200px;
-
-    /* position: relative;
-    opacity: 1; */
   }
   to {
     top: 0;
@@ -521,6 +547,11 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
     position: absolute;
     /* opacity: 1; */
   }
+}
+
+#square1 {
+  width: 100%;
+  height: 100%;
 }
 
 #square1 {
@@ -573,12 +604,8 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
 }  */
 
 .welcome2 {
-  /* border-right: solid 3px rgba(0,255,0,.75); */
   white-space: nowrap;
   overflow: hidden;
-  /* font-family: 'Source Code Pro', monospace;   */
-  /* font-size: 28px; */
-  /* color: rgba(255,255,255,.70); */
   margin: 0 auto;
 }
 
@@ -590,6 +617,58 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
 
 .welcome {
   margin-top: 10%;
+  color: lightgrey;
+  font-family: Indie Flower;
+  position: absolute;
+  font-size: calc(20px + 1.2vw);
+  transform: rotate(-6deg);
+  z-index: 10;
+}
+.count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count1 {
+  font-size: 200px;
+  font-family: Impact;
+  color: lightgrey;
+  opacity: 0.2;
+}
+
+.codeList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeList1 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.codeList2 {
+  font-family: Quicksand;
+  font-size: calc(10px + 0.5vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myProjects2 {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  margin-top: 20px;
+  width: 100%;
+  height: max-content;
+  background-color: rgb(173, 216, 230, 0.1);
 }
 
 .codingCardsDiv {
@@ -904,6 +983,9 @@ border-color: transparent transparent transparent black;
   .navbar {
     visibility: hidden;
   }
+  .toggleVisible {
+    visibility: visible;
+  }
 }
 
 .navbuttonneu {
@@ -913,11 +995,17 @@ border-color: transparent transparent transparent black;
   /* background-color: lightgrey !important; */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .navbuttonneu {
     font-size: 20px !important;
   }
 }
+
+/* @media (min-width: 800px) {
+  .navbuttonneu {
+    font-size: 0.8vw !important;
+  }
+} */
 
 #linkedin,
 #git {
@@ -933,7 +1021,7 @@ border-color: transparent transparent transparent black;
     visibility: hidden;
   } */
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .navbarneuDiv,
   .navbarneuDiv1 {
     visibility: visible;
@@ -997,7 +1085,7 @@ border-color: transparent transparent transparent black;
   margin-top: 20px;
   margin-bottom: 40px;
   font-family: Quicksand;
-  background-color: "#F7FBFC";
+  background-color: #f7fbfc;
 }
 
 .frontend1 {
@@ -1220,6 +1308,13 @@ border-color: transparent transparent transparent black;
     right: 80%;
     top: 0;
   }
+}
+
+.iconContainer {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  z-index: -1;
 }
 
 @media (max-width: 500px) {
