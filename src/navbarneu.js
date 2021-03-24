@@ -175,8 +175,8 @@ const Navbarneu = ({
           </div>
           <a href="#codingSkills" style={{ textDecoration: "none" }}>
             <Button
-              data-aos="fade-up"
-              data-aos-duration="2000"
+              // data-aos="fade-up"
+              // data-aos-duration="2000"
               className="navbuttonneu"
               variant="contained"
               style={{
@@ -191,8 +191,8 @@ const Navbarneu = ({
           </a>
           <a href="#myProjects" style={{ textDecoration: "none" }}>
             <Button
-              data-aos="fade-up"
-              data-aos-duration="2200"
+              // data-aos="fade-up"
+              // data-aos-duration="2200"
               className="navbuttonneu"
               variant="contained"
               style={{
@@ -207,8 +207,8 @@ const Navbarneu = ({
           </a>
           <a href="#resume" style={{ textDecoration: "none" }}>
             <Button
-              data-aos="fade-up"
-              data-aos-duration="2400"
+              // data-aos="fade-up"
+              // data-aos-duration="2400"
               className="navbuttonneu"
               variant="contained"
               onClick={handleExpandClick}
@@ -223,8 +223,8 @@ const Navbarneu = ({
           </a>
           <a href="#aboutMe" style={{ textDecoration: "none" }}>
             <Button
-              data-aos="fade-up"
-              data-aos-duration="2600"
+              // data-aos="fade-up"
+              // data-aos-duration="2600"
               className="navbuttonneu"
               variant="contained"
               style={{
@@ -239,8 +239,8 @@ const Navbarneu = ({
           </a>
           <a href="#contactMe" style={{ textDecoration: "none" }}>
             <Button
-              data-aos="fade-up"
-              data-aos-duration="2600"
+              // data-aos="fade-up"
+              // data-aos-duration="2600"
               className="navbuttonneu"
               variant="contained"
               style={{
@@ -255,8 +255,8 @@ const Navbarneu = ({
           </a>
           <a href="#top" style={{ textDecoration: "none" }}>
             <Button
-              data-aos="fade-up"
-              data-aos-duration="2600"
+              // data-aos="fade-up"
+              // data-aos-duration="2600"
               className="navbuttonneu"
               variant="contained"
               style={{
@@ -270,8 +270,8 @@ const Navbarneu = ({
             </Button>
           </a>
           <Button
-            data-aos="fade-up"
-            data-aos-duration="2600"
+            // data-aos="fade-up"
+            // data-aos-duration="2600"
             className="navbuttonneu"
             variant="contained"
             style={{
@@ -297,8 +297,8 @@ const Navbarneu = ({
               style={{ textDecoration: "none" }}
             >
               <LinkedInIcon
-                data-aos="fade-up"
-                data-aos-duration="2800"
+                // data-aos="fade-up"
+                // data-aos-duration="2800"
                 className="linkedin"
                 id="linkedin"
                 color="disabled"
@@ -311,8 +311,8 @@ const Navbarneu = ({
               style={{ textDecoration: "none" }}
             >
               <GitHubIcon
-                data-aos="fade-up"
-                data-aos-duration="3000"
+                // data-aos="fade-up"
+                // data-aos-duration="3000"
                 className="git"
                 id="git"
                 color="disabled"

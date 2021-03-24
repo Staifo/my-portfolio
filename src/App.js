@@ -863,7 +863,7 @@ function App() {
           style={{ fontSize: "40px", zIndex: "0" }}
         />
       </div> */}
-      <div className='animationTest' style={{position:'absolute', height:'40%', width:'100%', zIndex:'-1'}}>
+      <div className='animationTest'>
         <div className='animationTest1'>About Me</div>
         <div className='animationTest2'> I traveled the world</div>
         <div className='animationTest3'>I studied</div>
