@@ -67,6 +67,7 @@ import { GiGraduateCap } from "react-icons/gi";
 import { MdPeopleOutline } from "react-icons/md";
 import { HiOutlineCode } from "react-icons/hi";
 
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -597,7 +598,7 @@ function App() {
                   data-aos="zoom-in-up"
                   data-aos-duration="6000"
                   className="junior"
-                  id='junior'
+                  id="junior"
                   // style={{
                   //   fontFamily: "Impact",
                   //   fontWeight: "bold",
@@ -666,7 +667,7 @@ function App() {
           </div>
         </div>
         <div
-        className='count'
+          className="count"
           ref={counter1}
           // style={{
           //   position: "absolute",
@@ -676,7 +677,7 @@ function App() {
           // }}
         >
           <div
-          className='count1'
+            className="count1"
             // style={{
             //   fontSize: "200px",
             //   fontFamily: "Impact",
@@ -705,7 +706,7 @@ function App() {
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
               <div
-              className='codeList'
+                className="codeList"
                 // style={{
                 //   width: "100%",
                 //   display: "flex",
@@ -714,7 +715,7 @@ function App() {
                 // }}
               >
                 <div
-                className='codeList1'
+                  className="codeList1"
                   // style={{
                   //   width: "60%",
                   //   display: "flex",
@@ -726,7 +727,7 @@ function App() {
                   <Cards />
                   <hr style={{ width: "90%", borderColor: "1px solid blue" }} />
                   <div
-                  className='codeList2'
+                    className="codeList2"
                     // style={{
                     //   fontFamily: "Quicksand",
                     //   fontSize: "calc(10px + 0.5vw)",
@@ -803,11 +804,11 @@ function App() {
       <div
         className="myProjects"
         style={{
-          width: "100%"
+          width: "100%",
         }}
       >
         <div
-        className="myProjects2"
+          className="myProjects2"
           // style={{
           //   display: "flex",
           //   flexDirection: "column",
@@ -833,14 +834,8 @@ function App() {
           </span>
         </div>
       </div>
-      <div
+      {/* <div
         className="iconContainer"
-        // style={{
-        //   width: "100%",
-        //   height: "40%",
-        //   position: "absolute",
-        //   zIndex: "-1",
-        // }}
       >
         <div className="globe">
           <IoMdGlobe
@@ -867,6 +862,13 @@ function App() {
           className="code"
           style={{ fontSize: "40px", zIndex: "0" }}
         />
+      </div> */}
+      <div className='animationTest' style={{position:'absolute', height:'40%', width:'100%', zIndex:'-1'}}>
+        <div className='animationTest1'>About Me</div>
+        <div className='animationTest2'> I traveled the world</div>
+        <div className='animationTest3'>I studied</div>
+        <div className='animationTest4'>Now I code</div>
+
       </div>
       <div
         id="info"
@@ -881,7 +883,7 @@ function App() {
         // }}
       >
         <div
-        id='info2'
+          id="info2"
           // style={{
           //   width: "60%",
           //   fontSize: "25px",
@@ -1090,6 +1092,8 @@ function App() {
           className="myProjects"
           style={{
             width: "100%",
+            display: "flex",
+            alignItems: "center",
             // height: "max-content",
             // display: "flex",
             // justifyContent: "space-evenly",
@@ -1100,6 +1104,7 @@ function App() {
             style={{
               display: "flex",
               flexDirection: "column",
+              justifyContent: "center",
               width: "min-content",
               marginTop: "160px",
               width: "100%",

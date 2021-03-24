@@ -218,7 +218,28 @@ codingLang > div:hover {
   width: 60%;
   font-size: 25px;
   font-family: Quicksand;
+  /* animation-name: info;
+  animation-iteration-count: 1; */
+  animation: info 22s ease-in-out forwards;
+  /* animation-delay: 12s; */
+  /* color: rgb(0, 0, 0, 0); */
 }
+
+@keyframes info {
+  0% {
+    color: rgb(0, 0, 0, 0);
+    visibility: hidden;
+  }
+  50% {
+    color: rgb(0, 0, 0, 0);
+    visibility: hidden;
+  }
+  100% {
+    color: rgb(0, 0, 0, 1);
+    visibility: visible;
+  }
+}
+
 
 #info {
   padding: 40px;
@@ -662,8 +683,11 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
 }
 
 .myProjects2 {
+  justify-content: center !important;
+  /* align-items: center !important; */
   display: flex;
   flex-direction: column;
+  height: min-content !important;
   width: min-content;
   margin-top: 20px;
   width: 100%;
@@ -912,14 +936,14 @@ border-color: transparent transparent transparent black;
 } */
 
 .rotate {
-  animation-name: codeRotation;
-  animation-iteration-count: infinite;
-  animation-duration: 100s;
+  /* animation-name: codeRotation; */
+  /* animation-iteration-count: infinite; */
+  animation: codeRotation 60s linear infinite;
 }
 
 @keyframes codeRotation {
-  100% {
-    transform: rotate(720deg);
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -1137,7 +1161,7 @@ border-color: transparent transparent transparent black;
   background-color: lightgreen !important;
 }
 
-.globe {
+/* .globe {
   position: absolute;
   z-index: 0 !important;
   animation-name: globe;
@@ -1315,14 +1339,14 @@ border-color: transparent transparent transparent black;
   height: 40%;
   position: absolute;
   z-index: -1;
-}
+} */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .iconContainer {
     width: 280vw !important;
     height: 80% !important;
   }
-}
+} */
 
 .sendIcon {
   position: relative;
@@ -1357,3 +1381,133 @@ border-color: transparent transparent transparent black;
     left: 0;
   }
 }
+
+.animationTest1 {
+  animation-name: animate;
+  animation-iteration-count: 1;
+  animation-duration: 10s;
+  position: absolute;
+  visibility: hidden;
+  width: max-content;
+  font-family: Impact;
+}
+
+@keyframes animate {
+  0% {
+    visibility: visible;
+    margin-left: 40%; 
+    font-size: 400px;
+    color: rgb(211, 211, 211, 0.4)
+  }
+  /* 50% {
+    margin-left: 50%;
+    font-size: 60px;
+    color: rgb(211, 211, 211, 0.4)
+  } */
+  100% {
+    margin-left:10%;
+    visibility: hidden;
+    font-size: 100px;
+    color: rgb(211, 211, 211, 0.1)
+  }
+}
+
+.animationTest2 {
+  animation-name: animate2;
+  animation-iteration-count: 1;
+  animation-duration: 10s;
+  animation-delay: 6s;
+  position: absolute;
+  visibility: hidden;
+  width: max-content;
+  font-family: Impact;
+}
+
+@keyframes animate2 {
+  0% {
+    margin-top: 10%;
+    visibility: visible;
+    margin-left: 40%; 
+    font-size: 100px;
+    color: rgb(211, 211, 211, 0.4)
+  }
+  /* 50% {
+    margin-left: 50%;
+    font-size: 60px;
+    color: rgb(211, 211, 211, 0.4)
+  } */
+  100% {
+    margin-top: 2%;
+    margin-left:10%;
+    visibility: hidden;
+    font-size: 100px;
+    color: rgb(211, 211, 211, 0.1)
+  }
+}
+
+.animationTest3 {
+  animation-name: animate3;
+  animation-iteration-count: 1;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  position: absolute;
+  visibility: hidden;
+  width: max-content;
+  font-family: Impact;
+}
+
+@keyframes animate3 {
+  0% {
+    margin-top: 6%;
+    visibility: visible;
+    margin-left: 40%; 
+    font-size: 100px;
+    color: rgb(211, 211, 211, 0.4)
+  }
+  /* 50% {
+    margin-left: 50%;
+    font-size: 60px;
+    color: rgb(211, 211, 211, 0.4)
+  } */
+  100% {
+    margin-top: 2%;
+    margin-left:10%;
+    visibility: hidden;
+    font-size: 100px;
+    color: rgb(211, 211, 211, 0.1)
+  }
+}
+
+.animationTest4 {
+  animation-name: animate4;
+  animation-iteration-count: 1;
+  animation-duration: 10s;
+  animation-delay: 10s;
+  position: absolute;
+  visibility: hidden;
+  width: max-content;
+  font-family: Impact;
+}
+
+@keyframes animate4 {
+  0% {
+    margin-top: 10%;
+    visibility: visible;
+    margin-left: 40%; 
+    font-size: 100px;
+    color: rgb(211, 211, 211, 0.4)
+  }
+  /* 50% {
+    margin-left: 50%;
+    font-size: 60px;
+    color: rgb(211, 211, 211, 0.4)
+  } */
+  100% {
+    margin-top: 2%;
+    margin-left:10%;
+    visibility: hidden;
+    font-size: 100px;
+    color: rgb(211, 211, 211, 0.1)
+  }
+}
+
