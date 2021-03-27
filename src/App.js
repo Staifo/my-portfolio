@@ -49,7 +49,7 @@ import { DiReact } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { IoIosGitNetwork } from "react-icons/io";
-import { DiMongodb} from "react-icons/di";
+import { DiMongodb } from "react-icons/di";
 import Footer from "./footer";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
@@ -146,7 +146,7 @@ function App() {
   }));
 
   const Codes = ["JavaScript", "ReactJS", "NodeJS"];
-  const Codes2 = ["NodeJS", "MongoDB", "Git"]
+  const Codes2 = ["NodeJS", "MongoDB", "Git"];
 
   //REACT SPRING SLIDER
   const [bind, { delta, down }] = useGesture();
@@ -186,11 +186,11 @@ function App() {
 
   const handleAboutMeDiv = (e) => {
     setAboutMeDiv(e.target);
-  }
+  };
 
   const handleCodingskillDiv = (e) => {
     setcodingskillDiv(e.target);
-  }
+  };
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -330,7 +330,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCode(Codes[Math.floor(Math.random() * Codes.length)]);
-      setCode2(Codes2[Math.floor(Math.random() * Codes2.length)])
+      setCode2(Codes2[Math.floor(Math.random() * Codes2.length)]);
     }, 1000);
     return () => clearInterval(interval);
   }, []);
@@ -879,7 +879,7 @@ function App() {
       </div> */}
       {!aboutMeDiv && (
         <div
-        id='aboutMe'
+          id="aboutMe"
           className="aboutMeDiv1"
           style={{
             width: "100%",
@@ -896,7 +896,7 @@ function App() {
               zIndex: "9",
             }}
           >
-          {/* <div style={{position:'absolute', zIndex:'0',}}>
+            {/* <div style={{position:'absolute', zIndex:'0',}}>
           <div className="globe2">
           <IoMdGlobe 
             style={{ fontSize: "40px", zIndex: "0" }}
@@ -972,7 +972,7 @@ function App() {
             height: "100vh",
           }}
         >
-         {/* <div style={{position:'absolute', zIndex:'0',}}>
+          {/* <div style={{position:'absolute', zIndex:'0',}}>
           <div className="globe3">
           <IoMdGlobe 
             style={{ fontSize: "40px", zIndex: "0" }}
@@ -1093,8 +1093,8 @@ function App() {
         </div>
       </div>
       {!codingskillDiv && (
-        <div 
-        id='codingSkills'
+        <div
+          id="codingSkills"
           className="codingskillDiv"
           style={{
             width: "100%",
@@ -1105,6 +1105,7 @@ function App() {
           }}
         >
           <div
+          className='codingSkillmarginTop'
             style={{
               display: "flex",
               justifyContent: "center",
@@ -1159,7 +1160,7 @@ function App() {
         </div>
       )}
       <div
-      // id='myProjects'
+        // id='myProjects'
         className="projects"
         style={{
           width: "100%",
@@ -1168,14 +1169,14 @@ function App() {
         }}
       >
         <div
-        className="codingLang"
-        style={{
-          width: "100%",
-          display: "flex",
-          height: "min-content",
-        }}
-      >
-        {/* <div
+          className="codingLang"
+          style={{
+            width: "100%",
+            display: "flex",
+            height: "min-content",
+          }}
+        >
+          {/* <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -1206,26 +1207,26 @@ function App() {
             </span>
           </span>
         </div> */}
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {code2 === "NodeJS" && (
-            <IoLogoNodejs className="logo" style={{ fontSize: "2000%" }} />
-          )}
-          {code2 === "MongoDB" && (
-            <DiMongodb className="logo" style={{ fontSize: "2200%" }} />
-          )}
-          {code2 === "Git" && (
-            <IoIosGitNetwork className="logo" style={{ fontSize: "2200%" }} />
-          )}
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {code2 === "NodeJS" && (
+              <IoLogoNodejs className="logo" style={{ fontSize: "2000%" }} />
+            )}
+            {code2 === "MongoDB" && (
+              <DiMongodb className="logo" style={{ fontSize: "2200%" }} />
+            )}
+            {code2 === "Git" && (
+              <IoIosGitNetwork className="logo" style={{ fontSize: "2200%" }} />
+            )}
+          </div>
         </div>
-      </div>
-      <div id='myProjects'></div>
+        <div id="myProjects"></div>
         {/* <div
           className="myProjects"
           style={{
@@ -1332,13 +1333,12 @@ function App() {
               height: "100%",
               marginTop: "100px",
               display: "flex",
-              flexDirection:'column',
-              width:'100%',
+              flexDirection: "column",
+              width: "100%",
               // marginBottom: "80%",
               // height:'100vh'
             }}
           >
-
             <div
               //in case I want to use react spring animated.div
               // class="card"
@@ -1401,7 +1401,7 @@ function App() {
                     </a>
                   </LightTooltip>
                   <Info />
-                 
+
                   <a target="_blank" href="https://junior-coder.netlify.app/">
                     <div
                       className="button"
@@ -1430,15 +1430,19 @@ function App() {
               style={{
                 display: "flex",
                 justifyContent: "space-around",
-                width: '100%',
-                marginBottom:'60px'
+                width: "100%",
+                marginBottom: "60px",
               }}
             >
               <div
                 data-aos="zoom-out-right"
                 data-aos-offset="160"
                 data-aos-duration="3000"
-                style={{ border: "2px solid lightgrey", height: "400px", width:'max-content', }}
+                style={{
+                  border: "2px solid lightgrey",
+                  height: "400px",
+                  width: "max-content",
+                }}
               >
                 <div
                   style={{
@@ -1457,7 +1461,7 @@ function App() {
                           color: "grey",
                           textAlign: "center",
                           fontSize: "16px",
-                          width:'400px'
+                          width: "400px",
                         }}
                       >
                         <b>COOKBOOK:</b> Our first group project - duration 1
@@ -1467,9 +1471,9 @@ function App() {
                     </a>
                   </LightTooltip>
                   <a href="https://leckerlecker.netlify.app" target="_blanc">
-                  <div className='otherProjects1'>
-                  <img alt="" src={first1} width = '400px' height = '300px'/>
-                    {/* <Carousel autoPlay infiniteLoop>
+                    <div className="otherProjects1">
+                      <img alt="" src={first1} width="400px" height="300px" />
+                      {/* <Carousel autoPlay infiniteLoop>
                       <div>
                         <img alt="" src={first1} />
                       </div>
@@ -1489,7 +1493,11 @@ function App() {
                 data-aos="zoom-out-right"
                 data-aos-offset="160"
                 data-aos-duration="3000"
-                style={{ border: "2px solid lightgrey", height: '400px', width:'max-content'}}
+                style={{
+                  border: "2px solid lightgrey",
+                  height: "400px",
+                  width: "max-content",
+                }}
               >
                 <div
                   style={{
@@ -1508,7 +1516,7 @@ function App() {
                           color: "grey",
                           textAlign: "center",
                           fontSize: "16px",
-                          width:'400px'
+                          width: "400px",
                         }}
                       >
                         <b>TODO LIST:</b> Solo work - duration 1 week - creating
@@ -1517,9 +1525,9 @@ function App() {
                     </a>
                   </LightTooltip>
                   <a href="https://todoodo.netlify.app" target="_blanc">
-                  <div>
-                  <img alt="" src={todo1} width='400px'/>
-                  </div>
+                    <div>
+                      <img alt="" src={todo1} width="400px" />
+                    </div>
                     {/* <Carousel autoPlay infiniteLoop>
                       <div>
                         <img alt="" src={todo1} />
@@ -1538,7 +1546,7 @@ function App() {
                 data-aos="zoom-out-right"
                 data-aos-offset="160"
                 data-aos-duration="3000"
-                style={{ border: "2px solid lightgrey", height: "400px",}}
+                style={{ border: "2px solid lightgrey", height: "400px" }}
               >
                 <div
                   style={{
@@ -1560,7 +1568,7 @@ function App() {
                           color: "grey",
                           textAlign: "center",
                           fontSize: "16px",
-                          width:'400px'
+                          width: "400px",
                         }}
                       >
                         <b>My Portfolio:</b> Surprise - I concider my portfolio,
@@ -1570,7 +1578,7 @@ function App() {
                     </a>
                   </LightTooltip>
                   <div>
-                  <img alt="" src={portfolio1} width = '400px' />
+                    <img alt="" src={portfolio1} width="400px" />
                   </div>
                   {/* <Carousel autoPlay infiniteLoop>
                     <div>

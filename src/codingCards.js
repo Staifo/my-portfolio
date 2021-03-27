@@ -1343,7 +1343,7 @@ const CodingCard = ({ codingskillDiv }) => {
             data-aos="zoom-out-right"
             data-aos-offset="160"
             data-aos-duration="3000"
-            style={{ width: "50%", display: "flex", justifyContent: "center" }}
+            style={{ width: "50%", display: "flex", justifyContent: "center",}}
           >
             <div
               className="rotate"
@@ -1371,7 +1371,6 @@ const CodingCard = ({ codingskillDiv }) => {
                   justifyContent: "center",
                 }}
               >
-                {/* <IoLogoNodejs style={{}} /> */}
               </div>
 
               <div
@@ -1384,8 +1383,6 @@ const CodingCard = ({ codingskillDiv }) => {
                 }}
               >
                 <IoLogoNodejs style={{}} />
-                {/* <SiJavascript style={{ fontSize: "50px" }} />
-                <DiReact /> */}
               </div>
               <div
                 style={{
@@ -1394,7 +1391,6 @@ const CodingCard = ({ codingskillDiv }) => {
                   justifyContent: "center",
                 }}
               >
-                {/* <AiOutlineHtml5 style={{}} /> */}
               </div>
             </div>
             <div className="frontendbutton">
@@ -1412,7 +1408,6 @@ const CodingCard = ({ codingskillDiv }) => {
                 }}
                 onClick={handleClick}
               >
-                {/* <div style={{fontSize: '80px', lineHeight: '90px'}}>Lan</div> */}
                 <div
                   className="allCodingLang"
                   style={{
@@ -1424,7 +1419,6 @@ const CodingCard = ({ codingskillDiv }) => {
                 >
                   <li>NodeJS</li>
                 </div>
-                {/* <div style={{fontSize: '54px', lineHeight: '60px'}}>guages</div> */}
               </div>
             </div>
           </div>
