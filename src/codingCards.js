@@ -843,7 +843,7 @@ import zIndex from "@material-ui/core/styles/zIndex";
 
 ////Fifth Version////
 
-const CodingCard = () => {
+const CodingCard = ({ codingskillDiv }) => {
   const [openFrontend, setOpenFrontend] = useState(null);
   const [openBackend, setOpenBackend] = useState(null);
   const [logo, setLogo] = useState(null);
@@ -874,9 +874,9 @@ const CodingCard = () => {
     <div
       id="codingSkills"
       className="codingLangDiv"
-      style={{ width: "100%", marginTop: "10%" }}
+      style={{ width: "100%", height: "100vh" }}
     >
-      {!openFrontend && (
+      {/* {!openFrontend && (
         <div
           className="frontend"
           style={{
@@ -981,8 +981,8 @@ const CodingCard = () => {
             </div>
           </div>
         </div>
-      )}
-      {openFrontend && (
+      )} */}
+      {codingskillDiv && (
         <div
           className="frontend2"
           style={{
@@ -997,7 +997,7 @@ const CodingCard = () => {
             style={{
               width: "100%",
               position: "absolute",
-              zIndex: '0',
+              zIndex: "0",
               fontSize: "calc(260px + 10vw)",
               fontWeight: "bold",
               color: "rgb(211, 211, 211, 0.26)",
@@ -1013,6 +1013,9 @@ const CodingCard = () => {
             Frontend
           </div>
           <div
+            data-aos="zoom-out-right"
+            data-aos-offset="160"
+            data-aos-duration="3000"
             style={{ width: "50%", display: "flex", justifyContent: "center" }}
           >
             <div
@@ -1032,6 +1035,9 @@ const CodingCard = () => {
               }}
             >
               <div
+                data-aos="zoom-out-right"
+                data-aos-offset="160"
+                data-aos-duration="3000"
                 style={{
                   width: "60%",
                   display: "flex",
@@ -1078,7 +1084,6 @@ const CodingCard = () => {
                 }}
                 onClick={handleClick}
               >
-                {/* <div style={{fontSize: '80px', lineHeight: '90px'}}>Lan</div> */}
                 <div
                   className="allCodingLang"
                   style={{
@@ -1099,6 +1104,9 @@ const CodingCard = () => {
             </div>
           </div>
           <div
+            data-aos="zoom-out-right"
+            data-aos-offset="160"
+            data-aos-duration="3000"
             style={{ width: "50%", display: "flex", justifyContent: "center" }}
           >
             <div
@@ -1118,6 +1126,9 @@ const CodingCard = () => {
               }}
             >
               <div
+                data-aos="zoom-out-right"
+                data-aos-offset="160"
+                data-aos-duration="3000"
                 style={{
                   width: "60%",
                   display: "flex",
@@ -1188,7 +1199,7 @@ const CodingCard = () => {
           </div>
         </div>
       )}
-      {!openBackend && (
+      {/* {!openBackend && (
         <div
           className="frontend"
           style={{
@@ -1298,8 +1309,8 @@ const CodingCard = () => {
             </div>
           </div>
         </div>
-      )}
-      {openBackend && (
+      )} */}
+      {codingskillDiv && (
         <div
           className="frontend2"
           style={{
@@ -1313,7 +1324,7 @@ const CodingCard = () => {
             style={{
               width: "100%",
               position: "absolute",
-              zIndex: 0,
+              zIndex: '0',
               fontSize: "calc(260px + 10vw)",
               fontWeight: "bold",
               color: "rgb(211, 211, 211, 0.26)",
@@ -1329,6 +1340,9 @@ const CodingCard = () => {
             Backend
           </div>
           <div
+            data-aos="zoom-out-right"
+            data-aos-offset="160"
+            data-aos-duration="3000"
             style={{ width: "50%", display: "flex", justifyContent: "center" }}
           >
             <div
@@ -1348,6 +1362,9 @@ const CodingCard = () => {
               }}
             >
               <div
+                data-aos="zoom-out-right"
+                data-aos-offset="160"
+                data-aos-duration="3000"
                 style={{
                   width: "60%",
                   display: "flex",
@@ -1412,6 +1429,9 @@ const CodingCard = () => {
             </div>
           </div>
           <div
+            data-aos="zoom-out-right"
+            data-aos-offset="160"
+            data-aos-duration="3000"
             style={{ width: "50%", display: "flex", justifyContent: "center" }}
           >
             <div
@@ -1431,6 +1451,9 @@ const CodingCard = () => {
               }}
             >
               <div
+                data-aos="zoom-out-right"
+                data-aos-offset="160"
+                data-aos-duration="3000"
                 style={{
                   width: "60%",
                   display: "flex",

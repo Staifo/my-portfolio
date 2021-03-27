@@ -48,6 +48,8 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { DiReact } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
+import { IoIosGitNetwork } from "react-icons/io";
+import { DiMongodb} from "react-icons/di";
 import Footer from "./footer";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
@@ -66,7 +68,6 @@ import { MdBeachAccess } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
 import { MdPeopleOutline } from "react-icons/md";
 import { HiOutlineCode } from "react-icons/hi";
-
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -109,6 +110,7 @@ function App() {
   const [load, setLoad] = useState(null);
   const [open, sets] = useState(true);
   const [code, setCode] = useState(null);
+  const [code2, setCode2] = useState(null);
   const [logo, setLogo] = useState(null);
   const [counter, setCounter] = useState(12);
   const [buttonText, setButtonText] = useState(null);
@@ -119,6 +121,9 @@ function App() {
   const [top, setTop] = useState(null);
   const [changeNavigation, setChangeNavigation] = useState(null);
   const [changeToSide, setChangeToSide] = useState(null);
+  const [aboutMeDiv, setAboutMeDiv] = useState(null);
+  const [codingskillDiv, setcodingskillDiv] = useState(null);
+
   const counter1 = useRef(null);
   const button = useRef(null);
   const button1 = useRef(null);
@@ -141,6 +146,7 @@ function App() {
   }));
 
   const Codes = ["JavaScript", "ReactJS", "NodeJS"];
+  const Codes2 = ["NodeJS", "MongoDB", "Git"]
 
   //REACT SPRING SLIDER
   const [bind, { delta, down }] = useGesture();
@@ -177,6 +183,14 @@ function App() {
   const handleClick = (e) => {
     setClick(e.target);
   };
+
+  const handleAboutMeDiv = (e) => {
+    setAboutMeDiv(e.target);
+  }
+
+  const handleCodingskillDiv = (e) => {
+    setcodingskillDiv(e.target);
+  }
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -316,7 +330,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCode(Codes[Math.floor(Math.random() * Codes.length)]);
-      // setLogo(logos[Math.floor(Math.random() * logos.length)]);
+      setCode2(Codes2[Math.floor(Math.random() * Codes2.length)])
     }, 1000);
     return () => clearInterval(interval);
   }, []);
@@ -801,7 +815,7 @@ function App() {
           </span>
         </div> */}
 
-      <div
+      {/* <div
         className="myProjects"
         style={{
           width: "100%",
@@ -833,7 +847,7 @@ function App() {
             ></div>
           </span>
         </div>
-      </div>
+      </div> */}
       {/* <div
         className="iconContainer"
       >
@@ -863,54 +877,172 @@ function App() {
           style={{ fontSize: "40px", zIndex: "0" }}
         />
       </div> */}
-      <div className='animationTest'>
-        <div className='animationTest1'>About Me</div>
-        <div className='animationTest2'> I traveled the world</div>
-        <div className='animationTest3'>I studied</div>
-        <div className='animationTest4'>Now I code</div>
-
-      </div>
-      <div
-        id="info"
-        // style={{
-        //   padding: "40px",
-        //   width: "100%",
-        //   zIndex: "10",
-        //   textAlign: "justify",
-        //   display: "flex",
-        //   justifyContent: "center",
-        //   marginTop: "140px",
-        // }}
-      >
+      {!aboutMeDiv && (
         <div
-          id="info2"
-          // style={{
-          //   width: "60%",
-          //   fontSize: "25px",
-          //   fontFamily: "Quicksand",
-          // }}
+        id='aboutMe'
+          className="aboutMeDiv1"
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
         >
-          {" "}
-          "Coding is the manifestation of ideas and visions into reality! As far
-          as I can remember I was interested in coding. After finishing
-          highschool I went to the public library, grabbed a book about HTML and
-          wrote my first code. However, I studied International Business, gained
-          experience in Sales and traveled the world, just to realize that
-          coding is my calling. I love seeing how code has an immediate impact
-          and result. I love solving problems and communicating. Let’s create
-          great things!"
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              zIndex: "9",
+            }}
+          >
+          {/* <div style={{position:'absolute', zIndex:'0',}}>
+          <div className="globe2">
+          <IoMdGlobe 
+            style={{ fontSize: "40px", zIndex: "0" }}
+          />
         </div>
-      </div>
+        <GiPalmTree
+          className="palmtree2"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <GiGraduateCap
+          className="student2"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <MdPeopleOutline
+          className="people2"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <HiOutlineCode
+          className="code2"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+          </div> */}
+            <animated.div {...bind()} class="item" style={{ background: bg }}>
+              {" "}
+              <div
+                style={{
+                  fontFamily: "Quicksand",
+                  color: "white",
+                  fontSize: "40px",
+                  position: "absolute",
+                  textAlign: "center",
+                  width: "100%",
+                  marginLeft: "2px",
+                }}
+              >
+                About Me
+              </div>
+              <animated.div
+                class="av"
+                style={{
+                  transform: avSize,
+                  justifySelf: delta[0] < 0 ? "end" : "start",
+                }}
+              />
+              <animated.div
+                onClick={handleAboutMeDiv}
+                onTouchMove={handleAboutMeDiv}
+                id="slider"
+                class="fg"
+                style={{
+                  transform: interpolate(
+                    [x, size],
+                    (x, s) => `translate3d(${x}px,0,0) scale(${s})`
+                  ),
+                  fontFamily: "Quicksand",
+                }}
+              >
+                About Me.
+              </animated.div>
+            </animated.div>
+          </div>
+        </div>
+      )}
+      {aboutMeDiv && (
+        <div
+          className="aboutMeDiv"
+          style={{
+            width: "100%",
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
+        >
+         {/* <div style={{position:'absolute', zIndex:'0',}}>
+          <div className="globe3">
+          <IoMdGlobe 
+            style={{ fontSize: "40px", zIndex: "0" }}
+          />
+        </div>
+        <GiPalmTree
+          className="palmtree3"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <GiGraduateCap
+          className="student3"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <MdPeopleOutline
+          className="people3"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+        <HiOutlineCode
+          className="code3"
+          style={{ fontSize: "40px", zIndex: "0" }}
+        />
+          </div> */}
+          <div className="animationTest">
+            <div className="animationTest1">About Me</div>
+            <div className="animationTest2"> I traveled the world</div>
+            <div className="animationTest3">I studied</div>
+            <div className="animationTest4">Now I code</div>
+          </div>
+          <div
+            id="info"
+            // style={{
+            //   padding: "40px",
+            //   width: "100%",
+            //   zIndex: "10",
+            //   textAlign: "justify",
+            //   display: "flex",
+            //   justifyContent: "center",
+            //   marginTop: "140px",
+            // }}
+          >
+            <div
+              id="info2"
+              // style={{
+              //   width: "60%",
+              //   fontSize: "25px",
+              //   fontFamily: "Quicksand",
+              // }}
+            >
+              {" "}
+              "Coding is the manifestation of ideas and visions into reality! As
+              far as I can remember I was interested in coding. After finishing
+              highschool I went to the public library, grabbed a book about HTML
+              and wrote my first code. However, I studied International
+              Business, gained experience in Sales and traveled the world, just
+              to realize that coding is my calling. I love seeing how code has
+              an immediate impact and result. I love solving problems and
+              communicating. Let’s create great things!"
+            </div>
+          </div>
+        </div>
+      )}
       <div
         className="codingLang"
         style={{
           width: "100%",
           display: "flex",
           height: "min-content",
-          marginTop: "160px",
         }}
       >
-        <div
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -940,61 +1072,6 @@ function App() {
               <span style={{ padding: "20px" }}>{code}</span>
             </span>
           </span>
-        </div>
-
-        {/* <div data-aos="zoom-out-right" data-aos-offset="160"
-     data-aos-duration="3000" style={{ width: "16%", textAlign: "center" }}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {" "}
-            <span>
-              <DvrIcon color="primary" fontSize="large" />
-            </span>
-            <span style={{ fontSize: "30px" }}>FRONT-END</span>
-            <hr style={{ border: "1px solid blue", width: "20%" }} />
-            <span style={{ fontSize: "20px" }}>HTML5</span>{" "}
-            <span style={{ fontSize: "20px" }}>CSS3</span>{" "}
-            <span style={{ fontSize: "20px" }}>Javascript</span>{" "}
-            <span>ReactJS/Hooks</span> -{" "}
-            <span style={{ fontSize: "20px" }}>Bootstrap</span>
-            <span style={{ fontSize: "20px" }}>Material UI</span>
-          </div>
-        </div>
-        <div data-aos="zoom-out-right" data-aos-offset="160"
-     data-aos-duration="3000" style={{ width: "16%", textAlign: "center" }}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {" "}
-            <span>
-              <SettingsApplicationsIcon color="primary" fontSize="large" />
-            </span>
-            <span style={{ fontSize: "30px" }}>BACK-END</span>
-            <hr style={{ border: "1px solid blue", width: "20%" }} />
-            <span style={{ fontSize: "20px" }}>NodeJS</span>{" "}
-            <span style={{ fontSize: "20px" }}>Express</span>
-          </div>
-        </div>
-        <div data-aos="zoom-out-right" data-aos-offset="160"
-     data-aos-duration="3000" style={{ width: "16%", textAlign: "center",}}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <span>
-              <StorageIcon color="primary" fontSize="large" />
-            </span>{" "}
-            <span style={{ fontSize: "30px" }}>DATABASES</span>
-            <hr style={{ border: "1px solid blue", width: "20%" }} />
-            <span style={{ fontSize: "20px" }}>PostgreSQL</span>
-            <span style={{ fontSize: "20px" }}>MongoDB</span>
-          </div>
-        </div>
-        <div data-aos="zoom-out-right" data-aos-offset="160"
-     data-aos-duration="3000" style={{ width: "16%", textAlign: "center" }}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {" "}
-            <span>
-              <GitHubIcon color="primary" fontSize="large" />
-            </span>
-            <span style={{ fontSize: "30px" }}>Hosting and Collabo</span>
-            <hr style={{ border: "1px solid blue", width: "20%" }} />
-            <span style={{ fontSize: "20px" }}>Github</span>
-          </div>
         </div> */}
         <div
           style={{
@@ -1015,89 +1092,147 @@ function App() {
           )}
         </div>
       </div>
-
-      <div className="codeCard2" style={{ width: "100%" }}>
-        <CodingCard />
-      </div>
-
-      {/* <div
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          fontFamily: "Quicksand",
-          backgroundColor: "rgb(230, 225, 225,0.2)",
-        }}
-      >
-        <div style={{ width: "16%", textAlign: "center" }}>
+      {!codingskillDiv && (
+        <div 
+        id='codingSkills'
+          className="codingskillDiv"
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
+        >
           <div
             style={{
               display: "flex",
-              flexDirection: "column",
-              backgroundColor: "rgba(166, 217, 252, 0.1)",
-              height: "400px",
+              justifyContent: "center",
+              zIndex: "9",
             }}
           >
-            {" "}
-            <span style={{ marginTop: "40px" }}>
-              <DvrIcon color="primary" fontSize="large" />
-            </span>
-            <span style={{ fontSize: "30px" }}>Project-Management</span>
-            <hr style={{ border: "1px solid blue", width: "20%" }} />
-            <span style={{ fontSize: "20px" }}>Agile Methods / Scrum</span>{" "}
+            <animated.div {...bind()} class="item" style={{ background: bg }}>
+              {" "}
+              <div
+                style={{
+                  fontFamily: "Quicksand",
+                  color: "white",
+                  fontSize: "40px",
+                  position: "absolute",
+                  textAlign: "center",
+                  width: "100%",
+                  marginLeft: "2px",
+                }}
+              >
+                Coding Skills
+              </div>
+              <animated.div
+                class="av"
+                style={{
+                  transform: avSize,
+                  justifySelf: delta[0] < 0 ? "end" : "start",
+                }}
+              />
+              <animated.div
+                onClick={handleCodingskillDiv}
+                onTouchMove={handleCodingskillDiv}
+                id="slider"
+                class="fg"
+                style={{
+                  transform: interpolate(
+                    [x, size],
+                    (x, s) => `translate3d(${x}px,0,0) scale(${s})`
+                  ),
+                  fontFamily: "Quicksand",
+                }}
+              >
+                Coding Skills.
+              </animated.div>
+            </animated.div>
           </div>
         </div>
-      </div> */}
+      )}
 
+      {codingskillDiv && (
+        <div className="codeCard2" style={{ width: "100%" }}>
+          <CodingCard codingskillDiv={codingskillDiv} />
+        </div>
+      )}
       <div
+      // id='myProjects'
         className="projects"
         style={{
           width: "100%",
-          height: "100%",
-          marginTop: "60px",
           display: "flex",
           flexDirection: "column",
         }}
       >
-        {/* <hr
-          data-aos="fade-left"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          style={{ width: "12%", color: "grey" }}
-        /> */}
+        <div
+        className="codingLang"
+        style={{
+          width: "100%",
+          display: "flex",
+          height: "min-content",
+        }}
+      >
         {/* <div
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          className="myProjects"
-          id="myProjects"
           style={{
-            fontFamily: "Quicksand",
-            fontSize: "40px",
-            color: "grey",
-            width: "100%",
-            textAlign: "center",
+            display: "flex",
+            flexDirection: "column",
+            width: "min-content",
+            width: "max-content",
+            marginLeft: "20px",
           }}
         >
-          <p className="myProjectsText">My Projects</p>
+          <span className="nice">My</span>
+          <span style={{ display: "flex" }} className="nice">
+            Coding{" "}
+            <div
+              className="arrow"
+              style={{ marginLeft: "20px", marginTop: "60px" }}
+            ></div>
+          </span>
+          <span className="nice" style={{}}>
+            Skills{" "}
+            <span
+              style={{
+                border: "10px solid yellow",
+                fontFamily: "Quicksand",
+                fontSize: "90px",
+                borderTop: "hidden",
+              }}
+            >
+              <span style={{ padding: "20px" }}>{code}</span>
+            </span>
+          </span>
         </div> */}
-        {/* <hr
-          data-aos="fade-left"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          style={{ width: "12%", color: "grey" }}
-        /> */}
-
         <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {code2 === "NodeJS" && (
+            <IoLogoNodejs className="logo" style={{ fontSize: "2000%" }} />
+          )}
+          {code2 === "MongoDB" && (
+            <DiMongodb className="logo" style={{ fontSize: "2200%" }} />
+          )}
+          {code2 === "Git" && (
+            <IoIosGitNetwork className="logo" style={{ fontSize: "2200%" }} />
+          )}
+        </div>
+      </div>
+      <div id='myProjects'></div>
+        {/* <div
           className="myProjects"
           style={{
             width: "100%",
             display: "flex",
             alignItems: "center",
-            // height: "max-content",
-            // display: "flex",
-            // justifyContent: "space-evenly",
-            // backgroundColor: 'grey'
+            border:'10px solid yellow'
           }}
         >
           <div
@@ -1106,10 +1241,11 @@ function App() {
               flexDirection: "column",
               justifyContent: "center",
               width: "min-content",
-              marginTop: "160px",
+              // marginTop: "160px",
               width: "100%",
               height: "max-content",
               backgroundColor: "rgb(173, 216, 230, 0.1)",
+              height:'200px'
             }}
           >
             <span className="nice">My</span>
@@ -1122,12 +1258,12 @@ function App() {
               ></div>
             </span>
           </div>
-        </div>
+        </div> */}
         {!click && (
           <div
             style={{
               width: "100%",
-              height: "100%",
+              // height: "100vh",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -1182,27 +1318,9 @@ function App() {
                     fontFamily: "Quicksand",
                   }}
                 >
-                  Slide or Click.
+                  My Projects.
                 </animated.div>
               </animated.div>
-              {/* <Button
-                className="projectsButton"
-                style={{
-                  height: "120px",
-                  width: "340px",
-                  fontSize: "40px",
-                  fontFamily: "Quicksand",
-                  fontWeight: "bold",
-                  borderRadius: "20px",
-                  backgroundColor: "rgb(230, 225, 225)",
-                  color: "white",
-                }}
-                variant="contained"
-                size="large"
-                onClick={handleClick}
-              >
-                My Projects
-              </Button> */}
             </div>
           </div>
         )}
@@ -1210,39 +1328,17 @@ function App() {
         {click && (
           <div
             style={{
-              width: "100%",
+              // width: "100%",
               height: "100%",
               marginTop: "100px",
-              marginBottom: "10%",
+              display: "flex",
+              flexDirection:'column',
+              width:'100%',
+              // marginBottom: "80%",
+              // height:'100vh'
             }}
           >
-            {/* <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                width: "100%",
-              }}
-            >
-              <div
-                className="test"
-                style={{
-                  border: "2px solid black",
-                  width: "400px",
-                  height: "200px",
-                }}ef
-              >
-            Hallo
-              </div>
-              <div
-                style={{
-                  border: "2px solid black",
-                  width: "200px",
-                  height: "200px",
-                }}
-              >
-                Hallo
-              </div>
-            </div> */}
+
             <div
               //in case I want to use react spring animated.div
               // class="card"
@@ -1302,33 +1398,10 @@ function App() {
                           - My Final Project
                         </span>
                       </div>
-                      {/* <div style={{height: 'max-content', textAlign: 'center'}}>Individual work - created within 2 weeks</div> */}
                     </a>
                   </LightTooltip>
                   <Info />
-                  {/* <div style={{backgroundColor: 'lightgrey', textAlign: 'center'}}>
-                <IconButton id='clickme'
-            // className={clsx(classes.expand, {
-            //   [classes.expandOpen]: expanded,
-            // })}
-            // onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label="show more"
-            
-          >
-            <span
-              style={{
-                fontSize: "16px",
-                fontFamily: "Impact",
-                // fontWeight: "bold",
-                color: 'grey',
-                
-              }}
-            >
-              CLICK ME
-            </span>
-          </IconButton>
-          </div> */}
+                 
                   <a target="_blank" href="https://junior-coder.netlify.app/">
                     <div
                       className="button"
@@ -1357,21 +1430,20 @@ function App() {
               style={{
                 display: "flex",
                 justifyContent: "space-around",
-                width: "100%",
-                marginTop: "10%",
-                marginBottom: "10%",
+                width: '100%',
+                marginBottom:'60px'
               }}
             >
               <div
                 data-aos="zoom-out-right"
                 data-aos-offset="160"
                 data-aos-duration="3000"
-                style={{ border: "2px solid lightgrey", height: "540px" }}
+                style={{ border: "2px solid lightgrey", height: "400px", width:'max-content', }}
               >
                 <div
                   style={{
-                    width: "400px",
-                    height: "200px",
+                    width: "max-content",
+                    height: "max-content",
                   }}
                 >
                   <LightTooltip
@@ -1385,6 +1457,7 @@ function App() {
                           color: "grey",
                           textAlign: "center",
                           fontSize: "16px",
+                          width:'400px'
                         }}
                       >
                         <b>COOKBOOK:</b> Our first group project - duration 1
@@ -1394,7 +1467,9 @@ function App() {
                     </a>
                   </LightTooltip>
                   <a href="https://leckerlecker.netlify.app" target="_blanc">
-                    <Carousel autoPlay infiniteLoop>
+                  <div className='otherProjects1'>
+                  <img alt="" src={first1} width = '400px' height = '300px'/>
+                    {/* <Carousel autoPlay infiniteLoop>
                       <div>
                         <img alt="" src={first1} />
                       </div>
@@ -1404,7 +1479,8 @@ function App() {
                       <div>
                         <img alt="" src={first3} />
                       </div>
-                    </Carousel>
+                    </Carousel> */}
+                    </div>
                   </a>
                 </div>
               </div>
@@ -1413,12 +1489,12 @@ function App() {
                 data-aos="zoom-out-right"
                 data-aos-offset="160"
                 data-aos-duration="3000"
-                style={{ border: "2px solid lightgrey", height: "540px" }}
+                style={{ border: "2px solid lightgrey", height: '400px', width:'max-content'}}
               >
                 <div
                   style={{
-                    width: "400px",
-                    height: "200px",
+                    width: "max-content",
+                    height: "max-content",
                   }}
                 >
                   <LightTooltip
@@ -1432,6 +1508,7 @@ function App() {
                           color: "grey",
                           textAlign: "center",
                           fontSize: "16px",
+                          width:'400px'
                         }}
                       >
                         <b>TODO LIST:</b> Solo work - duration 1 week - creating
@@ -1440,7 +1517,10 @@ function App() {
                     </a>
                   </LightTooltip>
                   <a href="https://todoodo.netlify.app" target="_blanc">
-                    <Carousel autoPlay infiniteLoop>
+                  <div>
+                  <img alt="" src={todo1} width='400px'/>
+                  </div>
+                    {/* <Carousel autoPlay infiniteLoop>
                       <div>
                         <img alt="" src={todo1} />
                       </div>
@@ -1450,7 +1530,7 @@ function App() {
                       <div>
                         <img alt="" src={todo3} />
                       </div>
-                    </Carousel>
+                    </Carousel> */}
                   </a>
                 </div>
               </div>
@@ -1458,12 +1538,12 @@ function App() {
                 data-aos="zoom-out-right"
                 data-aos-offset="160"
                 data-aos-duration="3000"
-                style={{ border: "2px solid lightgrey", height: "540px" }}
+                style={{ border: "2px solid lightgrey", height: "400px",}}
               >
                 <div
                   style={{
-                    width: "400px",
-                    height: "200px",
+                    width: "max-content",
+                    height: "max-content",
                   }}
                 >
                   <LightTooltip
@@ -1480,6 +1560,7 @@ function App() {
                           color: "grey",
                           textAlign: "center",
                           fontSize: "16px",
+                          width:'400px'
                         }}
                       >
                         <b>My Portfolio:</b> Surprise - I concider my portfolio,
@@ -1488,31 +1569,10 @@ function App() {
                       </div>
                     </a>
                   </LightTooltip>
-                  {/* <a href='https://todoodo.netlify.app' target='_blanc'>
-                  <Carousel autoPlay infiniteLoop showThumbs={false}>
-                    <div>
-                      <img alt="" src={ugali1} />
-                    </div>
-                    <div>
-                      <img alt="" src={kochen} />
-                    </div>
-                    <div>
-                      <img alt="" src={love} />
-                    </div>
-                  </Carousel>
-                  </a>
-                  <div
-                    style={{
-                      fontFamily: "Quicksand",
-                      color: "grey",
-                      textAlign: "center",
-                      width: "100%",
-                      fontSize: "16px",
-                    }}
-                  >
-                    ...and reacreating it using our own backend with Nodejs
-                  </div> */}
-                  <Carousel autoPlay infiniteLoop>
+                  <div>
+                  <img alt="" src={portfolio1} width = '400px' />
+                  </div>
+                  {/* <Carousel autoPlay infiniteLoop>
                     <div>
                       <img alt="" src={portfolio1} />
                     </div>
@@ -1522,7 +1582,7 @@ function App() {
                     <div>
                       <img alt="" src={portfolio3} />
                     </div>
-                  </Carousel>
+                  </Carousel> */}
                 </div>
               </div>
             </div>

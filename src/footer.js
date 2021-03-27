@@ -4,9 +4,8 @@ import CopyrightIcon from "@material-ui/icons/Copyright";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Button from "@material-ui/core/Button";
-import Icon from '@material-ui/core/Icon';
-import SendIcon from '@material-ui/icons/Send';
-
+import Icon from "@material-ui/core/Icon";
+import SendIcon from "@material-ui/icons/Send";
 
 const Footer = () => {
   const [date, setDate] = useState(new Date().getFullYear());
@@ -15,21 +14,20 @@ const Footer = () => {
   const sendMessageClick = useRef(null);
   const visitor = useRef(null);
 
-  
-const handleVisitor = () => {
-setVisitors(!visitors);
-visitors 
-? visitor.current.style.visibility = 'visible' 
-: visitor.current.style.visibility = 'hidden' 
-}
+  const handleVisitor = () => {
+    setVisitors(!visitors);
+    visitors
+      ? (visitor.current.style.visibility = "visible")
+      : (visitor.current.style.visibility = "hidden");
+  };
 
   const handleClick = (e) => {
-setSendMessage(e.target);
-  }
-  
+    setSendMessage(e.target);
+  };
+
   function sendEmail(e) {
     e.preventDefault();
-  emailjs
+    emailjs
       .sendForm(
         "gmail",
         "template_w1q8yk8",
@@ -45,7 +43,11 @@ setSendMessage(e.target);
         }
       );
     e.target.reset();
-    setTimeout(()=>{ alert('Thanks for your message. I will get back to you as soon as possible. Have a good day.')}, 4000);
+    setTimeout(() => {
+      alert(
+        "Thanks for your message. I will get back to you as soon as possible. Have a good day."
+      );
+    }, 4000);
   }
 
   return (
@@ -53,16 +55,15 @@ setSendMessage(e.target);
       id="contactMe"
       style={{
         width: "100%",
+        height:'100vh',
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
         backgroundColor: "#343136",
         height: "max-content",
-       
       }}
     >
-    <div>
-    </div>
+      <div></div>
       <div
         style={{
           color: "white",
@@ -79,19 +80,26 @@ setSendMessage(e.target);
           width: "100%",
           display: "flex",
           justifyContent: "center",
+          alignItems:'center',
           height: "max-content",
+          display: "flex",
+          justifyContent: "center",
+          alignItems:'center',
         }}
       >
         <form
           style={{
+            display: "flex",
+          justifyContent: "center",
             height: "400px",
             display: "flex",
             flexDirection: "column",
             color: "white",
             fontSize: "20px",
-            marginTop: "40px",
+            // marginTop: "40px",
             width: "40%",
-            zIndex: '10',
+            zIndex: "10",
+            height:'100vh',
           }}
           className="contact-form"
           onSubmit={sendEmail}
@@ -106,24 +114,44 @@ setSendMessage(e.target);
           <label>Message</label>
           <textarea name="message" style={{ height: "160px", color: "grey" }} />
           <Button
-          className='send'
+            className="send"
             type="submit"
             value="Send"
-            style={{ backgroundColor: "blue", fontSize: '16px', fontWeight: 'bold', color: 'white', width: '100%' }}
+            style={{
+              backgroundColor: "blue",
+              fontSize: "16px",
+              fontWeight: "bold",
+              color: "white",
+              width: "100%",
+            }}
             onClick={handleClick}
-          ><span className='moveSend'>Send</span> 
-          {!sendMessage && <SendIcon ref={sendMessageClick} fontSize = 'large' className='moveOne' style={{marginLeft: '20px', visibility: 'visible'}}/>}
-          { sendMessage && <SendIcon ref={sendMessageClick} fontSize = 'large' className = 'sendIcon' style={{marginLeft: '20px', visibility: 'visible'}}/>}</Button>
-        </form>
-      </div>
-      <div style={{ width: "100%", textAlign: "center", marginBottom: "10px", }}>
+          >
+            <span className="moveSend">Send</span>
+            {!sendMessage && (
+              <SendIcon
+                ref={sendMessageClick}
+                fontSize="large"
+                className="moveOne"
+                style={{ marginLeft: "20px", visibility: "visible" }}
+              />
+            )}
+            {sendMessage && (
+              <SendIcon
+                ref={sendMessageClick}
+                fontSize="large"
+                className="sendIcon"
+                style={{ marginLeft: "20px", visibility: "visible" }}
+              />
+            )}
+          </Button>
+          <div style={{ width: "100%", textAlign: "center", marginBottom: "10px", marginTop:'40px'}}>
         <a
           href="https://www.linkedin.com/in/istayfo-ergun-a606a564/"
           target="_blanc"
-          style={{ textDecoration: "none",}}
+          style={{ textDecoration: "none" }}
         >
           <LinkedInIcon
-          className='linkedin'
+            className="linkedin"
             color="primary"
             fontSize="large"
             style={{ marginRight: "10px" }}
@@ -134,13 +162,56 @@ setSendMessage(e.target);
           target="_blanc"
           style={{ textDecoration: "none" }}
         >
-          <GitHubIcon className='git' color="primary" fontSize="large" />
+          <GitHubIcon className="git" color="primary" fontSize="large" />
         </a>
       </div>
-      <div style={{ color: "white", fontSize: "16px", display: 'flex', justifyContent:'center', alignItems:'center',}}>
+      <div
+        style={{
+          color: "white",
+          fontSize: "16px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <CopyrightIcon fontSize="small" style={{ color: "white" }} />
         {date} Istayfo Ergün, All rights reserved
       </div>
+        </form>
+      </div>
+      {/* <div style={{ width: "100%", textAlign: "center", marginBottom: "10px" }}>
+        <a
+          href="https://www.linkedin.com/in/istayfo-ergun-a606a564/"
+          target="_blanc"
+          style={{ textDecoration: "none" }}
+        >
+          <LinkedInIcon
+            className="linkedin"
+            color="primary"
+            fontSize="large"
+            style={{ marginRight: "10px" }}
+          />
+        </a>
+        <a
+          href="https://github.com/Staifo"
+          target="_blanc"
+          style={{ textDecoration: "none" }}
+        >
+          <GitHubIcon className="git" color="primary" fontSize="large" />
+        </a>
+      </div>
+      <div
+        style={{
+          color: "white",
+          fontSize: "16px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <CopyrightIcon fontSize="small" style={{ color: "white" }} />
+        {date} Istayfo Ergün, All rights reserved
+      </div> */}
     </div>
   );
 };

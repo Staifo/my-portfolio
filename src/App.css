@@ -1160,7 +1160,295 @@ border-color: transparent transparent transparent black;
   background-color: lightgreen !important;
 }
 
-/* .globe {
+.globe2 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: globe2;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: lightgrey !important;
+}
+
+@keyframes globe2 {
+  0% {
+    color: blue;
+    transform: rotate(0deg);
+    left: 0;
+    top: 80%;
+  }
+  100% {
+    color: blue;
+    transform: rotate(360deg);
+    left: 100%;
+    top: 10%;
+    margin-top: 0;
+  }
+}
+
+.palmtree2 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: palmtree2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  color: lightgrey !important;
+}
+
+@keyframes palmtree2 {
+  0% {
+    color: lightgreen;
+    transform: rotate(0deg);
+    left: 100px;
+    bottom: 80%;
+  }
+  100% {
+    color: lightgreen;
+    transform: rotate(360deg);
+    left: 100%;
+    top: -10%;
+    margin-top: 0;
+  }
+}
+
+.student2 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: student2;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  color: lightgrey !important;
+}
+
+@keyframes student2 {
+  0% {
+    transform: rotate(0deg);
+    left: 0;
+    top: 80%;
+  }
+  100% {
+    color: black;
+    transform: rotate(360deg);
+    left: -60px;
+    top: -40px;
+    margin-top: 0;
+  }
+}
+
+.people2 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: people2;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  color: lightgrey !important;
+}
+
+@keyframes people2 {
+  0% {
+    color: lightblue;
+    transform: rotate(0deg);
+    left: 0;
+    top: 80%;
+  }
+  100% {
+    color: lightblue;
+    transform: rotate(360deg);
+    left: -100px;
+    top: 80px;
+    margin-top: 0;
+  }
+}
+
+.code2 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: code2;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  color: lightgrey !important;
+}
+
+@keyframes code2 {
+  0% {
+    color: yellow;
+    transform: rotate(0deg);
+    right: 40%;
+    top: 80%;
+  }
+  80% {
+    color: yellow;
+    transform: rotate(360deg);
+    right: 80%;
+    top: 50%;
+  }
+  100% {
+    color: yellow;
+    font-size: 100px;
+    transform: rotate(360deg) !important;
+    right: 180px;
+    top: 50%;
+  }
+}
+
+.globe3 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: globe3;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: lightgrey !important;
+  visibility: hidden;
+}
+
+@keyframes globe3 {
+  0% {
+    color: blue;
+    transform: rotate(0deg);
+    left: 50%;
+    top: 50%;
+    visibility:visible;
+  }
+  100% {
+    color: blue;
+    transform: rotate(360deg);
+    left: -1000px;
+    top: 10%;
+    margin-top: 0;
+    visibility:visible;
+  }
+}
+
+.palmtree3 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: palmtree3;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  color: lightgrey !important;
+  visibility: hidden;
+}
+
+@keyframes palmtree3 {
+  0% {
+    color: lightgreen;
+    transform: rotate(0deg);
+    left: 50%;
+    top: 50%;
+    visibility:visible;
+  }
+  100% {
+    color: lightgreen;
+    transform: rotate(360deg);
+    left: 1000px;
+    top: 10%;
+    margin-top: 0;
+    visibility:visible;
+  }
+}
+
+.student3 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: student3;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  color: lightgrey !important;
+  visibility: hidden;
+}
+
+@keyframes student3 {
+  0% {
+    transform: rotate(0deg);
+    left: 50%;
+    top: 50%;
+    visibility:visible;
+  }
+  100% {
+    color: black;
+    transform: rotate(360deg);
+    left: -1000px;
+    top: -1000px;
+    margin-top: 0;
+    visibility:visible;
+  }
+}
+
+.people3 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: people3;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  color: lightgrey !important;
+  visibility: hidden;
+}
+
+@keyframes people3 {
+  0% {
+    color: lightblue;
+    transform: rotate(0deg);
+    left: 50%;
+    top: 50%;
+    visibility:visible;
+  }
+  100% {
+    color: lightblue;
+    transform: rotate(360deg);
+    left: 1000px;
+    top: 1000px;
+    margin-top: 0;
+    visibility:visible;
+  }
+}
+
+.code3 {
+  position: absolute;
+  z-index: 0 !important;
+  animation-name: code3;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  color: lightgrey !important;
+  visibility: hidden;
+  
+}
+
+@keyframes code3 {
+  0% {
+    color: yellow;
+    transform: rotate(0deg);
+    left: 50%;
+    top: 50%;
+    visibility:visible;
+  }
+  100% {
+    color: yellow;
+    font-size: 100px;
+    transform: rotate(360deg) !important;
+    left: 50%;
+    top: -1000px;
+    visibility:visible;
+  }
+}
+
+.iconContainer {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 500px) {
+  .iconContainer {
+    width: 280vw !important;
+    height: 80% !important;
+  }
+}
+
+.globe {
   position: absolute;
   z-index: 0 !important;
   animation-name: globe;
@@ -1191,7 +1479,7 @@ border-color: transparent transparent transparent black;
   position: absolute;
   z-index: 0 !important;
   animation-name: palmtree;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   animation-duration: 30s;
   color: lightgrey;
 }
@@ -1216,7 +1504,7 @@ border-color: transparent transparent transparent black;
   position: absolute;
   z-index: 0 !important;
   animation-name: umbrella;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   animation-duration: 36s;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -1333,19 +1621,6 @@ border-color: transparent transparent transparent black;
   }
 }
 
-.iconContainer {
-  width: 100%;
-  height: 40%;
-  position: absolute;
-  z-index: -1;
-} */
-
-/* @media (max-width: 500px) {
-  .iconContainer {
-    width: 280vw !important;
-    height: 80% !important;
-  }
-} */
 
 .sendIcon {
   position: relative;
@@ -1385,6 +1660,7 @@ border-color: transparent transparent transparent black;
   height:60%;
   width:100%; 
   z-index:-1;
+  font-family:Impact;
 }
 
 @media (max-width:600px)
@@ -1392,6 +1668,7 @@ border-color: transparent transparent transparent black;
   .animationTest {
     width:280%;
     height:100%;
+    font-weight: bold;
   }
 }
 
@@ -1524,3 +1801,10 @@ border-color: transparent transparent transparent black;
   }
 }
 
+/* .otherProjects {
+  overflow-x: scroll;
+} */
+
+/* .otherProjects > div {
+  margin-bottom:20px;
+} */
