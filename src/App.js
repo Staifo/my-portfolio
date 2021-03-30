@@ -954,7 +954,7 @@ function App() {
                   fontFamily: "Quicksand",
                 }}
               >
-                About Me.
+                <div id='aboutSpan'>About Me.</div>
               </animated.div>
             </animated.div>
           </div>
@@ -1034,14 +1034,16 @@ function App() {
           </div>
         </div>
       )}
-      <div
+      {/* <div
         className="codingLang"
         style={{
           width: "100%",
           display: "flex",
           height: "min-content",
         }}
-      >
+      > */}
+
+
         {/* <div
           style={{
             display: "flex",
@@ -1073,7 +1075,9 @@ function App() {
             </span>
           </span>
         </div> */}
-        <div
+
+        
+        {/* <div
           style={{
             width: "100%",
             display: "flex",
@@ -1091,7 +1095,7 @@ function App() {
             <IoLogoNodejs className="logo" style={{ fontSize: "2200%" }} />
           )}
         </div>
-      </div>
+      </div> */}
       {!codingskillDiv && (
         <div
           id="codingSkills"
@@ -1156,7 +1160,7 @@ function App() {
 
       {codingskillDiv && (
         <div className="codeCard2" style={{ width: "100%" }}>
-          <CodingCard codingskillDiv={codingskillDiv} />
+          <CodingCard codingskillDiv={codingskillDiv} code={code} code2={code2} />
         </div>
       )}
       <div
@@ -1168,14 +1172,15 @@ function App() {
           flexDirection: "column",
         }}
       >
-        <div
+        {/* <div
           className="codingLang"
           style={{
             width: "100%",
             display: "flex",
             height: "min-content",
           }}
-        >
+        > */}
+
           {/* <div
           style={{
             display: "flex",
@@ -1207,7 +1212,9 @@ function App() {
             </span>
           </span>
         </div> */}
-          <div
+
+
+          {/* <div
             style={{
               width: "100%",
               display: "flex",
@@ -1226,7 +1233,10 @@ function App() {
             )}
           </div>
         </div>
-        <div id="myProjects"></div>
+        <div id="myProjects"></div> */}
+        <div id='myProjects'></div>
+
+
         {/* <div
           className="myProjects"
           style={{

@@ -80,18 +80,19 @@ z-index: -1; */
   justify-content: center;
 }
 
-@media (max-width:600px) {
-.projects {
-  margin-top:110px;
-}
-.codingSkillmarginTop {
-  margin-top:110px; 
-}
+@media (max-width: 600px) {
+  .projects {
+    margin-top: 110px;
+  }
+  .codingSkillmarginTop {
+    margin-top: 110px;
+  }
 }
 
 .logo {
-  color: rgb(173, 216, 230, 0.1);
+  color: rgb(211, 211, 211, 0.4);
 }
+
 
 .codeCard {
   position: absolute;
@@ -104,7 +105,7 @@ z-index: -1; */
 }
 
 .codingLang > div,
-.myProjects > div { 
+.myProjects > div {
   margin-bottom: 20px;
   font-size: 20px;
   height: 400px;
@@ -248,7 +249,6 @@ codingLang > div:hover {
     visibility: visible;
   }
 }
-
 
 #info {
   padding: 40px;
@@ -419,6 +419,30 @@ background-color:yellow;
   background-color: white;
 }
 
+#slider:hover::after {
+  content: 'Slide or Click';
+} 
+
+
+
+/* #slider:hover {
+  animation-name: testing;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+@keyframes testing {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+} */
+
 /*  */
 
 @media (max-width: 1500px) {
@@ -514,7 +538,9 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
 .junior,
 .codinSkillsText,
 .myProjectsText,
-.allCodingLang {
+.allCodingLang,
+.newFrontendDiv4,
+.newFrontendDiv5 {
   text-align: center;
 
   color: #fff;
@@ -548,8 +574,6 @@ border-color: rgb(248, 242, 242) transparent transparent transparent;
 [data-aos][data-aos][data-aos-duration="4000"] {
   transition-duration: 4000ms;
 }
-
-
 
 .square {
   position: relative;
@@ -1316,7 +1340,7 @@ border-color: transparent transparent transparent black;
     transform: rotate(0deg);
     left: 50%;
     top: 50%;
-    visibility:visible;
+    visibility: visible;
   }
   100% {
     color: blue;
@@ -1324,7 +1348,7 @@ border-color: transparent transparent transparent black;
     left: -1000px;
     top: 10%;
     margin-top: 0;
-    visibility:visible;
+    visibility: visible;
   }
 }
 
@@ -1344,7 +1368,7 @@ border-color: transparent transparent transparent black;
     transform: rotate(0deg);
     left: 50%;
     top: 50%;
-    visibility:visible;
+    visibility: visible;
   }
   100% {
     color: lightgreen;
@@ -1352,7 +1376,7 @@ border-color: transparent transparent transparent black;
     left: 1000px;
     top: 10%;
     margin-top: 0;
-    visibility:visible;
+    visibility: visible;
   }
 }
 
@@ -1371,7 +1395,7 @@ border-color: transparent transparent transparent black;
     transform: rotate(0deg);
     left: 50%;
     top: 50%;
-    visibility:visible;
+    visibility: visible;
   }
   100% {
     color: black;
@@ -1379,7 +1403,7 @@ border-color: transparent transparent transparent black;
     left: -1000px;
     top: -1000px;
     margin-top: 0;
-    visibility:visible;
+    visibility: visible;
   }
 }
 
@@ -1399,7 +1423,7 @@ border-color: transparent transparent transparent black;
     transform: rotate(0deg);
     left: 50%;
     top: 50%;
-    visibility:visible;
+    visibility: visible;
   }
   100% {
     color: lightblue;
@@ -1407,7 +1431,7 @@ border-color: transparent transparent transparent black;
     left: 1000px;
     top: 1000px;
     margin-top: 0;
-    visibility:visible;
+    visibility: visible;
   }
 }
 
@@ -1419,7 +1443,6 @@ border-color: transparent transparent transparent black;
   animation-duration: 6s;
   color: lightgrey !important;
   visibility: hidden;
-  
 }
 
 @keyframes code3 {
@@ -1428,7 +1451,7 @@ border-color: transparent transparent transparent black;
     transform: rotate(0deg);
     left: 50%;
     top: 50%;
-    visibility:visible;
+    visibility: visible;
   }
   100% {
     color: yellow;
@@ -1436,7 +1459,7 @@ border-color: transparent transparent transparent black;
     transform: rotate(360deg) !important;
     left: 50%;
     top: -1000px;
-    visibility:visible;
+    visibility: visible;
   }
 }
 
@@ -1627,7 +1650,6 @@ border-color: transparent transparent transparent black;
   }
 }
 
-
 .sendIcon {
   position: relative;
   animation-name: send;
@@ -1662,18 +1684,17 @@ border-color: transparent transparent transparent black;
   }
 }
 .animationTest {
-  position:absolute;
-  height:60%;
-  width:100%; 
-  z-index:-1;
-  font-family:Impact;
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  z-index: -1;
+  font-family: Impact;
 }
 
-@media (max-width:600px)
-{
+@media (max-width: 600px) {
   .animationTest {
-    width:280%;
-    height:100%;
+    width: 280%;
+    height: 100%;
     font-weight: bold;
   }
 }
@@ -1691,9 +1712,9 @@ border-color: transparent transparent transparent black;
 @keyframes animate {
   0% {
     visibility: visible;
-    margin-left: 40%; 
+    margin-left: 40%;
     font-size: 400px;
-    color: rgb(211, 211, 211, 0.4)
+    color: rgb(211, 211, 211, 0.4);
   }
   /* 50% {
     margin-left: 50%;
@@ -1701,10 +1722,10 @@ border-color: transparent transparent transparent black;
     color: rgb(211, 211, 211, 0.4)
   } */
   100% {
-    margin-left:10%;
+    margin-left: 10%;
     visibility: hidden;
     font-size: 100px;
-    color: rgb(211, 211, 211, 0.1)
+    color: rgb(211, 211, 211, 0.1);
   }
 }
 
@@ -1723,9 +1744,9 @@ border-color: transparent transparent transparent black;
   0% {
     margin-top: 20%;
     visibility: visible;
-    margin-left: 40%; 
+    margin-left: 40%;
     font-size: 100px;
-    color: rgb(211, 211, 211, 0.4)
+    color: rgb(211, 211, 211, 0.4);
   }
   /* 50% {
     margin-left: 50%;
@@ -1734,10 +1755,10 @@ border-color: transparent transparent transparent black;
   } */
   100% {
     margin-top: 2%;
-    margin-left:10%;
+    margin-left: 10%;
     visibility: hidden;
     font-size: 100px;
-    color: rgb(211, 211, 211, 0.1)
+    color: rgb(211, 211, 211, 0.1);
   }
 }
 
@@ -1756,9 +1777,9 @@ border-color: transparent transparent transparent black;
   0% {
     margin-top: 20%;
     visibility: visible;
-    margin-left: 40%; 
+    margin-left: 40%;
     font-size: 100px;
-    color: rgb(211, 211, 211, 0.4)
+    color: rgb(211, 211, 211, 0.4);
   }
   /* 50% {
     margin-left: 50%;
@@ -1767,10 +1788,10 @@ border-color: transparent transparent transparent black;
   } */
   100% {
     margin-top: 2%;
-    margin-left:10%;
+    margin-left: 10%;
     visibility: hidden;
     font-size: 100px;
-    color: rgb(211, 211, 211, 0.1)
+    color: rgb(211, 211, 211, 0.1);
   }
 }
 
@@ -1789,9 +1810,9 @@ border-color: transparent transparent transparent black;
   0% {
     margin-top: 20%;
     visibility: visible;
-    margin-left: 40%; 
+    margin-left: 40%;
     font-size: 100px;
-    color: rgb(211, 211, 211, 0.4)
+    color: rgb(211, 211, 211, 0.4);
   }
   /* 50% {
     margin-left: 50%;
@@ -1800,10 +1821,10 @@ border-color: transparent transparent transparent black;
   } */
   100% {
     margin-top: 2%;
-    margin-left:10%;
+    margin-left: 10%;
     visibility: hidden;
     font-size: 100px;
-    color: rgb(211, 211, 211, 0.1)
+    color: rgb(211, 211, 211, 0.1);
   }
 }
 
@@ -1813,4 +1834,91 @@ border-color: transparent transparent transparent black;
 
 /* .otherProjects > div {
   margin-bottom:20px;
+} */
+
+.newFrontendDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.newFrontendDiv2 {
+  font-size: 200px;
+  font-family: Impact;
+  font-weight: bold;
+  line-height: 200px;
+  color: lightgrey;
+}
+
+.newfrontend {
+  animation: frontend2 6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes frontend2 {
+  from {
+    margin-left:-1600px;
+    opacity:0.1;
+  }
+  to {
+    justify-self: center;
+    opacity:1;
+  }
+}
+
+.newfrontend2 {
+  animation: frontend4 6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes frontend4 {
+  from {
+    margin-right:-1600px;
+    opacity:0.1;
+  }
+  to {
+    justify-self: center;
+    opacity:1;
+  }
+}
+
+
+.newFrontendDiv3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.newFrontendDiv4,
+.newFrontendDiv5 {
+  list-style-type: none;
+  font-size: calc(20px + 1vw);
+  text-align: center;
+  line-height: 34px;
+  width: 500px;
+  height: max-content;
+  /* border-radius: 100%; */
+  font-weight: bold;
+  font-family: Quicksand;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  /* border: 10px solid lightgrey; */
+  color: rgb(197, 194, 194);
+}
+
+
+/* .newfrontend:hover + .newFrontendDiv4 {
+  background-color: #272727;
+  border-radius: 40px;
+} */
+
+/* .newfrontend2:hover + .newFrontendDiv3 {
+  background-color: #272727;
+  border-radius: 40px;
 } */

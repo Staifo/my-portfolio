@@ -843,7 +843,7 @@ import zIndex from "@material-ui/core/styles/zIndex";
 
 ////Fifth Version////
 
-const CodingCard = ({ codingskillDiv }) => {
+const CodingCard = ({ codingskillDiv, code, code2 }) => {
   const [openFrontend, setOpenFrontend] = useState(null);
   const [openBackend, setOpenBackend] = useState(null);
   const [logo, setLogo] = useState(null);
@@ -982,7 +982,97 @@ const CodingCard = ({ codingskillDiv }) => {
           </div>
         </div>
       )} */}
+
       {codingskillDiv && (
+        <div className="newFrontendMainDiv" style={{display:'flex', justifyContent:'center', alignItems:'center' }}>
+       {/* <div
+       className='logoDiv'
+          style={{
+            width: "100%",
+            display: "flex",
+           justifyContent:'center',
+           alignItems:'center',
+           position:'absolute',
+           marginTop:'-200px'
+          }}
+        >
+          {code === "JavaScript" && (
+            <SiJavascript className="logo" style={{ fontSize: "1900%" }} />
+          )}
+          {code === "ReactJS" && (
+            <DiReact className="logo" style={{ fontSize: "2200%" }} />
+          )}
+          {code === "NodeJS" && (
+            <IoLogoNodejs className="logo" style={{ fontSize: "2200%" }} />
+          )}
+        </div> */}
+        <div className="newFrontendDiv" style={{ width:'max-content'}}>
+          <div className="newFrontendDiv2 newfrontend">
+            <span className="newFrontendSpan1">FRONT</span>
+            <span className="newFrontendSpan2">END</span>
+          </div>
+          <div className="newFrontendDiv3">
+            <div
+              className="newFrontendDiv4"
+              data-aos="zoom-out-right"
+              data-aos-offset="160"
+              data-aos-duration="3000"
+            >
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SASS</li>
+              <li>JavaScript</li>
+              <li>ReactJS</li>
+              <li>RESTFUL API's</li>
+            </div>
+            <div
+              className="newFrontendDiv5"
+              data-aos="zoom-out-right"
+              data-aos-offset="160"
+              data-aos-duration="3000"
+            >
+              <li>Git/GitHub</li>
+              <li>Material UI</li>
+              <li>Bootstrap</li>
+              <li>Netlify</li>
+              <li>React Spring</li>
+              <li>Scrum</li>
+            </div>
+          </div>
+          <div className="newFrontendDiv2 newfrontend2">
+            <span className="newFrontendSpan1">BACK</span>
+            <span className="newFrontendSpan2">END</span>
+          </div>
+          <div className="newFrontendDiv3">
+            <div
+              className="newFrontendDiv4"
+              data-aos="zoom-out-right"
+              data-aos-offset="160"
+              data-aos-duration="3000"
+            >
+              <li>NodeJS</li>
+            </div>
+            <div
+              className="newFrontendDiv5"
+              data-aos="zoom-out-right"
+              data-aos-offset="160"
+              data-aos-duration="3000"
+            >
+              <li>Git/GitHub</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Heroku</li>
+              <li>Scrum</li>
+            </div>
+          </div>
+          </div>
+        </div>
+      )}
+
+      {/* ACTUAL VERSION */}
+
+      {/* {codingskillDiv && (
         <div
           className="frontend2"
           style={{
@@ -1176,7 +1266,6 @@ const CodingCard = ({ codingskillDiv }) => {
                 }}
                 onClick={handleClick}
               >
-                {/* <div style={{fontSize: '80px', lineHeight: '80px'}}>Tools</div> */}
                 <div
                   className="allCodingLang"
                   style={{
@@ -1193,12 +1282,12 @@ const CodingCard = ({ codingskillDiv }) => {
                   <li>React Spring</li>
                   <li>Scrum</li>
                 </div>
-                {/* <div style={{fontSize: '60px', lineHeight: '60px'}}>I used</div> */}
               </div>
             </div>
           </div>
         </div>
-      )}
+      )} */}
+
       {/* {!openBackend && (
         <div
           className="frontend"
@@ -1310,7 +1399,10 @@ const CodingCard = ({ codingskillDiv }) => {
           </div>
         </div>
       )} */}
-      {codingskillDiv && (
+
+      {/* ACTUAL VERSION */}
+
+      {/* {codingskillDiv && (
         <div
           className="frontend2"
           style={{
@@ -1495,7 +1587,6 @@ const CodingCard = ({ codingskillDiv }) => {
                 }}
                 onClick={handleClick}
               >
-                {/* <div style={{fontSize: '80px', lineHeight: '80px'}}>Tools</div> */}
                 <div
                   className="allCodingLang"
                   style={{
@@ -1512,12 +1603,11 @@ const CodingCard = ({ codingskillDiv }) => {
                   <li>Heroku</li>
                   <li>Scrum</li>
                 </div>
-                {/* <div style={{fontSize: '60px', lineHeight: '60px'}}>I used</div> */}
               </div>
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
