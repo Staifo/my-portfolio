@@ -997,7 +997,7 @@ const CodingCard = ({ codingskillDiv, code, code2 }) => {
           }}
         >
           {code === "JavaScript" && (
-            <SiJavascript className="logo" style={{ fontSize: "1900%" }} />
+            <SiJavascript className="logo" style={{ fontSize: "1920%" }} />
           )}
           {code === "ReactJS" && (
             <DiReact className="logo" style={{ fontSize: "2200%" }} />
