@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect, useRef } from "react";
+import { Switch, Route } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CVImage from "./images/CVImage.jpg";
@@ -68,6 +69,9 @@ import { MdBeachAccess } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
 import { MdPeopleOutline } from "react-icons/md";
 import { HiOutlineCode } from "react-icons/hi";
+import CodingCertificate from "./CodingCertificate";
+import Bachelor from "./BachelorOfArts";
+import CertificateIV from "./CertificateIV";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -338,17 +342,12 @@ function App() {
 
   ///counter///
 
-  useEffect(() => {
-    // if(counter > 0){
-    //   return setTimeout(() => setCounter(counter - 1), 1000)
-    // } else if  (counter === 0) {
-    //   return counter1.current.style.visibility = 'hidden'
-    // }
-    counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
-    if (counter === 0) {
-      return (counter1.current.style.visibility = "hidden");
-    }
-  }, [counter]);
+  // useEffect(() => {
+  //   counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
+  //   if (counter === 0) {
+  //     return (counter1.current.style.visibility = "hidden");
+  //   }
+  // }, [counter]);
 
   /////
 
@@ -357,6 +356,8 @@ function App() {
       className="App"
       // style={{ minWidth: "100%" }}
     >
+    <Switch>
+    <Route exact path='/'>
       <div
         className="navbarDiv"
         // data-aos="zoom-out-left"
@@ -471,6 +472,17 @@ function App() {
           </a>
         </div>
       </div>
+      {/* <Switch>
+        <Route path='/codingcertificate'>
+        <CodingCertificate/>
+        </Route>
+        <Route path='/bachelor'>
+        <Bachelor/>
+        </Route>
+        <Route path='/certificateiv'>
+        <CertificateIV/>
+        </Route>
+      </Switch> */}
       <Navbarneu
         handleExpandClick={handleExpandClick}
         button={button}
@@ -954,7 +966,7 @@ function App() {
                   fontFamily: "Quicksand",
                 }}
               >
-                <div id='aboutSpan'>About Me.</div>
+                <div id="aboutSpan">About Me.</div>
               </animated.div>
             </animated.div>
           </div>
@@ -1043,8 +1055,7 @@ function App() {
         }}
       > */}
 
-
-        {/* <div
+      {/* <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -1076,8 +1087,7 @@ function App() {
           </span>
         </div> */}
 
-        
-        {/* <div
+      {/* <div
           style={{
             width: "100%",
             display: "flex",
@@ -1109,7 +1119,7 @@ function App() {
           }}
         >
           <div
-          className='codingSkillmarginTop'
+            className="codingSkillmarginTop"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -1160,7 +1170,11 @@ function App() {
 
       {codingskillDiv && (
         <div className="codeCard2" style={{ width: "100%" }}>
-          <CodingCard codingskillDiv={codingskillDiv} code={code} code2={code2} />
+          <CodingCard
+            codingskillDiv={codingskillDiv}
+            code={code}
+            code2={code2}
+          />
         </div>
       )}
       <div
@@ -1181,7 +1195,7 @@ function App() {
           }}
         > */}
 
-          {/* <div
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -1213,8 +1227,7 @@ function App() {
           </span>
         </div> */}
 
-
-          {/* <div
+        {/* <div
             style={{
               width: "100%",
               display: "flex",
@@ -1234,8 +1247,7 @@ function App() {
           </div>
         </div>
         <div id="myProjects"></div> */}
-        <div id='myProjects'></div>
-
+        <div id="myProjects"></div>
 
         {/* <div
           className="myProjects"
@@ -1619,6 +1631,17 @@ function App() {
           zIndex: "10",
         }}
       ></div>
+      </Route>
+      <Route path='/codingcertificate'>
+        <CodingCertificate/>
+        </Route>
+        <Route path='/bachelor'>
+        <Bachelor/>
+        </Route>
+        <Route path='/certificateiv'>
+        <CertificateIV/>
+        </Route>
+      </Switch>
     </div>
   );
 }
