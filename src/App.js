@@ -448,7 +448,6 @@ function App() {
               Contact Me
             </Button>
           </a>
-          <Link to = '/bachelor'>bachelor</Link>
           <a
             href="https://www.linkedin.com/in/istayfo-ergun-a606a564/"
             target="_blanc"
