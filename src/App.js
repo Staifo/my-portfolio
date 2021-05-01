@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect, useRef } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link} from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CVImage from "./images/CVImage.jpg";
@@ -448,6 +448,7 @@ function App() {
               Contact Me
             </Button>
           </a>
+          <Link to = '/bachelor'>bachelor</Link>
           <a
             href="https://www.linkedin.com/in/istayfo-ergun-a606a564/"
             target="_blanc"
