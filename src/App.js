@@ -357,7 +357,7 @@ function App() {
       // style={{ minWidth: "100%" }}
     >
     <Switch>
-    <Route path='/'>
+    <Route exact path='/'>
       <div
         className="navbarDiv"
         // data-aos="zoom-out-left"
