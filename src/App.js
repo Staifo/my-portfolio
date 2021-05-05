@@ -1009,9 +1009,10 @@ function App() {
           </div> */}
           <div className="animationTest">
             <div className="animationTest1">About Me</div>
-            <div className="animationTest2"> I traveled the world</div>
             <div className="animationTest3">I studied</div>
-            <div className="animationTest4">Now I code</div>
+            <div className="animationTest2"> I traveled the world</div>
+            <div className="animationTest4">I worked in Sales</div>
+            <div className="animationTest5">Now I code</div>
           </div>
           <div
             id="info"
