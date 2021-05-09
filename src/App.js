@@ -472,17 +472,6 @@ function App() {
           </a>
         </div>
       </div>
-      {/* <Switch>
-        <Route path='/codingcertificate'>
-        <CodingCertificate/>
-        </Route>
-        <Route path='/bachelor'>
-        <Bachelor/>
-        </Route>
-        <Route path='/certificateiv'>
-        <CertificateIV/>
-        </Route>
-      </Switch> */}
       <Navbarneu
         handleExpandClick={handleExpandClick}
         button={button}
