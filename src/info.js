@@ -52,7 +52,14 @@ const Info = () => {
   return (
     <Card className={classes.root}>
       <CardActions disableSpacing>
-        <div
+      <div  style={{
+            fontSize: "18px",
+            fontFamily: "Quicksand",
+            color: "white",
+            width: "100%",
+            textAlign: "center",
+          }}>- Video-based job-platform for Junior Coders -</div>
+        {/* <div
           style={{
             fontSize: "18px",
             fontFamily: "Quicksand",
@@ -81,8 +88,8 @@ const Info = () => {
               CLICK ME FOR MORE INFO
             </span>
           </IconButton>
-        </div>
-        <IconButton
+        </div> */}
+        {/* <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
           })}
@@ -91,9 +98,9 @@ const Info = () => {
           aria-label="show more"
         >
           <ExpandMoreIcon />
-        </IconButton>
+        </IconButton> */}
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+      {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent
           style={{
             fontSize: "20px",
@@ -117,7 +124,7 @@ const Info = () => {
           and work is still going on. On iOS: Videos dont't play on iOS since
           the videos are recorded and saved in WebM format.
         </CardContent>
-      </Collapse>
+      </Collapse> */}
     </Card>
   );
 };
