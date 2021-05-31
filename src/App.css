@@ -44,7 +44,7 @@ body,
 z-index: -1; */
   background-color: white;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -54,7 +54,7 @@ z-index: -1; */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 .jumbo2 {
